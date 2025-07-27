@@ -1,4 +1,4 @@
-pysqlite3-binary>=3.36.0
+pysqlite3-binary<=0.5.4
 altair==5.5.0
 annotated-types==0.7.0
 anyio==4.9.0
