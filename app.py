@@ -22,11 +22,11 @@ def load_resources():
     CHROMA_DIR = os.path.join(BASE_DIR, "chroma_RMA")
     GRAPH_FILE_PATH = os.path.join(BASE_DIR, "rma_knowledge_graph.graphml")
 
-    AZURE_API_KEY = os.getenv("AZURE_OPENAI_API_KEY")
-    AZURE_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
-    AZURE_DEPLOYMENT_EMBEDDING = os.getenv("AZURE_DEPLOYMENT_EMBEDDING")
-    AZURE_DEPLOYMENT_CHAT = os.getenv("AZURE_DEPLOYMENT_MODEL")
-    AZURE_API_VERSION = os.getenv("AZURE_OPENAI_API_VERSION")
+    AZURE_API_KEY = st.secrets("AZURE_OPENAI_API_KEY")
+    AZURE_ENDPOINT = st.secrets("AZURE_OPENAI_ENDPOINT")
+    AZURE_DEPLOYMENT_EMBEDDING = st.secrets("AZURE_DEPLOYMENT_EMBEDDING")
+    AZURE_DEPLOYMENT_CHAT = st.secrets("AZURE_DEPLOYMENT_MODEL")
+    AZURE_API_VERSION = st.secrets("AZURE_OPENAI_API_VERSION")
 
     client = AzureOpenAI(api_key=AZURE_API_KEY, api_version=AZURE_API_VERSION, azure_endpoint=AZURE_ENDPOINT)
     chroma_client = chromadb.PersistentClient(path=CHROMA_DIR)
