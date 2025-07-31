@@ -12,7 +12,7 @@ from chromadb.utils.embedding_functions import OpenAIEmbeddingFunction
 from dotenv import load_dotenv
 import datetime
 import difflib
-
+import re
 # ==== 1. CONFIGURATION ET CHARGEMENT DES RESSOURCES (MIS EN CACHE) ====
 @st.cache_resource
 def load_resources():
@@ -110,7 +110,7 @@ def final_synthesis(question, graph_context, detailed_chunks):
 
     FORMAT DE SORTIE OBLIGATOIRE :
     Un objet JSON avec :
-    1. "reponse": Une réponse claire, détaillée et informative basée sur les données fournies.
+    1. "reponse": Une réponse claire, détaillée et informative basée sur les données fournies, quand la réponse est détailler merci de fournir la réponse sous format de 1., 2..
     2. "suggestions": Une liste de 2 objets, chacune étant une question de suivi pertinente que l'utilisateur pourrait poser:
 
     Exemple :
@@ -212,10 +212,20 @@ if st.session_state.question:
             response_data = final_synthesis(current_question, graph_context, detailed_chunks)
 
             reponse_concise = response_data.get("reponse", "Désolé, une erreur est survenue.")
+
+            # 🔧 Nettoyage Markdown
+            reponse_concise = re.sub(r"(#+)([^\s#])", r"\1 \2", reponse_concise)  # Espace après ##
+            reponse_concise = re.sub(r"(##[^\n]*)", r"\n\n\1\n\n", reponse_concise)
+            reponse_concise = re.sub(r"([^\n])(\n- )", r"\1\n\n\2", reponse_concise)
+            reponse_concise = re.sub(r"\n{3,}", r"\n\n", reponse_concise)
+            reponse_concise = re.sub(r"(?<!\n)(\d+\. )", r"\n\n\1", reponse_concise)  # <<< ICI ajout pour listes numérotées
+            reponse_concise = reponse_concise.strip()
+
             suggestions_data = response_data.get("suggestions", [])
             suggestions = [s["question"] if isinstance(s, dict) else s for s in suggestions_data]
 
-            message_placeholder.markdown(reponse_concise)
+            message_placeholder.markdown(reponse_concise, unsafe_allow_html=False)
+
             st.session_state.messages.append({
                 "role": "assistant",
                 "content": reponse_concise,
