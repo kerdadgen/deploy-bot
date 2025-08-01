@@ -4,39 +4,96 @@
   <graph edgedefault="directed">
     <node id="Contrat Incendie - Explosions" />
     <node id="dommages matériels" />
+    <node id="Dommages matériels" />
+    <node id="incendie" />
+    <node id="explosion" />
+    <node id="biens immobiliers" />
+    <node id="biens mobiliers" />
+    <node id="conséquences financières" />
+    <node id="Conséquences financières" />
     <node id="dommages immatériels" />
+    <node id="Option" />
+    <node id="Assurance – Incendie &amp; Explosions" />
     <node id="risques professionnels et industriels" />
+    <node id="usines" />
+    <node id="ateliers" />
+    <node id="entrepôts" />
     <node id="toute entreprise" />
+    <node id="industrielle ou commerciale" />
+    <node id="se protéger" />
     <node id="biens de l'entreprise" />
     <node id="responsabilité envers les tiers" />
     <node id="arrêt prolongé de l'activité" />
+    <node id="Bâtiments et dépendances" />
+    <node id="Mobilier, matériel industriel, marchandises" />
     <node id="Responsabilité Civile" />
-    <node id="au Maroc" />
+    <node id="Dommages immatériels" />
+    <node id="Garantie" />
+    <node id="risques désignés sur les Conditions Particulières situés au Maroc" />
     <node id="Demande de souscription" />
-    <node id="au siège via ASSURLINE" />
-    <node id="Incendie" />
-    <node id="dommages par conflagration" />
-    <node id="Explosions" />
-    <node id="action subite et violente de la pression" />
-    <node id="Foudre" />
-    <node id="dommages d'incendie" />
-    <node id="Électricité" />
-    <node id="Dommages aux appareils électriques" />
-    <node id="incendie ou explosion dans machines" />
-    <node id="Tempêtes et grêle" />
-    <node id="dommages sur les bâtiments et contenu" />
+    <node id="siège via l'outil ASSURLINE" />
+    <node id="Souscription" />
+    <node id="Nature et localisation des biens à assurer" />
+    <node id="Valeurs estimées" />
+    <node id="Mesures de prévention mises en place" />
+    <node id="Extensions de garantie souhaitées" />
+    <node id="Dommages par conflagration" />
+    <node id="Dommages par embrasement" />
+    <node id="Dommages par simple combustion" />
+    <node id="Action subite et violente de la pression de gaz" />
+    <node id="Action subite et violente de la pression de vapeurs" />
+    <node id="Dommages d'incendie causés par la foudre" />
+    <node id="Dommages d'incendie provoqués par un défaut électrique" />
+    <node id="Incendie à l'intérieur des machines" />
+    <node id="Explosion à l'intérieur des machines" />
+    <node id="Dommages sur les bâtiments par tempêtes" />
+    <node id="Dommages sur les bâtiments par grêle" />
+    <node id="Dommages sur le contenu des bâtiments par tempêtes" />
+    <node id="Dommages sur le contenu des bâtiments par grêle" />
+    <node id="Garantie de base" />
+    <node id="Bâtiments avec valeur de reconstruction vétusté déduite" />
+    <node id="Mobilier avec valeur de remplacement vétusté déduite" />
+    <node id="Extensions de garantie" />
+    <node id="Dommages électriques avec Capital au 1er risque" />
+    <node id="Valeur à neuf" />
+    <node id="Pertes Indirectes" />
+    <node id="Assurances de responsabilité" />
+    <node id="Risques locatifs" />
+    <node id="Recours des locataires" />
+    <node id="Recours des voisins" />
+    <node id="Recours des tiers" />
+    <node id="Assurances complémentaires" />
+    <node id="Privation de jouissance" />
+    <node id="Frais de déblais" />
     <node id="Assuré" />
-    <node id="limiter les dommages en cas de sinistre" />
-    <node id="déclarer le sinistre à l'assureur" />
+    <node id="limiter progression du sinistre" />
+    <node id="assureur" />
+    <node id="Déclaration" />
+    <node id="5 jours" />
+    <node id="numéro de police" />
+    <node id="date" />
+    <node id="heure" />
+    <node id="circonstances" />
     <node id="Assureur" />
-    <node id="réduire ou refuser l'indemnité" />
-    <node id="Assurance Incendie - Explosions" />
-    <node id="non obligatoire mais recommandée" />
-    <node id="protection modulable" />
+    <node id="indemnité en cas de manquement" />
+    <node id="Protection modulable" />
     <node id="garanties complémentaires" />
-    <node id="souplesse pour modifier le contrat" />
-    <node id="incitation tarifaire" />
+    <node id="Souplesse pour modifier le contrat" />
+    <node id="Incitation tarifaire" />
+    <node id="Assurance Incendie - Explosions" />
+    <node id="non obligatoire mais fortement recommandée" />
+    <node id="partenaires financiers" />
+    <node id="règle proportionnelle" />
+    <node id="déclarer capitaux proche de valeur réelle" />
+    <node id="dommages dus à chaleur sans embrasement, usure, bris de machine, fusibles" />
+    <node id="perte de loyers ou de jouissance via extension de garantie" />
+    <node id="appareil électrique" />
+    <node id="garantie Dommages aux appareils électriques" />
+    <node id="réparations" />
+    <node id="Produit d'assurance" />
+    <node id="Multirisque des Entreprises Industrielles et Commerciales « OPTIMA »" />
     <node id="Contrat Multirisque OPTIMA" />
+    <node id="dispositif complet d'assurance" />
     <node id="entreprises industrielles et commerciales" />
     <node id="protection globale" />
     <node id="Protection globale" />
@@ -44,6 +101,7 @@
     <node id="matériel" />
     <node id="marchandises" />
     <node id="responsabilité civile de l'entreprise" />
+    <node id="Incendie" />
     <node id="options" />
     <node id="Options" />
     <node id="Vol" />
@@ -52,90 +110,229 @@
     <node id="Bris de glaces" />
     <node id="RC Exploitation" />
     <node id="Perte d'exploitation" />
+    <node id="PME-PMI" />
+    <node id="sites industriels" />
+    <node id="commerces" />
+    <node id="Prestataires de services" />
+    <node id="Bâtiments et locaux" />
+    <node id="construits et couverts en dur" />
+    <node id="moyens de sécurité adéquats" />
+    <node id="régulièrement" />
+    <node id="Marchandises et matériels" />
+    <node id="dans emplacements désignés aux Conditions Particulières" />
+    <node id="au siège via ASSURLINE" />
     <node id="Garanties" />
-    <node id="Maroc" />
-    <node id="Objectifs" />
-    <node id="protéger le patrimoine" />
-    <node id="assurer la continuité de l'exploitation" />
-    <node id="couvrir la responsabilité de l'entreprise" />
-    <node id="Garantie de base" />
-    <node id="risques annexes" />
+    <node id="au Maroc" />
+    <node id="pour les sites indiqués dans la police d'assurance" />
+    <node id="patrimoine" />
+    <node id="impacts financiers en cas d'incendie, vol, dégâts des eaux" />
+    <node id="continuité de l'exploitation" />
+    <node id="Garantie Perte d'exploitation" />
+    <node id="trésorerie" />
+    <node id="charges fixes" />
+    <node id="contre réclamations de tiers" />
+    <node id="responsabilité de l'entreprise" />
+    <node id="Contrat OPTIMA" />
+    <node id="garantie de base obligatoire" />
+    <node id="Garantie de base obligatoire" />
+    <node id="gamme de garanties optionnelles" />
+    <node id="événements climatiques" />
+    <node id="inondation" />
+    <node id="tremblement de terre" />
+    <node id="dommages électriques" />
+    <node id="recours des voisins et tiers" />
+    <node id="frais divers" />
+    <node id="pertes de loyers et privation de jouissance" />
+    <node id="extensions possibles" />
     <node id="Garanties optionnelles" />
+    <node id="contenu" />
+    <node id="détériorations immobilières" />
+    <node id="fonds et valeurs" />
     <node id="Dégâts des Eaux" />
+    <node id="dommages par fuites" />
+    <node id="responsabilité civile" />
+    <node id="frais de recherche" />
     <node id="Bris de Glaces" />
+    <node id="casse des vitrines" />
+    <node id="enseignes" />
+    <node id="pannes ou destructions soudaines des équipements" />
     <node id="Responsabilité Civile Exploitation" />
+    <node id="dommages causés aux tiers" />
+    <node id="défense et recours" />
     <node id="Perte d'Exploitation après incendie / explosions" />
-    <node id="En cas de sinistre" />
-    <node id="informer la compagnie" />
-    <node id="fournir informations" />
-    <node id="prendre mesures conservatoires" />
-    <node id="fournir pièces et expertise" />
-    <node id="procédure vol" />
-    <node id="Avantages de l'offre" />
-    <node id="large palette de garanties" />
-    <node id="souplesse de choix" />
-    <node id="multiples frais couverts" />
-    <node id="accompagnement et prévention par RMA" />
-    <node id="Multirisque DIAFA" />
-    <node id="protection complète aux hôtels et établissements touristiques" />
+    <node id="marge brute" />
+    <node id="5 jours ouvrés" />
+    <node id="1 jour ouvré" />
+    <node id="écrit ou oral" />
+    <node id="date, lieu, nature, circonstances, montant estimatif" />
+    <node id="prendre toutes actions pour limiter le dommage" />
+    <node id="20 jours" />
+    <node id="déclarer à la police dans les 24h, déposer plainte et coopérer" />
+    <node id="Large palette de garanties" />
+    <node id="Souplesse de choix" />
+    <node id="Multiples frais" />
+    <node id="RMA" />
+    <node id="Accompagnement et prévention" />
+    <node id="Système de sécurité" />
+    <node id="risque imprévisible" />
+    <node id="Assurance" />
+    <node id="pertes financières" />
+    <node id="Assurance OPTIMA" />
+    <node id="modulable" />
+    <node id="seulement pour garanties nécessaires" />
+    <node id="Assurance Incendie" />
+    <node id="OPTIMA" />
+    <node id="plusieurs garanties" />
+    <node id="économique" />
+    <node id="assurance évolutive" />
+    <node id="ajustement des garanties" />
+    <node id="Expert" />
+    <node id="accélérer évaluation" />
+    <node id="Garantie Perte d'Exploitation" />
+    <node id="maintenir trésorerie" />
+    <node id="Contrat Multirisque DIAFA" />
+    <node id="offrir une protection complète aux hôtels et établissements touristiques" />
     <node id="bâtiments" />
     <node id="mobilier" />
     <node id="équipements professionnels" />
     <node id="responsabilité civile de l'hôtelier" />
-    <node id="contrat" />
-    <node id="capital mobilier et immobilier" />
+    <node id="contrat en fonction de ses besoins" />
+    <node id="Multirisque Hôtel DIAFA" />
+    <node id="Hôtels et établissements touristiques non classés ou de 1 à 3 étoiles" />
+    <node id="normes de sécurité" />
+    <node id="bâtiment construit en dur" />
+    <node id="bâtiment bien entretenu" />
+    <node id="période d'inoccupation à moins de 90 jours" />
+    <node id="hôtels situés en montagne" />
+    <node id="hôtels loin des services de secours" />
+    <node id="siège via ASSURLINE" />
+    <node id="hôtels situés au Maroc" />
+    <node id="Assurance Multirisque DIAFA" />
+    <node id="capital mobilier" />
+    <node id="capital immobilier" />
     <node id="objets de la clientèle" />
-    <node id="contrat avec garantie de base 'Incendie'" />
+    <node id="contrat avec garantie de base Incendie" />
     <node id="autres garanties" />
-    <node id="Assurance DIAFA" />
-    <node id="garantie de base obligatoire (Incendie)" />
-    <node id="Garantie de base: Incendie" />
+    <node id="Bâtiment" />
+    <node id="construit en dur" />
+    <node id="bien entretenu" />
+    <node id="Période d'inoccupation" />
+    <node id="90 jours" />
+    <node id="Hôtels situés en montagne ou loin des services de secours" />
+    <node id="de la souscription" />
+    <node id="Bâtiments" />
+    <node id="Matériel" />
+    <node id="Dommages électriques" />
+    <node id="Cataclysmes naturels" />
+    <node id="Responsabilité effets clientèle" />
+    <node id="Frais divers" />
+    <node id="Pertes de loyers" />
+    <node id="Honoraires d'expert" />
+    <node id="Véhicules dans le parking" />
+    <node id="Renonciation à recours" />
+    <node id="Pertes indirectes" />
+    <node id="Emeutes" />
     <node id="Assurance Vol et Vandalisme" />
     <node id="dommages par vol" />
+    <node id="Dommages par vol" />
+    <node id="détériorations des bâtiments" />
+    <node id="vol de bijoux" />
+    <node id="espèces" />
     <node id="Assurance Dégâts des Eaux" />
     <node id="dégâts liés aux fuites" />
+    <node id="infiltrations" />
     <node id="casse des vitres" />
+    <node id="vitrines" />
     <node id="Responsabilité Civile de l'Hôtelier" />
-    <node id="dommages causés aux tiers" />
-    <node id="sinistre dans un délai de 5 jours ouvrés" />
-    <node id="Assurance" />
-    <node id="large palette de garanties et d'extensions" />
+    <node id="deux options de couverture" />
+    <node id="Deux options de couverture" />
+    <node id="Déclaration de sinistre" />
+    <node id="délai de 5 jours ouvrés" />
+    <node id="circonstances du sinistre" />
+    <node id="montant approximatif des dommages" />
+    <node id="large palette de garanties" />
+    <node id="extensions" />
     <node id="souplesse des choix de garanties" />
-    <node id="multiples frais offerts" />
+    <node id="multiples frais" />
+    <node id="produit d'assurance" />
+    <node id="toutes les tailles d'hôtel" />
+    <node id="DIAFA" />
+    <node id="couverture complète" />
+    <node id="Couverture complète" />
+    <node id="vol" />
+    <node id="dégâts des eaux" />
+    <node id="bris de glaces" />
+    <node id="Garantie responsabilité civile" />
     <node id="effets personnels des clients" />
-    <node id="garanties en cours de contrat" />
-    <node id="Assurance Accidents du travail" />
-    <node id="obligatoire depuis novembre 2002" />
-    <node id="travailleurs contre risques professionnels" />
+    <node id="expertise pour accélérer indemnisation" />
+    <node id="exclusions" />
+    <node id="Exclusions" />
+    <node id="sinistres intentionnels" />
+    <node id="vols sans effraction" />
+    <node id="évolutive" />
+    <node id="Client" />
+    <node id="trois copies du contrat" />
+    <node id="copie du contrat au siège" />
+    <node id="Assurance Accidents du Travail" />
+    <node id="assurance obligatoire" />
+    <node id="novembre 2002" />
     <node id="frais médicaux" />
     <node id="compensation financière" />
     <node id="proches en cas de décès" />
     <node id="Employeurs" />
-    <node id="souscrire à Assurance Accidents du travail" />
-    <node id="accidents pendant trajet travail-résidence" />
-    <node id="Garanties de l'Assurance Accidents du travail" />
-    <node id="au Maroc et à l'étranger" />
-    <node id="Indemnités de l'Assurance Accidents du travail" />
-    <node id="au Maroc en dirhams" />
-    <node id="en cas d'incapacité temporaire ou permanente" />
-    <node id="en cas de décès" />
-    <node id="frais de diagnostic et soins médicaux" />
-    <node id="frais des dispositifs médicaux" />
-    <node id="frais de transport de la victime" />
-    <node id="frais funéraires" />
-    <node id="Employeur" />
-    <node id="sinistre à assurance" />
-    <node id="sinistre à délégation régionale du travail" />
-    <node id="participation aux bénéfices" />
-    <node id="restitution de primes pour boîte de secours" />
-    <node id="accès à cliniques et ambulances conventionnées" />
-    <node id="RMA AT" />
-    <node id="encadrement médical et service personnalisé" />
-    <node id="obligatoire pour employeurs sous régime CNSS" />
-    <node id="tous les salariés affiliés à la CNSS" />
-    <node id="accidents sur lieu de travail et trajet" />
-    <node id="remboursement des frais médicaux" />
+    <node id="salariés" />
+    <node id="accidents de trajet" />
+    <node id="Maroc" />
+    <node id="déplacements professionnels à l'étranger" />
+    <node id="Indemnités" />
+    <node id="en dirhams" />
     <node id="Indemnité journalière" />
+    <node id="Indemnité sous forme de rente d'invalidité" />
+    <node id="Indemnité sous forme de rente pour ayants-droit" />
+    <node id="Maladies professionnelles" />
+    <node id="Frais de diagnostic" />
+    <node id="Frais soins médicaux" />
+    <node id="Frais chirurgicaux" />
+    <node id="Frais pharmaceutiques" />
+    <node id="Frais hospitalisation" />
+    <node id="Frais dispositifs médicaux" />
+    <node id="Frais de transport de la victime" />
+    <node id="Frais funéraires" />
+    <node id="Frais de transport de la dépouille" />
+    <node id="AT Déléguée" />
+    <node id="activités avec limites de salariés et masse salariale" />
+    <node id="AT Non déléguée" />
+    <node id="activités hors nomenclature ou avec excès de seuils" />
+    <node id="Victime" />
+    <node id="48h" />
+    <node id="Employeur" />
+    <node id="modèle N° 1 du BO" />
+    <node id="Certificats médicaux" />
+    <node id="bordereaux CNSS" />
+    <node id="En cas de décès" />
+    <node id="Certificat de décès" />
+    <node id="acte d'hérédité" />
+    <node id="délégation régionale du travail" />
+    <node id="48 heures après la déclaration de la victime" />
+    <node id="modèle N° 2 du BO" />
+    <node id="participation aux bénéfices" />
+    <node id="3% des primes nettes pour la boîte de secours" />
+    <node id="accès à des cliniques et ambulances conventionnées" />
+    <node id="accès gratuit à la plateforme RMA AT" />
+    <node id="Plateforme RMA AT" />
+    <node id="encadrement médical" />
+    <node id="service personnalisé" />
+    <node id="accompagnement par un médecin conseil" />
+    <node id="éviter les pertes financières" />
+    <node id="employeur soumis au régime de la CNSS" />
+    <node id="tous les salariés affiliés à la CNSS" />
+    <node id="accidents sur le lieu de travail" />
+    <node id="accidents sur le trajet" />
+    <node id="accidents lors de déplacements professionnels" />
+    <node id="remboursement des frais médicaux" />
+    <node id="prise en charge des prothèses" />
+    <node id="indemnités journalières" />
+    <node id="rentes d'incapacité" />
     <node id="deux tiers de la rémunération quotidienne" />
     <node id="Rente d'incapacité" />
     <node id="salaire annuel de la victime et taux d'incapacité" />
@@ -143,352 +340,932 @@
     <node id="pourcentage du salaire annuel versé aux ayants-droit" />
     <node id="Assurance Responsabilité Civile Scolaire" />
     <node id="conséquences financières des accidents" />
-    <node id="blessures aux élèves" />
+    <node id="blessures causées aux élèves" />
     <node id="accidents corporels ou matériels affectant des tiers" />
     <node id="dommages liés à l'intoxication ou l'empoisonnement" />
-    <node id="établissements scolaires privés" />
+    <node id="aliments ou boissons servis à la cantine" />
+    <node id="Crèches" />
+    <node id="Ecoles primaires" />
+    <node id="Ecoles secondaires" />
+    <node id="Ecoles supérieures" />
+    <node id="Instituts techniques" />
     <node id="dommages causés à des tiers" />
+    <node id="Élèves inscrits" />
+    <node id="établissement" />
+    <node id="Personnel salarié et enseignants" />
+    <node id="leurs fonctions" />
+    <node id="Établissement" />
+    <node id="mobilier, outils, matériel, aménagements intérieurs ou extérieurs" />
+    <node id="générateurs, moteurs, appareils, conduites de gaz" />
+    <node id="Générateurs, moteurs, appareils, conduites de gaz" />
+    <node id="dommages corporels à des tiers" />
     <node id="dommages subis par les enfants élèves" />
-    <node id="dommages matériels lors d'événements organisés par l'établissement" />
-    <node id="activité d'enseignement ou de formation à une adresse fixe" />
-    <node id="plafonds pour divers types de dommages" />
-    <node id="prise en charge des frais de prothèses dentaires, lunettes de vue et rattrapage scolaire" />
-    <node id="extension de garantie pour couvrir divers frais supplémentaires" />
-    <node id="mise à jour de la liste nominative des élèves pour couverture" />
-    <node id="déclaration de sinistre dans un délai de cinq jours" />
-    <node id="activités extra-scolaires déclarées" />
-    <node id="souscription de garanties spécifiques sur demande" />
+    <node id="Enfant/Élève scolarisé" />
+    <node id="blessures corporelles" />
+    <node id="dommages résultant d'intoxication ou empoisonnement" />
+    <node id="Aliments ou boissons" />
+    <node id="cantine de l'établissement" />
+    <node id="dommages matériels causés par incendie, explosion ou dégât des eaux" />
+    <node id="Événements organisés par l'établissement" />
+    <node id="biens appartenant à des tiers" />
+    <node id="Conditions de souscription" />
+    <node id="exercer activité d'enseignement ou de formation à une adresse fixe" />
+    <node id="dommages corporels" />
+    <node id="intoxication alimentaire" />
+    <node id="incendie hors locaux" />
+    <node id="dégâts des eaux hors locaux" />
+    <node id="décès" />
+    <node id="incapacité physique permanente" />
+    <node id="frais médicaux et pharmaceutiques" />
+    <node id="prothèses dentaires" />
+    <node id="prothèses auditives et orthopédiques" />
+    <node id="lunettes de vue" />
+    <node id="risques parascolaires" />
+    <node id="frais de transport" />
+    <node id="frais de recherche et de sauvetage" />
+    <node id="frais de rattrapage scolaire suite à un accident" />
+    <node id="événements catastrophiques" />
+    <node id="Garantie Événements catastrophiques" />
+    <node id="garantie Responsabilité Civile" />
+    <node id="Frais de prothèses dentaires" />
+    <node id="accident" />
+    <node id="activités parascolaires" />
+    <node id="déclaration de l'accident" />
+    <node id="Accident sans gravité" />
+    <node id="consultation médicale" />
+    <node id="déclaration à l'intermédiaire" />
+    <node id="Accident grave" />
+    <node id="demande de prise en charge" />
+    <node id="prise en charge à l'établissement de santé" />
+    <node id="Cas de rattrapage scolaire" />
+    <node id="Certificat d'arrêt et de reprise" />
+    <node id="Cas de bris de lunettes" />
+    <node id="Facture de remplacement" />
+    <node id="Cas de prothèse" />
+    <node id="Devis" />
+    <node id="Cas de recherche et sauvetage" />
+    <node id="Déclaration à la police" />
+    <node id="Cas de lit du parent accompagnateur" />
+    <node id="Facture hospitalière" />
+    <node id="Réclamation du capital IPP" />
+    <node id="Certificat de guérison avec taux d'IPP" />
+    <node id="Réclamation du capital décès" />
+    <node id="large gamme de garanties" />
+    <node id="extensions sur-mesure" />
+    <node id="offre complète" />
+    <node id="capitaux élevés" />
+    <node id="risques liés aux trajets" />
+    <node id="frais de prothèses dentaires" />
+    <node id="rattrapage scolaire" />
+    <node id="extension de garantie" />
+    <node id="tarif très compétitif" />
+    <node id="Indemnités contractuelles" />
+    <node id="Nouveaux élèves" />
+    <node id="mise à jour de la liste nominative des élèves" />
+    <node id="Sinistre" />
+    <node id="cinq jours" />
+    <node id="Activités extra-scolaires" />
+    <node id="déclarées à l'assureur" />
+    <node id="Couverture spécifique" />
+    <node id="demande" />
+    <node id="Doute" />
+    <node id="contacter l'assureur" />
+    <node id="Intermédiaire" />
+    <node id="client signe les trois copies du contrat" />
+    <node id="Envoi de copie du contrat" />
+    <node id="20 jours suivant la date d'émission du contrat" />
     <node id="Assurance Multirisque Immeuble de RMA" />
     <node id="propriétaires" />
     <node id="syndics de copropriété" />
     <node id="gestionnaires d'immeubles" />
+    <node id="risques liés à biens immobiliers" />
+    <node id="couverture étendue" />
     <node id="frais liés à un sinistre" />
     <node id="responsabilités civiles" />
-    <node id="couverture des biens" />
-    <node id="couverture des parties communes" />
-    <node id="couverture des équipements essentiels" />
-    <node id="responsabilité civile des propriétaires" />
-    <node id="responsabilité civile des syndics" />
+    <node id="protéger le patrimoine immobilier" />
+    <node id="responsabilités des propriétaires ou syndics envers tiers" />
+    <node id="immeubles résidentiels ou mixtes" />
     <node id="garanties personnalisées" />
+    <node id="Assurance Multirisque Immeuble" />
     <node id="propriétaires d'immeubles mis en location" />
     <node id="gestionnaires de patrimoine immobilier" />
-    <node id="nombre maximum d'immeubles assurés à 5" />
-    <node id="plafond par immeuble à 10 millions Dhs" />
-    <node id="garanties sur Incendie" />
-    <node id="garanties sur Responsabilité Civile" />
-    <node id="personnalisation de la couverture" />
+    <node id="de 200 000 Dhs à 50 millions Dhs" />
+    <node id="Nombre maximum d'immeubles assurés" />
+    <node id="5" />
+    <node id="Plafond par immeuble" />
+    <node id="10 millions Dhs" />
+    <node id="Total maximum" />
+    <node id="50 millions Dhs" />
+    <node id="Immeuble" />
+    <node id="au moins 95% de matériaux durs" />
+    <node id="usage résidentiel et/ou de bureaux" />
+    <node id="commerces ou artisans pour moins d'un quart de sa surface" />
+    <node id="Surface totale du bâtiment" />
+    <node id="7 000 m² par immeuble" />
+    <node id="Hauteur de l'immeuble" />
+    <node id="28 m" />
+    <node id="adjacent à d'autres bâtiments" />
+    <node id="environnement présentant un risque accru" />
+    <node id="Risque assuré" />
+    <node id="couvert par un autre contrat d'assurance résilié pour sinistre au cours des 12 derniers mois" />
+    <node id="En cas de résidence" />
+    <node id="ses propres garanties" />
+    <node id="aux lieux mentionnés dans les Conditions Particulières" />
+    <node id="deux garanties principales" />
+    <node id="Garanties de base" />
     <node id="Incendie et risques annexes" />
     <node id="Evénements catastrophiques" />
     <node id="Vol et détériorations immobilières" />
     <node id="Accident du Travail" />
+    <node id="Garanties complémentaires" />
     <node id="Bris d'antenne" />
     <node id="Bris Panneaux solaires" />
-    <node id="Renonciation à recours" />
     <node id="Bris de Citernes" />
     <node id="Perte de liquides" />
+    <node id="Autres garanties en option de l'Incendie" />
     <node id="Véhicules au garage" />
     <node id="Catastrophes naturelles" />
     <node id="Evénements climatiques" />
-    <node id="Emeutes" />
-    <node id="aux intermédiaires" />
-    <node id="au siège" />
-    <node id="déclaration de sinistre dans délai prévu" />
-    <node id="estimation des biens endommagés" />
-    <node id="liste des objets volés" />
-    <node id="justificatifs des biens volés" />
+    <node id="Gestion déléguée aux intermédiaires" />
+    <node id="Version à la carte" />
+    <node id="Gestion réservée au siège" />
+    <node id="Au-delà de 1 immeuble" />
+    <node id="Formalités en cas de sinistre" />
+    <node id="Déclarer le sinistre" />
+    <node id="Fournir une estimation des biens endommagés" />
+    <node id="Fournir une liste des objets volés" />
+    <node id="Fournir des justificatifs des biens volés" />
+    <node id="choix des garanties" />
+    <node id="choix des plafonds" />
+    <node id="flexible" />
+    <node id="complet" />
+    <node id="accessible" />
+    <node id="délégable" />
+    <node id="tarification adaptée" />
+    <node id="Gestion et souscription" />
+    <node id="réseau" />
+    <node id="immeubles résidentiels" />
+    <node id="immeubles à usage mixte" />
+    <node id="catastrophes naturelles" />
+    <node id="Garantie vol et détériorations immobilières" />
+    <node id="vandalisme dans parties communes" />
+    <node id="dommages lors de tentatives de vol" />
+    <node id="remplacement des serrures" />
+    <node id="responsabilités civiles pour dommages aux tiers" />
+    <node id="intoxications dues aux fumées" />
+    <node id="accidents dans parties communes" />
+    <node id="Garantie accident du travail" />
+    <node id="employés à la garde et à l'entretien" />
+    <node id="personnel temporaire" />
+    <node id="défaut d'entretien connu" />
+    <node id="guerres" />
+    <node id="dommages causés par véhicules à moteur" />
+    <node id="mobilier des parties communes" />
+    <node id="sinistres liés à défauts de construction" />
+    <node id="infiltrations accidentelles d'eau" />
+    <node id="dommages dus à défaut d'entretien" />
+    <node id="non-respect des mesures de prévention" />
+    <node id="installations spécifiques déclarées" />
+    <node id="agence RMA pour déclarer sinistre" />
+    <node id="Indemnisation" />
+    <node id="valeur d'usage ou valeur à neuf" />
     <node id="Multirisque PME-PMI" />
     <node id="protection du patrimoine professionnel" />
-    <node id="PME-PMI" />
     <node id="patrimoine professionnel" />
-    <node id="frais et pertes suite à dommage" />
+    <node id="frais et pertes suite à dommage garanti" />
     <node id="responsabilité Civile Chef d'entreprise" />
     <node id="pertes financières en cas de sinistre" />
-    <node id="Dirigeant/Chef d'entreprise/Gérant" />
-    <node id="activité parmi 152 activités spécifiques" />
+    <node id="Assurance Multirisque PME-PMI" />
+    <node id="Dirigeant" />
+    <node id="Chef d'entreprise" />
+    <node id="Gérant de PME/PMI" />
+    <node id="secteur industriel" />
+    <node id="secteur commercial" />
+    <node id="secteur de service" />
+    <node id="152 activités de la nomenclature spécifique" />
+    <node id="Contenu" />
+    <node id="de 150 000 à 5 millions de dirhams" />
+    <node id="de 150 000 à 15 millions de dirhams" />
     <node id="Gestion déléguée" />
     <node id="offres Packagée et Modulable" />
-    <node id="Gestion réservée au siège" />
-    <node id="valeurs ou risques dépassent seuils" />
+    <node id="respect des limites de capitaux" />
+    <node id="valeurs ou risques dépassent les seuils fixés" />
     <node id="moins de 50 salariés" />
-    <node id="superficie ≤ 2000 m²" />
-    <node id="valeur du contenu ≤ 5000000 DH" />
-    <node id="valeur du bâtiment ≤ 15000000 DH" />
-    <node id="activité sur un seul site" />
+    <node id="superficie inférieure ou égale à 2000 m²" />
+    <node id="contenu d'une valeur inférieure ou égale à 5 000 000 DH" />
+    <node id="bâtiment d'une valeur inférieure ou égale à 15 000 000 DH" />
+    <node id="activité parmi 152 activités de la nomenclature" />
+    <node id="activité exercée sur un seul site" />
     <node id="Garanties dommages" />
+    <node id="exclusivement au Maroc" />
     <node id="Garanties Responsabilité civile" />
-    <node id="dommages à l'étranger" />
+    <node id="dommages survenus à l'étranger" />
+    <node id="séjour ne dépasse pas 90 jours" />
     <node id="Option Packagée" />
     <node id="5 garanties de base" />
-    <node id="garanties optionnelles" />
+    <node id="ajout de garanties optionnelles" />
+    <node id="Bris de matériels" />
     <node id="Option Modulable" />
     <node id="2 garanties de base" />
     <node id="6 garanties optionnelles" />
-    <node id="Sinistre" />
-    <node id="compagnie dans 5 jours" />
-    <node id="compagnie dans 48 heures" />
-    <node id="couverture complète" />
+    <node id="2 garanties complémentaires" />
+    <node id="Garanties de base dans Option Modulable" />
+    <node id="Evénements Catastrophiques" />
+    <node id="compagnie" />
+    <node id="48 heures" />
+    <node id="copie du procès-verbal" />
     <node id="tarif compétitif et flexible" />
-    <node id="plus de 152 activités couvertes" />
-    <node id="eventail étendu de garanties et d'extensions" />
-    <node id="facile et rapide en agence" />
-    <node id="dommages causés aux tiers pendant activités courantes" />
-    <node id="RC après livraison des Produits" />
-    <node id="responsabilité pour dommages après livraison/réalisation" />
+    <node id="plus de 152 activités" />
+    <node id="éventail étendu de garanties et d'extensions" />
+    <node id="souscription facile et rapide en agence" />
+    <node id="non obligatoire" />
+    <node id="fortement recommandée" />
+    <node id="personnel" />
+    <node id="Accident de travail" />
+    <node id="RC après livraison des Produits ou achèvement des travaux" />
+    <node id="responsabilité de l'entreprise pour des dommages après livraison/réalisation" />
+    <node id="tarif pour la multirisque" />
+    <node id="activité, valeur des biens, adresse, dispositifs de protection, garanties choisies" />
+    <node id="souscription à la multirisque" />
+    <node id="à tout moment" />
+    <node id="au démarrage ou en cours d'activité" />
+    <node id="souscription" />
+    <node id="informations relatives à la profession" />
+    <node id="services inclus" />
+    <node id="Conseil et suivi RMA, Programme de prévention RMA, Souscription déléguée" />
+    <node id="intermédiaire" />
     <node id="Contrat Global Santé" />
     <node id="contrat collectif complémentaire" />
     <node id="garantie Maladie-Maternité" />
+    <node id="Garantie Maladie-Maternité" />
+    <node id="cadre de base Décès-Incapacité-Maladie" />
     <node id="prise en charge des frais excédant plafond du contrat de base" />
-    <node id="décès et incapacité" />
-    <node id="Personne morale" />
-    <node id="police de base DIM en vigueur" />
-    <node id="prestations de prise en charge des frais de soins" />
-    <node id="Garanties du Contrat Global Santé" />
+    <node id="incapacité" />
+    <node id="Assurance Global Santé" />
+    <node id="toute personne morale" />
+    <node id="police de base « DIM »" />
+    <node id="en vigueur" />
+    <node id="collaborateurs" />
+    <node id="membres" />
+    <node id="faire bénéficier les assurés de prestations de prise en charge des frais de soins" />
+    <node id="régime de base DIM" />
     <node id="Hospitalisations à l'étranger" />
     <node id="accord préalable de l'assureur" />
     <node id="Remboursements" />
-    <node id="au Maroc en Dirhams" />
-    <node id="Remboursement" />
-    <node id="frais médicaux et pharmaceutiques" />
+    <node id="Dirhams" />
     <node id="frais chirurgicaux" />
     <node id="frais d'hospitalisation" />
     <node id="actes de pratiques médicales" />
     <node id="frais de transport et de garde du malade" />
-    <node id="frais de séjour en clinique ou hôpital" />
+    <node id="frais de séjour en clinique ou en hôpital" />
     <node id="soins et prothèses dentaires" />
     <node id="examens biologiques et radiologiques" />
-    <node id="après épuisement du plafond du contrat de base DIM" />
+    <node id="épuisement du plafond du contrat de base DIM" />
+    <node id="1.000.000 DH par personne par maladie par an" />
     <node id="Adhérent" />
-    <node id="au titre de la police de base DIM" />
+    <node id="assuré au titre de la police de base" />
+    <node id="Police de base" />
+    <node id="RMA DIM" />
     <node id="Entreprises" />
-    <node id="si moins de 20 adhérents à la souscription" />
-    <node id="si 10 adhérents après deux années d'adhésion" />
-    <node id="Souscription" />
+    <node id="moins de 20 adhérents à la souscription" />
+    <node id="10 adhérents après deux années d'adhésion" />
     <node id="siège" />
     <node id="NOV AS" />
-    <node id="Délai de carence pour frais médicaux liés à grossesse" />
-    <node id="10 mois après adhésion" />
-    <node id="Délai de carence pour frais d'affections psychiatriques" />
-    <node id="24 mois après date d'effet du contrat" />
-    <node id="Cessation de l'adhésion" />
-    <node id="date de retraite ou rupture du contrat de travail" />
-    <node id="date de résiliation du contrat ou en cas de fraude" />
-    <node id="Service Global Santé" />
-    <node id="24h/24 et 7j/7 via site web et application mobile RMA" />
-    <node id="sur compte de l'entreprise ou directement sur comptes des salariés" />
+    <node id="Frais médicaux liés à la grossesse et la maternité" />
+    <node id="dix mois après la date d'adhésion" />
+    <node id="Frais résultant d'affections psychiatriques" />
+    <node id="vingt-quatre mois après la date d'effet du contrat" />
+    <node id="Adhésion" />
+    <node id="date de retraite" />
+    <node id="rupture du contrat de travail" />
+    <node id="adhérent n'est plus sur les bordereaux" />
+    <node id="date de résiliation du contrat" />
+    <node id="fraude" />
+    <node id="imprimé de prise en charge" />
+    <node id="prescription médicale" />
+    <node id="comptes rendus des analyses" />
+    <node id="déclaration Maladie" />
+    <node id="facture détaillée" />
+    <node id="notes d'honoraires" />
+    <node id="ordonnance" />
+    <node id="Assureur en cas d'hospitalisation programmée" />
+    <node id="trois mois après cessation des soins" />
+    <node id="service accessible 24h/24 et 7j/7" />
+    <node id="Service accessible 24h/24 et 7j/7" />
+    <node id="site web" />
+    <node id="application mobile RMA" />
+    <node id="réception de remboursements sur compte de l'entreprise" />
+    <node id="réception de remboursements sur comptes des salariés" />
     <node id="Carte RMA Cash" />
-    <node id="recevoir remboursements même sans être bancarisé" />
+    <node id="réception de remboursements sur carte monétique" />
+    <node id="réception de remboursements sans être bancarisé" />
     <node id="Couverture médicale complémentaire" />
-    <node id="assurance facultative qui complète couverture de base DIM" />
+    <node id="assurance facultative" />
+    <node id="couverture de base (DIM)" />
     <node id="Conjoint et enfants" />
-    <node id="couverts" />
+    <node id="Oui" />
     <node id="Ascendants de l'adhérent" />
-    <node id="non couverts" />
-    <node id="Changement de situation familiale" />
-    <node id="remplir bulletin d'adhésion modificatif" />
+    <node id="Non" />
+    <node id="bulletin d'adhésion modificatif" />
+    <node id="bulletin d'adhésion modificatif à l'assureur" />
+    <node id="justificatifs" />
     <node id="Enfants" />
     <node id="21 ans" />
     <node id="Enfants en études" />
     <node id="25 ans" />
     <node id="Adhésion à Global Santé" />
-    <node id="adhésion à assurance de base DIM" />
+    <node id="adhésion à l'assurance de base DIM" />
     <node id="Retraite Active Entreprise" />
     <node id="contrat collectif d'épargne retraite" />
-    <node id="salariés" />
     <node id="épargne retraite complémentaire" />
     <node id="cotisations salariales" />
     <node id="cotisations patronales" />
     <node id="cotisations" />
-    <node id="régulièrement jusqu'à l'âge de départ à la retraite" />
+    <node id="âge de départ à la retraite" />
     <node id="sommes accumulées" />
-    <node id="chaque année" />
-    <node id="revalorisation" />
     <node id="taux minimum garanti" />
-    <node id="participation aux bénéfices de 90%" />
-    <node id="entreprises publiques et privées" />
+    <node id="participation aux bénéfices fixée à 90%" />
+    <node id="Guide Retraite Active" />
+    <node id="entreprises publiques" />
+    <node id="entreprises privées" />
     <node id="administrations" />
     <node id="associations" />
-    <node id="salariés adhérents" />
+    <node id="Salariés adhérents" />
     <node id="plus de 18 ans" />
-    <node id="moins de 60 ans à la souscription" />
-    <node id="cotisation minimale" />
+    <node id="moins de 60 ans" />
+    <node id="Cotisation minimale" />
     <node id="200 DH / mois" />
+    <node id="600 DH / trimestre" />
+    <node id="1200 DH / semestre" />
+    <node id="2400 DH / an" />
+    <node id="Cotisations" />
     <node id="périodiques" />
-    <node id="augmenter cotisations" />
-    <node id="diminuer cotisations" />
-    <node id="suspendre cotisations" />
+    <node id="annuelles" />
+    <node id="semestrielles" />
+    <node id="trimestrielles" />
+    <node id="mensuelles" />
+    <node id="augmenter les cotisations" />
+    <node id="diminuer les cotisations" />
+    <node id="suspendre provisoirement les cotisations" />
     <node id="versements exceptionnels" />
+    <node id="Versements exceptionnels" />
+    <node id="1000 Dhs" />
     <node id="Retraite" />
     <node id="Capital Rachat avant le terme" />
     <node id="Capital constitué revalorisé" />
-    <node id="Décès" />
+    <node id="Impôt retenu à la source" />
+    <node id="Impôt" />
+    <node id="15%" />
+    <node id="Avant terme" />
+    <node id="durée du contrat inférieure à 8 ans ou âge de l'assuré inférieur à 45 ans" />
+    <node id="Liquidation de Capital au terme" />
+    <node id="Versement du capital constitué revalorisé" />
+    <node id="Liquidation en Rente" />
+    <node id="Rente viagère trimestrielle" />
+    <node id="Rente Certaine trimestrielle" />
+    <node id="Liquidation Mixte" />
+    <node id="Rachat partiel et liquidation sous forme de rente" />
+    <node id="Décès naturel" />
+    <node id="Versement d'un capital décès complémentaire" />
+    <node id="Décès accidentel" />
+    <node id="Versement d'un capital décès complémentaire doublé" />
     <node id="Incapacité totale temporaire de travail" />
-    <node id="salarié adhérent" />
-    <node id="rachat partiel ou total" />
-    <node id="avance" />
-    <node id="options à terme" />
+    <node id="Prise en charge des versements de la part salariale" />
+    <node id="Disponibilité de l'épargne" />
+    <node id="rachat partiel ou total ou une avance" />
+    <node id="Rachat Total ou Partiel" />
+    <node id="tout moment" />
+    <node id="Avance" />
+    <node id="remboursement de toute autre avance consentie" />
+    <node id="Options à terme" />
     <node id="Versement de la totalité de l'épargne constituée" />
     <node id="Versement d'une rente viagère" />
     <node id="Versement d'une rente certaine" />
-    <node id="Combinaison entre rente et capital" />
-    <node id="entreprise adhérente" />
-    <node id="intermédiaire d'assurance en cas de sinistre" />
-    <node id="entreprise" />
+    <node id="Formalité en cas de sinistre" />
+    <node id="déclaration par l'entreprise adhérente" />
+    <node id="Cas d'une avance ou d'un rachat partiel" />
+    <node id="demande signée et authentifiée" />
+    <node id="Cas d'un rachat total" />
+    <node id="demande de rachat total signée et authentifiée" />
+    <node id="Cas d'une Option au terme" />
+    <node id="demande de liquidation de l'épargne signée et authentifiée" />
+    <node id="Cas d'un Décès" />
+    <node id="déclaration de décès" />
+    <node id="Cas d'une Invalidité Totale et Absolue" />
+    <node id="déclaration d'invalidité" />
+    <node id="Cas d'une Incapacité de travail" />
+    <node id="déclaration d'arrêt de travail" />
     <node id="fidélisation des collaborateurs" />
     <node id="amélioration du climat social" />
-    <node id="à hauteur du pourcentage désiré" />
+    <node id="participation financière ajustable" />
+    <node id="choix de sortie de la part patronale" />
+    <node id="déductions fiscales sur part patronale" />
     <node id="bilan de retraite gratuit" />
     <node id="relevé annuel du plan épargne" />
-    <node id="souplesse de gestion des cotisations" />
-    <node id="possibilité de suspendre les cotisations" />
+    <node id="gestion souple des cotisations" />
+    <node id="primes dès encaissement" />
     <node id="rendement certain et attractif" />
     <node id="fiscalité avantageuse" />
     <node id="disponibilité de l'épargne revalorisée" />
-    <node id="options de sortie au choix" />
-    <node id="réversibilité possible au profit du conjoint" />
-    <node id="garanties complémentaires incluses" />
-    <node id="Assurance Décès - Invalidité - Maladie" />
+    <node id="options de sortie diversifiées" />
+    <node id="réversibilité au profit du conjoint" />
+    <node id="Produit Retraite Active" />
+    <node id="constitution d'une retraite complémentaire par capitalisation" />
+    <node id="Produit Retraite Active Entreprise" />
+    <node id="constitution d'une épargne retraite complémentaire" />
+    <node id="cotisations salariales et patronales" />
+    <node id="revalorisation aux taux minimum garanti annuellement" />
+    <node id="participation aux bénéfices de 90%" />
+    <node id="Rachats avant terme" />
+    <node id="impôt de 15%" />
+    <node id="Rentes et capital" />
+    <node id="impôts en vigueur lors de leur liquidation" />
+    <node id="Épargne" />
+    <node id="80% de la valeur du rachat" />
+    <node id="Avance sur épargne" />
+    <node id="5 ans" />
+    <node id="Participation de l'employeur" />
+    <node id="facultative" />
+    <node id="Entreprise" />
+    <node id="pourcentage de cotisation" />
+    <node id="versement d'un capital décès complémentaire" />
+    <node id="Capital décès naturel" />
+    <node id="100 000 DH" />
+    <node id="Capital décès accidentel" />
+    <node id="200 000 DH" />
+    <node id="retraite complémentaire" />
+    <node id="revenus à la retraite" />
+    <node id="fidélisation des salariés" />
+    <node id="attraction des meilleurs profils" />
+    <node id="Assurance Décès, Invalidité et Maladie (DIM)" />
     <node id="assurance de groupe" />
     <node id="assurance collective" />
-    <node id="prise en charge des frais" />
-    <node id="conséquences financières" />
+    <node id="Assurance collective" />
     <node id="personne physique ou morale" />
-    <node id="remboursement complémentaire" />
-    <node id="famille/bénéficiaires" />
-    <node id="Garanties du contrat" />
-    <node id="Garanties en cas de décès" />
-    <node id="versement du capital" />
-    <node id="rente viagère" />
-    <node id="Garanties en cas d'invalidité" />
-    <node id="versement d'une indemnité journalière" />
-    <node id="service d'une rente" />
-    <node id="Garanties en cas de maladie et maternité" />
-    <node id="Souscription au contrat" />
-    <node id="entreprises avec au moins 5 salariés" />
-    <node id="Conditions d'adhésion" />
-    <node id="être au travail" />
-    <node id="bulletin d'adhésion signé" />
-    <node id="réception des remboursements" />
-    <node id="retrait d'argent" />
+    <node id="prise en charge des frais engagés par l'adhérent et les personnes à sa charge" />
+    <node id="Personnes à charge" />
+    <node id="conjoint et enfants" />
+    <node id="Assurance Décès Invalidité - Maladie" />
+    <node id="amortissement des conséquences financières" />
+    <node id="décès de l'adhérent" />
+    <node id="invalidité totale et définitive de l'adhérent" />
+    <node id="Assurance Décès - Invalidité - Maladie" />
+    <node id="toute personne physique ou morale" />
+    <node id="ensemble de personnes" />
+    <node id="salariés d'une entreprise" />
     <node id="Assurance DIM" />
-    <node id="date d'adhésion" />
+    <node id="remboursement" />
+    <node id="Remboursement" />
+    <node id="indemnités CNSS" />
+    <node id="autre couverture d'assurances" />
+    <node id="Contrat" />
+    <node id="protection financière des bénéficiaires en cas de décès de l'adhérent" />
+    <node id="Garanties du contrat Décès Invalidité Maladie" />
+    <node id="Hospitalisation à l'étranger" />
+    <node id="capital garanti aux bénéficiaires désignés" />
+    <node id="rente viagère au conjoint survivant" />
+    <node id="rente temporaire aux enfants orphelins jusqu'à 25 ans" />
+    <node id="rente viagère au conjoint et aux enfants orphelins" />
+    <node id="indemnité journalière en cas d'incapacité temporaire totale de travail" />
+    <node id="rente en cas d'invalidité permanente totale ou partielle" />
+    <node id="paiement des primes" />
+    <node id="frais de soins et prothèse dentaire" />
+    <node id="frais de transport sanitaire" />
+    <node id="entreprises avec au moins 5 salariés" />
+    <node id="Nombre des adhérents" />
+    <node id="au moins 75% de l'effectif du personnel du souscripteur" />
+    <node id="au travail au moment de son adhésion" />
+    <node id="réduction d'horaire pour raison de santé" />
+    <node id="Adhérent absent pour maladie ou accident" />
+    <node id="premier jour du 2ème mois suivant la reprise de travail" />
+    <node id="déclaration de reprise de travail, certificat médical, bulletin d'adhésion" />
+    <node id="bulletin d'adhésion avec questionnaire médical" />
+    <node id="Souscripteur" />
+    <node id="exemplaire du contrat, liste des adhérents, bulletin d'adhésion signé" />
+    <node id="avis trimestriel des primes" />
+    <node id="au siège de la compagnie" />
+    <node id="Garantie du contrat maladie" />
+    <node id="au jour de l'adhésion" />
+    <node id="Garantie pour certaines maladies" />
+    <node id="expiration d'un délai d'attente" />
+    <node id="Délai d'attente pour cataracte et ulcère gastroduodénaux" />
+    <node id="6 mois" />
+    <node id="Délai d'attente pour tumeurs et maladies des organes génitaux féminins" />
+    <node id="9 mois" />
+    <node id="à la date d'entrée en jouissance de la retraite" />
+    <node id="à la date de rupture du contrat de travail" />
+    <node id="si l'adhérent cesse de figurer sur les bordereaux trimestriels" />
+    <node id="à la date de résiliation du contrat" />
+    <node id="si l'assureur prouve la fraude de l'adhérent" />
+    <node id="intermédiaire d'assurance" />
+    <node id="formulaire de déclaration" />
+    <node id="Formulaire de déclaration" />
+    <node id="BO" />
+    <node id="décret d'application de la loi 18/12" />
+    <node id="Décret d'application de la loi 18/12" />
+    <node id="22/01/2015" />
+    <node id="employeur" />
+    <node id="compagnie d'assurances" />
+    <node id="Dossier Accident du travail" />
+    <node id="certificat initial" />
+    <node id="certificat de prolongation" />
+    <node id="certificat de reprise du travail" />
+    <node id="certificat de consolidation" />
+    <node id="certificat de guérison" />
+    <node id="trois derniers bordereaux de CNSS" />
+    <node id="site web www.rmaassurance.com" />
+    <node id="Salariés assurés" />
+    <node id="suivi en ligne de leurs dossiers de remboursement santé" />
+    <node id="Souscripteurs" />
+    <node id="remboursements des dossiers de maladie sur compte de l'entreprise" />
+    <node id="remboursements des dossiers de maladie sur comptes de leurs salariés" />
+    <node id="Salariés des souscripteurs" />
+    <node id="remboursements santé sans attendre remboursement de l'AMO" />
+    <node id="réception des remboursements de dossiers de maladie sur carte monétique rechargeable" />
+    <node id="entreprise de se décharger de la gestion des remboursements des dossiers santé" />
+    <node id="retrait d'argent des remboursements dans réseau des GAB" />
+    <node id="paiement des achats auprès des commerçants affiliés à Visa" />
+    <node id="personnes au travail" />
+    <node id="bulletin d'adhésion" />
+    <node id="date aux Conditions Particulières" />
+    <node id="31 décembre de l'année en cours" />
+    <node id="automatiquement chaque année" />
     <node id="conséquences d'actes volontaires" />
-    <node id="Procédure de remboursement" />
-    <node id="transmission de documents" />
-    <node id="Fin d'adhésion à l'assurance DIM" />
-    <node id="retraite" />
-    <node id="rupture du contrat de travail" />
-    <node id="non-paiement des primes" />
+    <node id="accidents liés à des compétitions sportives non normales" />
+    <node id="maladies ou accidents antérieurs à l'adhésion" />
+    <node id="sinistres liés aux guerres" />
+    <node id="maladies congénitales non mentionnées" />
+    <node id="incapacité temporaire de travail" />
+    <node id="indemnité journalière" />
+    <node id="Invalidité totale" />
+    <node id="rente annuelle" />
+    <node id="Invalidité partielle" />
+    <node id="rente proportionnelle" />
+    <node id="consultations médicales" />
+    <node id="frais de laboratoire" />
+    <node id="soins dentaires sous conditions" />
+    <node id="indemnité forfaitaire pour maternité" />
+    <node id="déclaration de maladie" />
+    <node id="ordonnances et factures" />
+    <node id="vignettes des médicaments" />
+    <node id="adhésion à l'assurance DIM" />
+    <node id="résiliation selon loi 17-99" />
+    <node id="signature des trois copies du contrat" />
     <node id="Assurance Perte d'Exploitation après Incendie" />
     <node id="replacer l'entreprise dans la situation financière antérieure" />
     <node id="perte de bénéfice net" />
-    <node id="charges fixes" />
-    <node id="frais supplémentaires pour rétablir l'activité" />
-    <node id="toutes les entreprises industrielles ou commerciales" />
+    <node id="frais supplémentaires" />
+    <node id="Assurance Perte d'Exploitation Après Incendie" />
+    <node id="entreprises" />
+    <node id="industrielles ou commerciales" />
+    <node id="continuité des activités après incendie" />
+    <node id="Perte d'Exploitation Après Incendie" />
     <node id="santé financière de l'entreprise" />
     <node id="confiance des partenaires et des clients" />
-    <node id="continuité de l'exploitation" />
     <node id="Assurance Perte d'Exploitation" />
-    <node id="si le risque est couvert par une police d'assurance directe" />
+    <node id="si risque couvert par police d'assurance directe" />
     <node id="Conditions Particulières" />
     <node id="période d'indemnisation" />
     <node id="marge brute prévisionnelle" />
     <node id="limite d'indemnité" />
-    <node id="Entreprise" />
     <node id="période d'indemnisation souhaitée" />
-    <node id="risques d'incendie ou explosion" />
-    <node id="extensions de garantie" />
-    <node id="prendre mesures pour prévenir et atténuer conséquences du sinistre" />
-    <node id="déclarer le sinistre" />
-    <node id="transmettre un état estimatif des dommages" />
-    <node id="fournir éléments justificatifs" />
-    <node id="couverture étendue" />
+    <node id="perte d'exploitation après incendie" />
+    <node id="perte d'exploitation après explosion" />
+    <node id="frais supplémentaires additionnels" />
+    <node id="honoraires d'expert" />
+    <node id="pertes d'exploitation après dommages électriques" />
+    <node id="siège de la compagnie" />
+    <node id="mesures raisonnables" />
+    <node id="sinistre dans 5 jours" />
+    <node id="état estimatif détaillé dans 45 jours" />
+    <node id="éléments justificatifs" />
     <node id="protection financière" />
     <node id="flexibilité" />
-    <node id="écart jusqu'à 20% sur la marge brute" />
+    <node id="tolérance d'écart jusqu'à 20% sur la marge brute" />
     <node id="services plus" />
-    <node id="fortement conseillée" />
+    <node id="Conseil et suivi RMA" />
+    <node id="programme de prévention RMA" />
+    <node id="non obligatoire mais fortement conseillée" />
     <node id="Marge brute à assurer" />
     <node id="dernier bilan clos" />
+    <node id="perspectives d'activité" />
     <node id="Marge brute réelle" />
-    <node id="réduction de l'indemnité par règle proportionnelle" />
-    <node id="Frais supplémentaires" />
+    <node id="marge brute déclarée" />
+    <node id="Règle proportionnelle" />
+    <node id="indemnité" />
+    <node id="Frais supplémentaires remboursables" />
     <node id="frais nécessaires à la poursuite ou reprise rapide de l'activité" />
     <node id="Délai d'indemnisation" />
     <node id="complexité du sinistre" />
-    <node id="Intermédiaire" />
-    <node id="client signe les trois copies du contrat" />
-    <node id="copie du contrat au siège" />
+    <node id="versements" />
     <edge source="Contrat Incendie - Explosions" target="dommages matériels">
+      <data key="d0">a pour objet de garantir</data>
+    </edge>
+    <edge source="Contrat Incendie - Explosions" target="conséquences financières">
       <data key="d0">garantit</data>
     </edge>
-    <edge source="Contrat Incendie - Explosions" target="dommages immatériels">
-      <data key="d0">garantit</data>
+    <edge source="Dommages matériels" target="incendie">
+      <data key="d0">causés par</data>
     </edge>
-    <edge source="Contrat Incendie - Explosions" target="risques professionnels et industriels">
+    <edge source="Dommages matériels" target="explosion">
+      <data key="d0">causés par</data>
+    </edge>
+    <edge source="Dommages matériels" target="biens immobiliers">
+      <data key="d0">touchent</data>
+    </edge>
+    <edge source="Dommages matériels" target="biens mobiliers">
+      <data key="d0">touchent</data>
+    </edge>
+    <edge source="Dommages matériels" target="Bâtiments">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Dommages matériels" target="Matériel">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Dommages matériels" target="mobilier">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Dommages matériels" target="marchandises">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Dommages matériels" target="Dommages électriques">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Dommages matériels" target="Cataclysmes naturels">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Dommages matériels" target="Responsabilité effets clientèle">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Dommages matériels" target="Recours des voisins">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Dommages matériels" target="Frais divers">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Dommages matériels" target="Pertes de loyers">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Dommages matériels" target="Honoraires d'expert">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Conséquences financières" target="dommages immatériels">
+      <data key="d0">sont</data>
+    </edge>
+    <edge source="Conséquences financières" target="décès de l'adhérent">
+      <data key="d0">entraînées par</data>
+    </edge>
+    <edge source="Conséquences financières" target="invalidité totale et définitive de l'adhérent">
+      <data key="d0">entraînées par</data>
+    </edge>
+    <edge source="Option" target="dommages immatériels">
+      <data key="d0">est souscrite pour</data>
+    </edge>
+    <edge source="Assurance – Incendie &amp; Explosions" target="risques professionnels et industriels">
       <data key="d0">cible</data>
     </edge>
-    <edge source="Contrat Incendie - Explosions" target="toute entreprise">
+    <edge source="Assurance – Incendie &amp; Explosions" target="toute entreprise">
       <data key="d0">cible</data>
     </edge>
-    <edge source="Contrat Incendie - Explosions" target="biens de l'entreprise">
-      <data key="d0">protège</data>
+    <edge source="Assurance – Incendie &amp; Explosions" target="biens de l'entreprise">
+      <data key="d0">protéger</data>
     </edge>
-    <edge source="Contrat Incendie - Explosions" target="responsabilité envers les tiers">
+    <edge source="Assurance – Incendie &amp; Explosions" target="responsabilité envers les tiers">
+      <data key="d0">couvrir</data>
+    </edge>
+    <edge source="Assurance – Incendie &amp; Explosions" target="arrêt prolongé de l'activité">
+      <data key="d0">éviter</data>
+    </edge>
+    <edge source="Assurance – Incendie &amp; Explosions" target="Bâtiments et dépendances">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="Contrat Incendie - Explosions" target="arrêt prolongé de l'activité">
-      <data key="d0">évite</data>
+    <edge source="Assurance – Incendie &amp; Explosions" target="Mobilier, matériel industriel, marchandises">
+      <data key="d0">couvre</data>
     </edge>
-    <edge source="Contrat Incendie - Explosions" target="Responsabilité Civile">
+    <edge source="Assurance – Incendie &amp; Explosions" target="Responsabilité Civile">
+      <data key="d0">offre en option</data>
+    </edge>
+    <edge source="Assurance – Incendie &amp; Explosions" target="Dommages immatériels">
+      <data key="d0">offre en option</data>
+    </edge>
+    <edge source="Assurance – Incendie &amp; Explosions" target="Dommages par conflagration">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance – Incendie &amp; Explosions" target="Dommages par embrasement">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance – Incendie &amp; Explosions" target="Dommages par simple combustion">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance – Incendie &amp; Explosions" target="Action subite et violente de la pression de gaz">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance – Incendie &amp; Explosions" target="Action subite et violente de la pression de vapeurs">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance – Incendie &amp; Explosions" target="Dommages d'incendie causés par la foudre">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance – Incendie &amp; Explosions" target="Dommages d'incendie provoqués par un défaut électrique">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance – Incendie &amp; Explosions" target="Incendie à l'intérieur des machines">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance – Incendie &amp; Explosions" target="Explosion à l'intérieur des machines">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance – Incendie &amp; Explosions" target="Dommages sur les bâtiments par tempêtes">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance – Incendie &amp; Explosions" target="Dommages sur les bâtiments par grêle">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance – Incendie &amp; Explosions" target="Dommages sur le contenu des bâtiments par tempêtes">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance – Incendie &amp; Explosions" target="Dommages sur le contenu des bâtiments par grêle">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance – Incendie &amp; Explosions" target="Protection modulable">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="Assurance – Incendie &amp; Explosions" target="garanties complémentaires">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="Assurance – Incendie &amp; Explosions" target="Souplesse pour modifier le contrat">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="Assurance – Incendie &amp; Explosions" target="Incitation tarifaire">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="risques professionnels et industriels" target="usines">
       <data key="d0">inclut</data>
     </edge>
-    <edge source="Contrat Incendie - Explosions" target="au Maroc">
+    <edge source="risques professionnels et industriels" target="ateliers">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="risques professionnels et industriels" target="entrepôts">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="toute entreprise" target="industrielle ou commerciale">
+      <data key="d0">type</data>
+    </edge>
+    <edge source="toute entreprise" target="se protéger">
+      <data key="d0">but</data>
+    </edge>
+    <edge source="Garantie" target="risques désignés sur les Conditions Particulières situés au Maroc">
       <data key="d0">s'applique</data>
+    </edge>
+    <edge source="Garantie" target="dommages résultant d'intoxication ou empoisonnement">
+      <data key="d0">peut être étendue à</data>
+    </edge>
+    <edge source="Garantie" target="dommages matériels causés par incendie, explosion ou dégât des eaux">
+      <data key="d0">peut être étendue à</data>
+    </edge>
+    <edge source="Garantie" target="activités parascolaires">
+      <data key="d0">s'étend à</data>
+    </edge>
+    <edge source="Garantie" target="consultations médicales">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Garantie" target="frais de laboratoire">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Garantie" target="frais d'hospitalisation">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Garantie" target="soins dentaires sous conditions">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Garantie" target="indemnité forfaitaire pour maternité">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Demande de souscription" target="siège via l'outil ASSURLINE">
+      <data key="d0">remonte</data>
     </edge>
     <edge source="Demande de souscription" target="au siège via ASSURLINE">
       <data key="d0">remonte</data>
     </edge>
-    <edge source="Incendie" target="dommages par conflagration">
-      <data key="d0">cause</data>
+    <edge source="Demande de souscription" target="siège via ASSURLINE">
+      <data key="d0">remonte</data>
     </edge>
-    <edge source="Explosions" target="action subite et violente de la pression">
-      <data key="d0">cause</data>
+    <edge source="Demande de souscription" target="siège">
+      <data key="d0">remonte à</data>
     </edge>
-    <edge source="Foudre" target="dommages d'incendie">
-      <data key="d0">cause</data>
+    <edge source="Demande de souscription" target="siège de la compagnie">
+      <data key="d0">se fait à</data>
     </edge>
-    <edge source="Électricité" target="dommages d'incendie">
-      <data key="d0">provoque</data>
+    <edge source="Souscription" target="Nature et localisation des biens à assurer">
+      <data key="d0">nécessite fourniture de</data>
     </edge>
-    <edge source="Dommages aux appareils électriques" target="incendie ou explosion dans machines">
+    <edge source="Souscription" target="Valeurs estimées">
+      <data key="d0">nécessite fourniture de</data>
+    </edge>
+    <edge source="Souscription" target="Mesures de prévention mises en place">
+      <data key="d0">nécessite fourniture de</data>
+    </edge>
+    <edge source="Souscription" target="Extensions de garantie souhaitées">
+      <data key="d0">nécessite fourniture de</data>
+    </edge>
+    <edge source="Souscription" target="NOV AS">
+      <data key="d0">se fait sur</data>
+    </edge>
+    <edge source="Souscription" target="au siège de la compagnie">
+      <data key="d0">se fait</data>
+    </edge>
+    <edge source="Garantie de base" target="Bâtiments avec valeur de reconstruction vétusté déduite">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="Garantie de base" target="Mobilier avec valeur de remplacement vétusté déduite">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="Garantie de base" target="Incendie">
+      <data key="d0">est</data>
+    </edge>
+    <edge source="Extensions de garantie" target="Dommages électriques avec Capital au 1er risque">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="Extensions de garantie" target="Valeur à neuf">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="Extensions de garantie" target="Pertes Indirectes">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="Extensions de garantie" target="Véhicules dans le parking">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Extensions de garantie" target="Renonciation à recours">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Extensions de garantie" target="Pertes indirectes">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Extensions de garantie" target="Emeutes">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Assurances de responsabilité" target="Risques locatifs">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="Tempêtes et grêle" target="dommages sur les bâtiments et contenu">
-      <data key="d0">cause</data>
+    <edge source="Assurances de responsabilité" target="Recours des locataires">
+      <data key="d0">couvre</data>
     </edge>
-    <edge source="Assuré" target="limiter les dommages en cas de sinistre">
+    <edge source="Assurances de responsabilité" target="Recours des voisins">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurances de responsabilité" target="Recours des tiers">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurances complémentaires" target="Privation de jouissance">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="Assurances complémentaires" target="Frais de déblais">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="Assuré" target="limiter progression du sinistre">
       <data key="d0">doit</data>
     </edge>
-    <edge source="Assuré" target="déclarer le sinistre à l'assureur">
-      <data key="d0">doit</data>
+    <edge source="Assuré" target="assureur">
+      <data key="d0">doit déclarer sinistre à</data>
     </edge>
     <edge source="Assuré" target="options">
       <data key="d0">peut sélectionner</data>
     </edge>
-    <edge source="Assuré" target="contrat">
+    <edge source="Assuré" target="contrat en fonction de ses besoins">
       <data key="d0">peut moduler</data>
     </edge>
-    <edge source="Assuré" target="contrat avec garantie de base 'Incendie'">
+    <edge source="Assuré" target="contrat avec garantie de base Incendie">
       <data key="d0">peut constituer</data>
     </edge>
     <edge source="Assuré" target="autres garanties">
       <data key="d0">peut ajouter</data>
     </edge>
-    <edge source="Assuré" target="sinistre dans un délai de 5 jours ouvrés">
-      <data key="d0">doit déclarer</data>
+    <edge source="Assuré" target="numéro de police">
+      <data key="d0">doit fournir</data>
     </edge>
-    <edge source="Assuré" target="garanties en cours de contrat">
-      <data key="d0">peut modifier</data>
+    <edge source="Assuré" target="circonstances du sinistre">
+      <data key="d0">doit indiquer</data>
+    </edge>
+    <edge source="Assuré" target="montant approximatif des dommages">
+      <data key="d0">doit indiquer</data>
+    </edge>
+    <edge source="Assuré" target="prise en charge à l'établissement de santé">
+      <data key="d0">présente</data>
+    </edge>
+    <edge source="Assuré" target="date">
+      <data key="d0">doit fournir</data>
+    </edge>
+    <edge source="Assuré" target="heure">
+      <data key="d0">doit fournir</data>
+    </edge>
+    <edge source="Assuré" target="circonstances">
+      <data key="d0">doit fournir</data>
+    </edge>
+    <edge source="Assuré" target="versement d'un capital décès complémentaire">
+      <data key="d0">décède avant la retraite</data>
+    </edge>
+    <edge source="Assuré" target="formulaire de déclaration">
+      <data key="d0">doit renseigner</data>
     </edge>
     <edge source="Assuré" target="marge brute prévisionnelle">
       <data key="d0">doit déclarer</data>
@@ -496,35 +1273,128 @@
     <edge source="Assuré" target="limite d'indemnité">
       <data key="d0">peut fixer</data>
     </edge>
-    <edge source="Assuré" target="prendre mesures pour prévenir et atténuer conséquences du sinistre">
-      <data key="d0">doit</data>
+    <edge source="Assuré" target="mesures raisonnables">
+      <data key="d0">doit prendre</data>
     </edge>
-    <edge source="Assuré" target="déclarer le sinistre">
-      <data key="d0">doit</data>
+    <edge source="Assuré" target="sinistre dans 5 jours">
+      <data key="d0">doit déclarer</data>
     </edge>
-    <edge source="Assuré" target="transmettre un état estimatif des dommages">
-      <data key="d0">doit</data>
+    <edge source="Assuré" target="état estimatif détaillé dans 45 jours">
+      <data key="d0">doit transmettre</data>
     </edge>
-    <edge source="Assuré" target="fournir éléments justificatifs">
-      <data key="d0">doit</data>
+    <edge source="Assuré" target="éléments justificatifs">
+      <data key="d0">doit fournir</data>
     </edge>
-    <edge source="Assureur" target="réduire ou refuser l'indemnité">
-      <data key="d0">peut</data>
+    <edge source="Déclaration" target="5 jours">
+      <data key="d0">doit être faite dans</data>
     </edge>
-    <edge source="Assurance Incendie - Explosions" target="non obligatoire mais recommandée">
+    <edge source="Déclaration" target="numéro de police">
+      <data key="d0">requiert</data>
+    </edge>
+    <edge source="Déclaration" target="date">
+      <data key="d0">requiert</data>
+    </edge>
+    <edge source="Déclaration" target="heure">
+      <data key="d0">requiert</data>
+    </edge>
+    <edge source="Déclaration" target="circonstances">
+      <data key="d0">requiert</data>
+    </edge>
+    <edge source="Assureur" target="indemnité en cas de manquement">
+      <data key="d0">peut réduire ou refuser</data>
+    </edge>
+    <edge source="Assureur" target="expertise pour accélérer indemnisation">
+      <data key="d0">engage</data>
+    </edge>
+    <edge source="Assureur" target="règle proportionnelle">
+      <data key="d0">peut appliquer</data>
+    </edge>
+    <edge source="Assureur" target="versements">
+      <data key="d0">procède à</data>
+    </edge>
+    <edge source="Assurance Incendie - Explosions" target="non obligatoire mais fortement recommandée">
       <data key="d0">est</data>
     </edge>
-    <edge source="Assurance Incendie - Explosions" target="protection modulable">
+    <edge source="Assurance Incendie - Explosions" target="partenaires financiers">
+      <data key="d0">exigée par</data>
+    </edge>
+    <edge source="Assurance Incendie - Explosions" target="dommages dus à chaleur sans embrasement, usure, bris de machine, fusibles">
+      <data key="d0">a des exclusions</data>
+    </edge>
+    <edge source="Assurance Incendie - Explosions" target="perte de loyers ou de jouissance via extension de garantie">
+      <data key="d0">peut couvrir</data>
+    </edge>
+    <edge source="règle proportionnelle" target="déclarer capitaux proche de valeur réelle">
+      <data key="d0">éviter par</data>
+    </edge>
+    <edge source="appareil électrique" target="garantie Dommages aux appareils électriques">
+      <data key="d0">si explosion survient et couvert par</data>
+    </edge>
+    <edge source="garantie Dommages aux appareils électriques" target="réparations">
+      <data key="d0">prend en charge</data>
+    </edge>
+    <edge source="Produit d'assurance" target="Multirisque des Entreprises Industrielles et Commerciales « OPTIMA »">
+      <data key="d0">est</data>
+    </edge>
+    <edge source="Multirisque des Entreprises Industrielles et Commerciales « OPTIMA »" target="PME-PMI">
+      <data key="d0">cible</data>
+    </edge>
+    <edge source="Multirisque des Entreprises Industrielles et Commerciales « OPTIMA »" target="sites industriels">
+      <data key="d0">cible</data>
+    </edge>
+    <edge source="Multirisque des Entreprises Industrielles et Commerciales « OPTIMA »" target="commerces">
+      <data key="d0">cible</data>
+    </edge>
+    <edge source="Multirisque des Entreprises Industrielles et Commerciales « OPTIMA »" target="Prestataires de services">
+      <data key="d0">cible</data>
+    </edge>
+    <edge source="Multirisque des Entreprises Industrielles et Commerciales « OPTIMA »" target="patrimoine">
+      <data key="d0">protège</data>
+    </edge>
+    <edge source="Multirisque des Entreprises Industrielles et Commerciales « OPTIMA »" target="impacts financiers en cas d'incendie, vol, dégâts des eaux">
+      <data key="d0">limite</data>
+    </edge>
+    <edge source="Multirisque des Entreprises Industrielles et Commerciales « OPTIMA »" target="continuité de l'exploitation">
+      <data key="d0">assure</data>
+    </edge>
+    <edge source="Multirisque des Entreprises Industrielles et Commerciales « OPTIMA »" target="responsabilité de l'entreprise">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Multirisque des Entreprises Industrielles et Commerciales « OPTIMA »" target="5 jours ouvrés">
+      <data key="d0">délai pour informer la compagnie en cas de sinistre</data>
+    </edge>
+    <edge source="Multirisque des Entreprises Industrielles et Commerciales « OPTIMA »" target="1 jour ouvré">
+      <data key="d0">délai pour informer la compagnie en cas de vol</data>
+    </edge>
+    <edge source="Multirisque des Entreprises Industrielles et Commerciales « OPTIMA »" target="écrit ou oral">
+      <data key="d0">mode de communication pour informer la compagnie</data>
+    </edge>
+    <edge source="Multirisque des Entreprises Industrielles et Commerciales « OPTIMA »" target="date, lieu, nature, circonstances, montant estimatif">
+      <data key="d0">informations à fournir en cas de sinistre</data>
+    </edge>
+    <edge source="Multirisque des Entreprises Industrielles et Commerciales « OPTIMA »" target="prendre toutes actions pour limiter le dommage">
+      <data key="d0">action requise</data>
+    </edge>
+    <edge source="Multirisque des Entreprises Industrielles et Commerciales « OPTIMA »" target="20 jours">
+      <data key="d0">délai pour fournir un état estimatif des biens</data>
+    </edge>
+    <edge source="Multirisque des Entreprises Industrielles et Commerciales « OPTIMA »" target="5 jours">
+      <data key="d0">délai pour fournir un état estimatif des biens en cas de vol</data>
+    </edge>
+    <edge source="Multirisque des Entreprises Industrielles et Commerciales « OPTIMA »" target="déclarer à la police dans les 24h, déposer plainte et coopérer">
+      <data key="d0">procédure en cas de vol</data>
+    </edge>
+    <edge source="Multirisque des Entreprises Industrielles et Commerciales « OPTIMA »" target="Large palette de garanties">
       <data key="d0">offre</data>
     </edge>
-    <edge source="Assurance Incendie - Explosions" target="garanties complémentaires">
+    <edge source="Multirisque des Entreprises Industrielles et Commerciales « OPTIMA »" target="Souplesse de choix">
       <data key="d0">offre</data>
     </edge>
-    <edge source="Assurance Incendie - Explosions" target="souplesse pour modifier le contrat">
-      <data key="d0">offre</data>
+    <edge source="Multirisque des Entreprises Industrielles et Commerciales « OPTIMA »" target="Multiples frais">
+      <data key="d0">couvre</data>
     </edge>
-    <edge source="Assurance Incendie - Explosions" target="incitation tarifaire">
-      <data key="d0">offre</data>
+    <edge source="Contrat Multirisque OPTIMA" target="dispositif complet d'assurance">
+      <data key="d0">est</data>
     </edge>
     <edge source="Contrat Multirisque OPTIMA" target="entreprises industrielles et commerciales">
       <data key="d0">couvre</data>
@@ -544,62 +1414,134 @@
     <edge source="Protection globale" target="responsabilité civile de l'entreprise">
       <data key="d0">inclut</data>
     </edge>
-    <edge source="Options" target="Vol">
+    <edge source="Incendie" target="explosion">
       <data key="d0">inclut</data>
     </edge>
-    <edge source="Options" target="Dégâts des eaux">
+    <edge source="Incendie" target="événements climatiques">
       <data key="d0">inclut</data>
     </edge>
-    <edge source="Options" target="Bris de machines">
+    <edge source="Incendie" target="inondation">
       <data key="d0">inclut</data>
     </edge>
-    <edge source="Options" target="Bris de glaces">
+    <edge source="Incendie" target="tremblement de terre">
       <data key="d0">inclut</data>
     </edge>
-    <edge source="Options" target="RC Exploitation">
+    <edge source="Incendie" target="dommages électriques">
       <data key="d0">inclut</data>
     </edge>
-    <edge source="Options" target="Perte d'exploitation">
+    <edge source="Incendie" target="recours des voisins et tiers">
       <data key="d0">inclut</data>
     </edge>
-    <edge source="Vol" target="compagnie dans 48 heures">
-      <data key="d0">doit être déclaré à</data>
+    <edge source="Incendie" target="frais divers">
+      <data key="d0">inclut</data>
     </edge>
-    <edge source="RC Exploitation" target="dommages causés aux tiers pendant activités courantes">
+    <edge source="Incendie" target="pertes de loyers et privation de jouissance">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="Incendie" target="extensions possibles">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="Incendie" target="dommages matériels">
       <data key="d0">couvre</data>
     </edge>
+    <edge source="Options" target="Vol">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Options" target="Dégâts des eaux">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Options" target="Bris de machines">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Options" target="Bris de glaces">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Options" target="RC Exploitation">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Options" target="Perte d'exploitation">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Vol" target="contenu">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Vol" target="détériorations immobilières">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Vol" target="fonds et valeurs">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Vol" target="48 heures">
+      <data key="d0">doit être déclaré dans un délai de</data>
+    </edge>
+    <edge source="Vol" target="copie du procès-verbal">
+      <data key="d0">nécessite fourniture de</data>
+    </edge>
+    <edge source="Bris de machines" target="pannes ou destructions soudaines des équipements">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="RC Exploitation" target="contre réclamations de tiers">
+      <data key="d0">protège</data>
+    </edge>
+    <edge source="RC Exploitation" target="dommages causés aux tiers">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="RC Exploitation" target="non obligatoire">
+      <data key="d0">est</data>
+    </edge>
+    <edge source="Bâtiments et locaux" target="construits et couverts en dur">
+      <data key="d0">doivent être</data>
+    </edge>
+    <edge source="Bâtiments et locaux" target="moyens de sécurité adéquats">
+      <data key="d0">dotés de</data>
+    </edge>
+    <edge source="Bâtiments et locaux" target="régulièrement">
+      <data key="d0">entretenus</data>
+    </edge>
+    <edge source="Marchandises et matériels" target="dans emplacements désignés aux Conditions Particulières">
+      <data key="d0">assurés</data>
+    </edge>
+    <edge source="Garanties" target="au Maroc">
+      <data key="d0">s'appliquent</data>
+    </edge>
+    <edge source="Garanties" target="pour les sites indiqués dans la police d'assurance">
+      <data key="d0">s'appliquent</data>
+    </edge>
     <edge source="Garanties" target="Maroc">
+      <data key="d0">limitées à</data>
+    </edge>
+    <edge source="Garanties" target="déplacements professionnels à l'étranger">
+      <data key="d0">s'appliquent</data>
+    </edge>
+    <edge source="Garanties" target="aux lieux mentionnés dans les Conditions Particulières">
       <data key="d0">s'appliquent</data>
     </edge>
     <edge source="Garanties" target="Retraite">
-      <data key="d0">incluent</data>
+      <data key="d0">inclut</data>
     </edge>
     <edge source="Garanties" target="Capital Rachat avant le terme">
-      <data key="d0">incluent</data>
+      <data key="d0">inclut</data>
     </edge>
     <edge source="Garanties" target="Capital constitué revalorisé">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="Garanties" target="Décès">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="Garanties" target="Incapacité totale temporaire de travail">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="Objectifs" target="protéger le patrimoine">
       <data key="d0">inclut</data>
     </edge>
-    <edge source="Objectifs" target="assurer la continuité de l'exploitation">
+    <edge source="Garanties" target="Impôt retenu à la source">
       <data key="d0">inclut</data>
     </edge>
-    <edge source="Objectifs" target="couvrir la responsabilité de l'entreprise">
-      <data key="d0">inclut</data>
+    <edge source="Garantie Perte d'exploitation" target="trésorerie">
+      <data key="d0">maintient</data>
     </edge>
-    <edge source="Garantie de base" target="Incendie">
-      <data key="d0">inclut</data>
+    <edge source="Garantie Perte d'exploitation" target="charges fixes">
+      <data key="d0">fait face</data>
     </edge>
-    <edge source="Garantie de base" target="risques annexes">
-      <data key="d0">inclut</data>
+    <edge source="Contrat OPTIMA" target="garantie de base obligatoire">
+      <data key="d0">propose</data>
+    </edge>
+    <edge source="Contrat OPTIMA" target="gamme de garanties optionnelles">
+      <data key="d0">propose</data>
+    </edge>
+    <edge source="Garantie de base obligatoire" target="Incendie">
+      <data key="d0">est</data>
     </edge>
     <edge source="Garanties optionnelles" target="Vol">
       <data key="d0">inclut</data>
@@ -611,7 +1553,7 @@
       <data key="d0">inclut</data>
     </edge>
     <edge source="Garanties optionnelles" target="Bris de machines">
-      <data key="d0">inclut</data>
+      <data key="d0">comprend</data>
     </edge>
     <edge source="Garanties optionnelles" target="Responsabilité Civile Exploitation">
       <data key="d0">inclut</data>
@@ -619,172 +1561,460 @@
     <edge source="Garanties optionnelles" target="Perte d'Exploitation après incendie / explosions">
       <data key="d0">inclut</data>
     </edge>
+    <edge source="Garanties optionnelles" target="Dégâts des eaux">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Garanties optionnelles" target="Vol et détériorations immobilières">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Garanties optionnelles" target="Accident du Travail">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Garanties optionnelles" target="Catastrophes naturelles">
+      <data key="d0">comprend</data>
+    </edge>
+    <edge source="Garanties optionnelles" target="Bris de glaces">
+      <data key="d0">comprend</data>
+    </edge>
+    <edge source="Garanties optionnelles" target="Bris de matériels">
+      <data key="d0">comprend</data>
+    </edge>
+    <edge source="Garanties optionnelles" target="Perte d'exploitation">
+      <data key="d0">comprend</data>
+    </edge>
+    <edge source="Dégâts des Eaux" target="dommages par fuites">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Dégâts des Eaux" target="responsabilité civile">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Dégâts des Eaux" target="frais de recherche">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Bris de Glaces" target="casse des vitrines">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Bris de Glaces" target="enseignes">
+      <data key="d0">couvre</data>
+    </edge>
     <edge source="Bris de Glaces" target="casse des vitres">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="En cas de sinistre" target="informer la compagnie">
-      <data key="d0">nécessite</data>
-    </edge>
-    <edge source="En cas de sinistre" target="fournir informations">
-      <data key="d0">nécessite</data>
-    </edge>
-    <edge source="En cas de sinistre" target="prendre mesures conservatoires">
-      <data key="d0">nécessite</data>
-    </edge>
-    <edge source="En cas de sinistre" target="fournir pièces et expertise">
-      <data key="d0">nécessite</data>
-    </edge>
-    <edge source="En cas de sinistre" target="procédure vol">
-      <data key="d0">nécessite</data>
-    </edge>
-    <edge source="Avantages de l'offre" target="large palette de garanties">
-      <data key="d0">inclut</data>
-    </edge>
-    <edge source="Avantages de l'offre" target="souplesse de choix">
-      <data key="d0">inclut</data>
-    </edge>
-    <edge source="Avantages de l'offre" target="multiples frais couverts">
-      <data key="d0">inclut</data>
-    </edge>
-    <edge source="Avantages de l'offre" target="accompagnement et prévention par RMA">
-      <data key="d0">inclut</data>
-    </edge>
-    <edge source="Multirisque DIAFA" target="protection complète aux hôtels et établissements touristiques">
-      <data key="d0">conçu pour</data>
-    </edge>
-    <edge source="Multirisque DIAFA" target="bâtiments">
-      <data key="d0">garantit</data>
-    </edge>
-    <edge source="Multirisque DIAFA" target="mobilier">
-      <data key="d0">garantit</data>
-    </edge>
-    <edge source="Multirisque DIAFA" target="équipements professionnels">
-      <data key="d0">garantit</data>
-    </edge>
-    <edge source="Multirisque DIAFA" target="responsabilité civile de l'hôtelier">
-      <data key="d0">garantit</data>
-    </edge>
-    <edge source="Multirisque DIAFA" target="capital mobilier et immobilier">
+    <edge source="Bris de Glaces" target="vitrines">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="Multirisque DIAFA" target="objets de la clientèle">
+    <edge source="Responsabilité Civile Exploitation" target="dommages causés aux tiers">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="Assurance DIAFA" target="garantie de base obligatoire (Incendie)">
+    <edge source="Responsabilité Civile Exploitation" target="défense et recours">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Perte d'Exploitation après incendie / explosions" target="marge brute">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="RMA" target="Accompagnement et prévention">
+      <data key="d0">fournit</data>
+    </edge>
+    <edge source="RMA" target="accès gratuit à la plateforme RMA AT">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="Système de sécurité" target="risque imprévisible">
+      <data key="d0">ne couvre pas</data>
+    </edge>
+    <edge source="Assurance" target="pertes financières">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance" target="exclusions">
+      <data key="d0">a</data>
+    </edge>
+    <edge source="Assurance" target="évolutive">
+      <data key="d0">est</data>
+    </edge>
+    <edge source="Assurance" target="date aux Conditions Particulières">
+      <data key="d0">prend effet</data>
+    </edge>
+    <edge source="Assurance" target="31 décembre de l'année en cours">
+      <data key="d0">a une durée</data>
+    </edge>
+    <edge source="Assurance" target="automatiquement chaque année">
+      <data key="d0">est renouvelable</data>
+    </edge>
+    <edge source="Assurance" target="conséquences d'actes volontaires">
+      <data key="d0">exclut</data>
+    </edge>
+    <edge source="Assurance" target="accidents liés à des compétitions sportives non normales">
+      <data key="d0">exclut</data>
+    </edge>
+    <edge source="Assurance" target="maladies ou accidents antérieurs à l'adhésion">
+      <data key="d0">exclut</data>
+    </edge>
+    <edge source="Assurance" target="sinistres liés aux guerres">
+      <data key="d0">exclut</data>
+    </edge>
+    <edge source="Assurance" target="maladies congénitales non mentionnées">
+      <data key="d0">exclut</data>
+    </edge>
+    <edge source="Assurance OPTIMA" target="modulable">
+      <data key="d0">est</data>
+    </edge>
+    <edge source="Assurance OPTIMA" target="seulement pour garanties nécessaires">
+      <data key="d0">permet paiement</data>
+    </edge>
+    <edge source="Assurance Incendie" target="OPTIMA">
+      <data key="d0">est différente de</data>
+    </edge>
+    <edge source="OPTIMA" target="plusieurs garanties">
+      <data key="d0">englobe</data>
+    </edge>
+    <edge source="OPTIMA" target="économique">
+      <data key="d0">est</data>
+    </edge>
+    <edge source="OPTIMA" target="assurance évolutive">
+      <data key="d0">est</data>
+    </edge>
+    <edge source="OPTIMA" target="ajustement des garanties">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="Expert" target="accélérer évaluation">
+      <data key="d0">est mandaté pour</data>
+    </edge>
+    <edge source="Garantie Perte d'Exploitation" target="maintenir trésorerie">
+      <data key="d0">aide à</data>
+    </edge>
+    <edge source="Contrat Multirisque DIAFA" target="offrir une protection complète aux hôtels et établissements touristiques">
+      <data key="d0">est conçu pour</data>
+    </edge>
+    <edge source="Contrat Multirisque DIAFA" target="bâtiments">
+      <data key="d0">garantit</data>
+    </edge>
+    <edge source="Contrat Multirisque DIAFA" target="mobilier">
+      <data key="d0">garantit</data>
+    </edge>
+    <edge source="Contrat Multirisque DIAFA" target="équipements professionnels">
+      <data key="d0">garantit</data>
+    </edge>
+    <edge source="Contrat Multirisque DIAFA" target="responsabilité civile de l'hôtelier">
+      <data key="d0">garantit</data>
+    </edge>
+    <edge source="Multirisque Hôtel DIAFA" target="Hôtels et établissements touristiques non classés ou de 1 à 3 étoiles">
+      <data key="d0">cible</data>
+    </edge>
+    <edge source="Multirisque Hôtel DIAFA" target="bâtiment construit en dur">
+      <data key="d0">nécessite</data>
+    </edge>
+    <edge source="Multirisque Hôtel DIAFA" target="bâtiment bien entretenu">
+      <data key="d0">nécessite</data>
+    </edge>
+    <edge source="Multirisque Hôtel DIAFA" target="période d'inoccupation à moins de 90 jours">
+      <data key="d0">limite</data>
+    </edge>
+    <edge source="Multirisque Hôtel DIAFA" target="hôtels situés en montagne">
+      <data key="d0">exclut</data>
+    </edge>
+    <edge source="Multirisque Hôtel DIAFA" target="hôtels loin des services de secours">
+      <data key="d0">exclut</data>
+    </edge>
+    <edge source="Multirisque Hôtel DIAFA" target="hôtels situés au Maroc">
+      <data key="d0">s'applique</data>
+    </edge>
+    <edge source="Multirisque Hôtel DIAFA" target="garantie de base obligatoire">
       <data key="d0">comprend</data>
     </edge>
-    <edge source="Garantie de base: Incendie" target="dommages matériels">
+    <edge source="Multirisque Hôtel DIAFA" target="Extensions de garantie">
+      <data key="d0">comprend</data>
+    </edge>
+    <edge source="Multirisque Hôtel DIAFA" target="Garanties optionnelles">
+      <data key="d0">comprend</data>
+    </edge>
+    <edge source="Multirisque Hôtel DIAFA" target="large palette de garanties">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="Multirisque Hôtel DIAFA" target="extensions">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="Multirisque Hôtel DIAFA" target="souplesse des choix de garanties">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="Multirisque Hôtel DIAFA" target="multiples frais">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="Multirisque Hôtel DIAFA" target="produit d'assurance">
+      <data key="d0">est</data>
+    </edge>
+    <edge source="Multirisque Hôtel DIAFA" target="toutes les tailles d'hôtel">
+      <data key="d0">s'adapte</data>
+    </edge>
+    <edge source="Hôtels et établissements touristiques non classés ou de 1 à 3 étoiles" target="normes de sécurité">
+      <data key="d0">doivent respecter</data>
+    </edge>
+    <edge source="Assurance Multirisque DIAFA" target="capital mobilier">
       <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Multirisque DIAFA" target="capital immobilier">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Multirisque DIAFA" target="objets de la clientèle">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Bâtiment" target="construit en dur">
+      <data key="d0">doit être</data>
+    </edge>
+    <edge source="Bâtiment" target="bien entretenu">
+      <data key="d0">doit être</data>
+    </edge>
+    <edge source="Bâtiment" target="de 200 000 Dhs à 50 millions Dhs">
+      <data key="d0">valeur assurable</data>
+    </edge>
+    <edge source="Bâtiment" target="de 150 000 à 15 millions de dirhams">
+      <data key="d0">montant couvert</data>
+    </edge>
+    <edge source="Période d'inoccupation" target="90 jours">
+      <data key="d0">doit être inférieure à</data>
+    </edge>
+    <edge source="Hôtels situés en montagne ou loin des services de secours" target="de la souscription">
+      <data key="d0">sont exclus</data>
     </edge>
     <edge source="Assurance Vol et Vandalisme" target="dommages par vol">
       <data key="d0">couvre</data>
     </edge>
+    <edge source="Dommages par vol" target="détériorations des bâtiments">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Dommages par vol" target="vol de bijoux">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Dommages par vol" target="espèces">
+      <data key="d0">incluent</data>
+    </edge>
     <edge source="Assurance Dégâts des Eaux" target="dégâts liés aux fuites">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="Responsabilité Civile de l'Hôtelier" target="dommages causés aux tiers">
+    <edge source="Assurance Dégâts des Eaux" target="infiltrations">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="Assurance" target="large palette de garanties et d'extensions">
+    <edge source="Responsabilité Civile de l'Hôtelier" target="deux options de couverture">
       <data key="d0">offre</data>
     </edge>
-    <edge source="Assurance" target="souplesse des choix de garanties">
+    <edge source="Deux options de couverture" target="dommages causés aux tiers">
+      <data key="d0">pour</data>
+    </edge>
+    <edge source="Déclaration de sinistre" target="délai de 5 jours ouvrés">
+      <data key="d0">doit être faite dans</data>
+    </edge>
+    <edge source="Déclaration de sinistre" target="intermédiaire d'assurance">
+      <data key="d0">se fait chez</data>
+    </edge>
+    <edge source="DIAFA" target="couverture complète">
       <data key="d0">offre</data>
     </edge>
-    <edge source="Assurance" target="multiples frais offerts">
-      <data key="d0">offre</data>
+    <edge source="Couverture complète" target="vol">
+      <data key="d0">inclut</data>
     </edge>
-    <edge source="Assurance" target="effets personnels des clients">
+    <edge source="Couverture complète" target="dégâts des eaux">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="Couverture complète" target="bris de glaces">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="Couverture complète" target="responsabilité civile">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="Garantie responsabilité civile" target="effets personnels des clients">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="Assurance Accidents du travail" target="obligatoire depuis novembre 2002">
+    <edge source="Exclusions" target="sinistres intentionnels">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Exclusions" target="vols sans effraction">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Client" target="trois copies du contrat">
+      <data key="d0">doit signer</data>
+    </edge>
+    <edge source="Client" target="copie du contrat au siège">
+      <data key="d0">envoyer</data>
+    </edge>
+    <edge source="Client" target="agence RMA pour déclarer sinistre">
+      <data key="d0">doit contacter</data>
+    </edge>
+    <edge source="Assurance Accidents du Travail" target="assurance obligatoire">
       <data key="d0">est</data>
     </edge>
-    <edge source="Assurance Accidents du travail" target="travailleurs contre risques professionnels">
-      <data key="d0">protège</data>
+    <edge source="Assurance Accidents du Travail" target="novembre 2002">
+      <data key="d0">date d'obligation</data>
     </edge>
-    <edge source="Assurance Accidents du travail" target="frais médicaux">
+    <edge source="Assurance Accidents du Travail" target="frais médicaux">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="Assurance Accidents du travail" target="compensation financière">
+    <edge source="Assurance Accidents du Travail" target="compensation financière">
       <data key="d0">assure</data>
     </edge>
-    <edge source="Assurance Accidents du travail" target="proches en cas de décès">
+    <edge source="Assurance Accidents du Travail" target="proches en cas de décès">
       <data key="d0">soutient</data>
     </edge>
-    <edge source="Assurance Accidents du travail" target="accidents pendant trajet travail-résidence">
+    <edge source="Assurance Accidents du Travail" target="salariés">
+      <data key="d0">protège</data>
+    </edge>
+    <edge source="Assurance Accidents du Travail" target="accidents de trajet">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="Assurance Accidents du travail" target="en cas d'incapacité temporaire ou permanente">
-      <data key="d0">indemnise</data>
-    </edge>
-    <edge source="Assurance Accidents du travail" target="en cas de décès">
-      <data key="d0">indemnise</data>
-    </edge>
-    <edge source="Assurance Accidents du travail" target="frais de diagnostic et soins médicaux">
-      <data key="d0">garantit</data>
-    </edge>
-    <edge source="Assurance Accidents du travail" target="frais des dispositifs médicaux">
-      <data key="d0">garantit</data>
-    </edge>
-    <edge source="Assurance Accidents du travail" target="frais de transport de la victime">
-      <data key="d0">garantit</data>
-    </edge>
-    <edge source="Assurance Accidents du travail" target="frais funéraires">
-      <data key="d0">garantit</data>
-    </edge>
-    <edge source="Assurance Accidents du travail" target="participation aux bénéfices">
+    <edge source="Assurance Accidents du Travail" target="Indemnité journalière">
       <data key="d0">offre</data>
     </edge>
-    <edge source="Assurance Accidents du travail" target="restitution de primes pour boîte de secours">
+    <edge source="Assurance Accidents du Travail" target="Indemnité sous forme de rente d'invalidité">
       <data key="d0">offre</data>
     </edge>
-    <edge source="Assurance Accidents du travail" target="accès à cliniques et ambulances conventionnées">
+    <edge source="Assurance Accidents du Travail" target="Indemnité sous forme de rente pour ayants-droit">
       <data key="d0">offre</data>
     </edge>
-    <edge source="Assurance Accidents du travail" target="obligatoire pour employeurs sous régime CNSS">
-      <data key="d0">est</data>
-    </edge>
-    <edge source="Assurance Accidents du travail" target="tous les salariés affiliés à la CNSS">
+    <edge source="Assurance Accidents du Travail" target="Maladies professionnelles">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="Assurance Accidents du travail" target="accidents sur lieu de travail et trajet">
+    <edge source="Assurance Accidents du Travail" target="Frais de diagnostic">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="Assurance Accidents du travail" target="remboursement des frais médicaux">
+    <edge source="Assurance Accidents du Travail" target="Frais soins médicaux">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Accidents du Travail" target="Frais chirurgicaux">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Accidents du Travail" target="Frais pharmaceutiques">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Accidents du Travail" target="Frais hospitalisation">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Accidents du Travail" target="Frais dispositifs médicaux">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Accidents du Travail" target="Frais de transport de la victime">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Accidents du Travail" target="Frais funéraires">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Accidents du Travail" target="Frais de transport de la dépouille">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Accidents du Travail" target="participation aux bénéfices">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="Assurance Accidents du Travail" target="3% des primes nettes pour la boîte de secours">
+      <data key="d0">restitue</data>
+    </edge>
+    <edge source="Assurance Accidents du Travail" target="accès à des cliniques et ambulances conventionnées">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="Assurance Accidents du Travail" target="employeur soumis au régime de la CNSS">
+      <data key="d0">est obligatoire pour</data>
+    </edge>
+    <edge source="Assurance Accidents du Travail" target="tous les salariés affiliés à la CNSS">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Accidents du Travail" target="accidents sur le lieu de travail">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Accidents du Travail" target="accidents sur le trajet">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Accidents du Travail" target="accidents lors de déplacements professionnels">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Accidents du Travail" target="remboursement des frais médicaux">
       <data key="d0">propose</data>
     </edge>
-    <edge source="Employeurs" target="souscrire à Assurance Accidents du travail">
-      <data key="d0">ont obligation légale de</data>
+    <edge source="Assurance Accidents du Travail" target="prise en charge des prothèses">
+      <data key="d0">propose</data>
     </edge>
-    <edge source="Garanties de l'Assurance Accidents du travail" target="au Maroc et à l'étranger">
-      <data key="d0">s'appliquent</data>
+    <edge source="Assurance Accidents du Travail" target="indemnités journalières">
+      <data key="d0">propose</data>
     </edge>
-    <edge source="Indemnités de l'Assurance Accidents du travail" target="au Maroc en dirhams">
+    <edge source="Assurance Accidents du Travail" target="rentes d'incapacité">
+      <data key="d0">propose</data>
+    </edge>
+    <edge source="Employeurs" target="Assurance Accidents du Travail">
+      <data key="d0">ont obligation de souscrire</data>
+    </edge>
+    <edge source="salariés" target="épargne retraite complémentaire">
+      <data key="d0">constituer</data>
+    </edge>
+    <edge source="Indemnités" target="Maroc">
       <data key="d0">sont versées</data>
     </edge>
-    <edge source="Employeur" target="sinistre à assurance">
-      <data key="d0">doit déclarer</data>
-    </edge>
-    <edge source="Employeur" target="sinistre à délégation régionale du travail">
-      <data key="d0">doit déclarer</data>
-    </edge>
-    <edge source="RMA AT" target="encadrement médical et service personnalisé">
-      <data key="d0">offre</data>
+    <edge source="Indemnités" target="en dirhams">
+      <data key="d0">sont versées</data>
     </edge>
     <edge source="Indemnité journalière" target="deux tiers de la rémunération quotidienne">
-      <data key="d0">est</data>
+      <data key="d0">est déterminée par</data>
+    </edge>
+    <edge source="AT Déléguée" target="activités avec limites de salariés et masse salariale">
+      <data key="d0">est pour</data>
+    </edge>
+    <edge source="AT Non déléguée" target="activités hors nomenclature ou avec excès de seuils">
+      <data key="d0">est pour</data>
+    </edge>
+    <edge source="Victime" target="48h">
+      <data key="d0">a pour délai pour informer</data>
+    </edge>
+    <edge source="Victime" target="48 heures après la déclaration de la victime">
+      <data key="d0">a pour délai pour déclaration à la délégation régionale du travail</data>
+    </edge>
+    <edge source="Victime" target="employeur">
+      <data key="d0">doit informer</data>
+    </edge>
+    <edge source="Victime" target="48 heures">
+      <data key="d0">délai pour informer employeur</data>
+    </edge>
+    <edge source="Employeur" target="5 jours">
+      <data key="d0">délai pour informer compagnie d'assurances</data>
+    </edge>
+    <edge source="Employeur" target="modèle N° 1 du BO">
+      <data key="d0">doit remplir pour assurance</data>
+    </edge>
+    <edge source="Employeur" target="Certificats médicaux">
+      <data key="d0">doit fournir pour assurance</data>
+    </edge>
+    <edge source="Employeur" target="bordereaux CNSS">
+      <data key="d0">doit fournir pour assurance</data>
+    </edge>
+    <edge source="Employeur" target="délégation régionale du travail">
+      <data key="d0">doit déclarer à</data>
+    </edge>
+    <edge source="Employeur" target="modèle N° 2 du BO">
+      <data key="d0">doit remplir pour délégation régionale du travail</data>
+    </edge>
+    <edge source="Employeur" target="compagnie d'assurances">
+      <data key="d0">doit informer</data>
+    </edge>
+    <edge source="En cas de décès" target="Certificat de décès">
+      <data key="d0">doit fournir pour assurance</data>
+    </edge>
+    <edge source="En cas de décès" target="acte d'hérédité">
+      <data key="d0">doit fournir pour assurance</data>
+    </edge>
+    <edge source="Plateforme RMA AT" target="encadrement médical">
+      <data key="d0">fournit</data>
+    </edge>
+    <edge source="Plateforme RMA AT" target="service personnalisé">
+      <data key="d0">fournit</data>
+    </edge>
+    <edge source="Plateforme RMA AT" target="accompagnement par un médecin conseil">
+      <data key="d0">fournit</data>
+    </edge>
+    <edge source="Plateforme RMA AT" target="éviter les pertes financières">
+      <data key="d0">aide à</data>
     </edge>
     <edge source="Rente d'incapacité" target="salaire annuel de la victime et taux d'incapacité">
       <data key="d0">est calculée sur</data>
     </edge>
     <edge source="Indemnité en cas de décès" target="pourcentage du salaire annuel versé aux ayants-droit">
-      <data key="d0">est</data>
+      <data key="d0">est déterminée par</data>
     </edge>
     <edge source="Assurance Responsabilité Civile Scolaire" target="conséquences financières des accidents">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="Assurance Responsabilité Civile Scolaire" target="blessures aux élèves">
+    <edge source="Assurance Responsabilité Civile Scolaire" target="blessures causées aux élèves">
       <data key="d0">inclut</data>
     </edge>
     <edge source="Assurance Responsabilité Civile Scolaire" target="accidents corporels ou matériels affectant des tiers">
@@ -793,7 +2023,19 @@
     <edge source="Assurance Responsabilité Civile Scolaire" target="dommages liés à l'intoxication ou l'empoisonnement">
       <data key="d0">peut être étendue</data>
     </edge>
-    <edge source="Assurance Responsabilité Civile Scolaire" target="établissements scolaires privés">
+    <edge source="Assurance Responsabilité Civile Scolaire" target="Crèches">
+      <data key="d0">cible</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="Ecoles primaires">
+      <data key="d0">cible</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="Ecoles secondaires">
+      <data key="d0">cible</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="Ecoles supérieures">
+      <data key="d0">cible</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="Instituts techniques">
       <data key="d0">cible</data>
     </edge>
     <edge source="Assurance Responsabilité Civile Scolaire" target="dommages causés à des tiers">
@@ -802,155 +2044,440 @@
     <edge source="Assurance Responsabilité Civile Scolaire" target="dommages subis par les enfants élèves">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="Assurance Responsabilité Civile Scolaire" target="dommages matériels lors d'événements organisés par l'établissement">
-      <data key="d0">peut être étendue</data>
-    </edge>
-    <edge source="Assurance Responsabilité Civile Scolaire" target="activité d'enseignement ou de formation à une adresse fixe">
-      <data key="d0">nécessite</data>
-    </edge>
-    <edge source="Assurance Responsabilité Civile Scolaire" target="plafonds pour divers types de dommages">
-      <data key="d0">offre</data>
-    </edge>
-    <edge source="Assurance Responsabilité Civile Scolaire" target="prise en charge des frais de prothèses dentaires, lunettes de vue et rattrapage scolaire">
-      <data key="d0">inclut</data>
-    </edge>
-    <edge source="Assurance Responsabilité Civile Scolaire" target="extension de garantie pour couvrir divers frais supplémentaires">
-      <data key="d0">offre</data>
-    </edge>
-    <edge source="Assurance Responsabilité Civile Scolaire" target="mise à jour de la liste nominative des élèves pour couverture">
-      <data key="d0">nécessite</data>
-    </edge>
-    <edge source="Assurance Responsabilité Civile Scolaire" target="déclaration de sinistre dans un délai de cinq jours">
-      <data key="d0">nécessite</data>
-    </edge>
-    <edge source="Assurance Responsabilité Civile Scolaire" target="activités extra-scolaires déclarées">
+    <edge source="Assurance Responsabilité Civile Scolaire" target="dommages corporels">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="Assurance Responsabilité Civile Scolaire" target="souscription de garanties spécifiques sur demande">
-      <data key="d0">permet</data>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="dommages matériels">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="intoxication alimentaire">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="incendie hors locaux">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="dégâts des eaux hors locaux">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="défense et recours">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="décès">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="incapacité physique permanente">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="frais médicaux et pharmaceutiques">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="prothèses dentaires">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="prothèses auditives et orthopédiques">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="lunettes de vue">
+      <data key="d0">prend en charge</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="risques parascolaires">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="frais de transport">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="frais de recherche et de sauvetage">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="frais de rattrapage scolaire suite à un accident">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="événements catastrophiques">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="déclaration de l'accident">
+      <data key="d0">nécessite</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="large gamme de garanties">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="extensions sur-mesure">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="offre complète">
+      <data key="d0">est</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="capitaux élevés">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="risques liés aux trajets">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="frais de prothèses dentaires">
+      <data key="d0">prend en charge</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="rattrapage scolaire">
+      <data key="d0">prend en charge</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="extension de garantie">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="Assurance Responsabilité Civile Scolaire" target="tarif très compétitif">
+      <data key="d0">a</data>
+    </edge>
+    <edge source="dommages liés à l'intoxication ou l'empoisonnement" target="aliments ou boissons servis à la cantine">
+      <data key="d0">causés par</data>
+    </edge>
+    <edge source="Élèves inscrits" target="établissement">
+      <data key="d0">sous la garde de</data>
+    </edge>
+    <edge source="Personnel salarié et enseignants" target="leurs fonctions">
+      <data key="d0">dans l'exercice de</data>
+    </edge>
+    <edge source="Établissement" target="mobilier, outils, matériel, aménagements intérieurs ou extérieurs">
+      <data key="d0">utilise</data>
+    </edge>
+    <edge source="Établissement" target="générateurs, moteurs, appareils, conduites de gaz">
+      <data key="d0">utilise</data>
+    </edge>
+    <edge source="Générateurs, moteurs, appareils, conduites de gaz" target="dommages corporels à des tiers">
+      <data key="d0">causent</data>
+    </edge>
+    <edge source="Enfant/Élève scolarisé" target="blessures corporelles">
+      <data key="d0">peut se causer</data>
+    </edge>
+    <edge source="Aliments ou boissons" target="cantine de l'établissement">
+      <data key="d0">servis à</data>
+    </edge>
+    <edge source="Événements organisés par l'établissement" target="biens appartenant à des tiers">
+      <data key="d0">touchent</data>
+    </edge>
+    <edge source="Conditions de souscription" target="exercer activité d'enseignement ou de formation à une adresse fixe">
+      <data key="d0">nécessitent</data>
+    </edge>
+    <edge source="Garantie Événements catastrophiques" target="garantie Responsabilité Civile">
+      <data key="d0">adosse à</data>
+    </edge>
+    <edge source="Frais de prothèses dentaires" target="accident">
+      <data key="d0">consécutifs à</data>
+    </edge>
+    <edge source="Accident sans gravité" target="consultation médicale">
+      <data key="d0">nécessite</data>
+    </edge>
+    <edge source="Accident sans gravité" target="déclaration à l'intermédiaire">
+      <data key="d0">nécessite</data>
+    </edge>
+    <edge source="Accident sans gravité" target="5 jours">
+      <data key="d0">a un délai de déclaration</data>
+    </edge>
+    <edge source="Accident grave" target="demande de prise en charge">
+      <data key="d0">nécessite</data>
+    </edge>
+    <edge source="Cas de rattrapage scolaire" target="Certificat d'arrêt et de reprise">
+      <data key="d0">nécessite</data>
+    </edge>
+    <edge source="Cas de bris de lunettes" target="Facture de remplacement">
+      <data key="d0">nécessite</data>
+    </edge>
+    <edge source="Cas de prothèse" target="Devis">
+      <data key="d0">nécessite</data>
+    </edge>
+    <edge source="Cas de recherche et sauvetage" target="Déclaration à la police">
+      <data key="d0">nécessite</data>
+    </edge>
+    <edge source="Cas de lit du parent accompagnateur" target="Facture hospitalière">
+      <data key="d0">nécessite</data>
+    </edge>
+    <edge source="Réclamation du capital IPP" target="Certificat de guérison avec taux d'IPP">
+      <data key="d0">nécessite</data>
+    </edge>
+    <edge source="Réclamation du capital décès" target="Certificat de décès">
+      <data key="d0">nécessite</data>
+    </edge>
+    <edge source="Indemnités contractuelles" target="garantie Responsabilité Civile">
+      <data key="d0">doit être accompagnée de</data>
+    </edge>
+    <edge source="Nouveaux élèves" target="mise à jour de la liste nominative des élèves">
+      <data key="d0">nécessitent</data>
+    </edge>
+    <edge source="Sinistre" target="cinq jours">
+      <data key="d0">doit être déclaré dans un délai de</data>
+    </edge>
+    <edge source="Activités extra-scolaires" target="déclarées à l'assureur">
+      <data key="d0">sont couvertes si</data>
+    </edge>
+    <edge source="Couverture spécifique" target="demande">
+      <data key="d0">peut être souscrite sur</data>
+    </edge>
+    <edge source="Doute" target="contacter l'assureur">
+      <data key="d0">recommandation</data>
+    </edge>
+    <edge source="Intermédiaire" target="client signe les trois copies du contrat">
+      <data key="d0">doit s'assurer que</data>
+    </edge>
+    <edge source="Intermédiaire" target="copie du contrat au siège">
+      <data key="d0">envoyer</data>
+    </edge>
+    <edge source="Intermédiaire" target="signature des trois copies du contrat">
+      <data key="d0">doit s'assurer</data>
+    </edge>
+    <edge source="Envoi de copie du contrat" target="20 jours suivant la date d'émission du contrat">
+      <data key="d0">doit être fait dans</data>
     </edge>
     <edge source="Assurance Multirisque Immeuble de RMA" target="propriétaires">
-      <data key="d0">destinée à</data>
+      <data key="d0">est destinée à</data>
     </edge>
     <edge source="Assurance Multirisque Immeuble de RMA" target="syndics de copropriété">
-      <data key="d0">cible</data>
+      <data key="d0">est destinée à</data>
     </edge>
     <edge source="Assurance Multirisque Immeuble de RMA" target="gestionnaires d'immeubles">
-      <data key="d0">destinée à</data>
+      <data key="d0">est destinée à</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="dommages matériels">
-      <data key="d0">couvre</data>
+    <edge source="Assurance Multirisque Immeuble de RMA" target="risques liés à biens immobiliers">
+      <data key="d0">protège contre</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="frais liés à un sinistre">
-      <data key="d0">couvre</data>
-    </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="responsabilités civiles">
-      <data key="d0">couvre</data>
-    </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="couverture des biens">
-      <data key="d0">inclut</data>
-    </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="couverture des parties communes">
-      <data key="d0">inclut</data>
-    </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="couverture des équipements essentiels">
-      <data key="d0">inclut</data>
-    </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="responsabilité civile des propriétaires">
-      <data key="d0">prend en charge</data>
-    </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="responsabilité civile des syndics">
-      <data key="d0">prend en charge</data>
-    </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="garanties personnalisées">
+    <edge source="Assurance Multirisque Immeuble de RMA" target="couverture étendue">
       <data key="d0">offre</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="propriétaires d'immeubles mis en location">
+    <edge source="Assurance Multirisque Immeuble de RMA" target="dommages matériels">
+      <data key="d0">inclut dans couverture</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble de RMA" target="frais liés à un sinistre">
+      <data key="d0">inclut dans couverture</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble de RMA" target="responsabilités civiles">
+      <data key="d0">inclut dans couverture</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble de RMA" target="protéger le patrimoine immobilier">
+      <data key="d0">permet de</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble de RMA" target="responsabilités des propriétaires ou syndics envers tiers">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble de RMA" target="immeubles résidentiels ou mixtes">
+      <data key="d0">est destinée à</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble de RMA" target="garanties personnalisées">
+      <data key="d0">propose</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="propriétaires d'immeubles mis en location">
       <data key="d0">cible</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="gestionnaires de patrimoine immobilier">
+    <edge source="Assurance Multirisque Immeuble" target="syndics de copropriété">
       <data key="d0">cible</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="nombre maximum d'immeubles assurés à 5">
+    <edge source="Assurance Multirisque Immeuble" target="gestionnaires de patrimoine immobilier">
+      <data key="d0">cible</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="Bâtiment">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="deux garanties principales">
+      <data key="d0">repose sur</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="choix des garanties">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="choix des plafonds">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="flexible">
+      <data key="d0">est</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="complet">
+      <data key="d0">est</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="accessible">
+      <data key="d0">est</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="délégable">
+      <data key="d0">est</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="tarification adaptée">
+      <data key="d0">a</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="immeubles résidentiels">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="immeubles à usage mixte">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="catastrophes naturelles">
+      <data key="d0">nécessite souscription pour couverture</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="événements catastrophiques">
+      <data key="d0">inclut dans garanties de base</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="responsabilités civiles pour dommages aux tiers">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="intoxications dues aux fumées">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="accidents dans parties communes">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="défaut d'entretien connu">
+      <data key="d0">exclut</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="guerres">
+      <data key="d0">exclut</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="dommages causés par véhicules à moteur">
+      <data key="d0">exclut</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="mobilier des parties communes">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="sinistres liés à défauts de construction">
+      <data key="d0">exclut</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="infiltrations accidentelles d'eau">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="dommages dus à défaut d'entretien">
+      <data key="d0">exclut</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="non-respect des mesures de prévention">
+      <data key="d0">peut ne pas s'appliquer</data>
+    </edge>
+    <edge source="Assurance Multirisque Immeuble" target="installations spécifiques déclarées">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Nombre maximum d'immeubles assurés" target="5">
+      <data key="d0">est</data>
+    </edge>
+    <edge source="Plafond par immeuble" target="10 millions Dhs">
+      <data key="d0">est</data>
+    </edge>
+    <edge source="Total maximum" target="50 millions Dhs">
+      <data key="d0">est</data>
+    </edge>
+    <edge source="Immeuble" target="au moins 95% de matériaux durs">
+      <data key="d0">doit être construit avec</data>
+    </edge>
+    <edge source="Immeuble" target="usage résidentiel et/ou de bureaux">
+      <data key="d0">doit être destiné à</data>
+    </edge>
+    <edge source="Immeuble" target="commerces ou artisans pour moins d'un quart de sa surface">
+      <data key="d0">peut accueillir</data>
+    </edge>
+    <edge source="Immeuble" target="adjacent à d'autres bâtiments">
+      <data key="d0">ne doit pas être</data>
+    </edge>
+    <edge source="Immeuble" target="environnement présentant un risque accru">
+      <data key="d0">ne doit pas être situé dans</data>
+    </edge>
+    <edge source="Surface totale du bâtiment" target="7 000 m² par immeuble">
       <data key="d0">limite</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="plafond par immeuble à 10 millions Dhs">
+    <edge source="Hauteur de l'immeuble" target="28 m">
       <data key="d0">limite</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="garanties sur Incendie">
-      <data key="d0">base de</data>
+    <edge source="Risque assuré" target="couvert par un autre contrat d'assurance résilié pour sinistre au cours des 12 derniers mois">
+      <data key="d0">ne doit pas avoir été</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="garanties sur Responsabilité Civile">
-      <data key="d0">base de</data>
+    <edge source="En cas de résidence" target="ses propres garanties">
+      <data key="d0">peut choisir</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="personnalisation de la couverture">
-      <data key="d0">permet</data>
+    <edge source="deux garanties principales" target="Incendie">
+      <data key="d0">sont</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="Responsabilité Civile Exploitation">
-      <data key="d0">inclut dans garanties de base</data>
+    <edge source="deux garanties principales" target="Responsabilité Civile">
+      <data key="d0">sont</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="Incendie et risques annexes">
-      <data key="d0">inclut dans garanties de base</data>
+    <edge source="Garanties de base" target="Responsabilité Civile Exploitation">
+      <data key="d0">incluent</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="Evénements catastrophiques">
-      <data key="d0">inclut dans garanties de base</data>
+    <edge source="Garanties de base" target="Incendie et risques annexes">
+      <data key="d0">incluent</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="Dégâts des eaux">
-      <data key="d0">offre en option</data>
+    <edge source="Garanties de base" target="Evénements catastrophiques">
+      <data key="d0">incluent</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="Vol et détériorations immobilières">
-      <data key="d0">offre en option</data>
+    <edge source="Garanties de base" target="Incendie">
+      <data key="d0">comprend</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="Accident du Travail">
-      <data key="d0">offre en option</data>
+    <edge source="Garanties de base" target="Dégâts des eaux">
+      <data key="d0">comprend</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="Bris de glaces">
-      <data key="d0">offre complémentaires</data>
+    <edge source="Garanties de base" target="Vol">
+      <data key="d0">comprend</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="Bris d'antenne">
-      <data key="d0">offre complémentaires</data>
+    <edge source="Garanties de base" target="RC Exploitation">
+      <data key="d0">comprend</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="Bris Panneaux solaires">
-      <data key="d0">offre complémentaires</data>
+    <edge source="Garanties complémentaires" target="Bris de glaces">
+      <data key="d0">incluent</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="Renonciation à recours">
-      <data key="d0">offre complémentaires</data>
+    <edge source="Garanties complémentaires" target="Bris d'antenne">
+      <data key="d0">incluent</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="Bris de Citernes">
-      <data key="d0">offre complémentaires</data>
+    <edge source="Garanties complémentaires" target="Bris Panneaux solaires">
+      <data key="d0">incluent</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="Perte de liquides">
-      <data key="d0">offre complémentaires</data>
+    <edge source="Garanties complémentaires" target="Renonciation à recours">
+      <data key="d0">incluent</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="Véhicules au garage">
-      <data key="d0">offre en option de l'Incendie</data>
+    <edge source="Garanties complémentaires" target="Bris de Citernes">
+      <data key="d0">incluent</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="Catastrophes naturelles">
-      <data key="d0">offre en option de l'Incendie</data>
+    <edge source="Garanties complémentaires" target="Perte de liquides">
+      <data key="d0">incluent</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="Evénements climatiques">
-      <data key="d0">offre en option de l'Incendie</data>
+    <edge source="Autres garanties en option de l'Incendie" target="Véhicules au garage">
+      <data key="d0">incluent</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="Emeutes">
-      <data key="d0">offre en option de l'Incendie</data>
+    <edge source="Autres garanties en option de l'Incendie" target="Catastrophes naturelles">
+      <data key="d0">incluent</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="aux intermédiaires">
-      <data key="d0">délègue gestion</data>
+    <edge source="Autres garanties en option de l'Incendie" target="Evénements climatiques">
+      <data key="d0">incluent</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="au siège">
-      <data key="d0">réserve gestion</data>
+    <edge source="Autres garanties en option de l'Incendie" target="Emeutes">
+      <data key="d0">incluent</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="déclaration de sinistre dans délai prévu">
-      <data key="d0">exige</data>
+    <edge source="Gestion déléguée aux intermédiaires" target="Version à la carte">
+      <data key="d0">est</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="estimation des biens endommagés">
-      <data key="d0">exige</data>
+    <edge source="Gestion réservée au siège" target="Au-delà de 1 immeuble">
+      <data key="d0">est</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="liste des objets volés">
-      <data key="d0">exige</data>
+    <edge source="Gestion réservée au siège" target="valeurs ou risques dépassent les seuils fixés">
+      <data key="d0">condition</data>
     </edge>
-    <edge source="Assurance Multirisque Immeuble de RMA" target="justificatifs des biens volés">
-      <data key="d0">exige</data>
+    <edge source="Formalités en cas de sinistre" target="Déclarer le sinistre">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Formalités en cas de sinistre" target="Fournir une estimation des biens endommagés">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Formalités en cas de sinistre" target="Fournir une liste des objets volés">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Formalités en cas de sinistre" target="Fournir des justificatifs des biens volés">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="Gestion et souscription" target="réseau">
+      <data key="d0">peuvent être réalisées par</data>
+    </edge>
+    <edge source="Garantie vol et détériorations immobilières" target="vandalisme dans parties communes">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Garantie vol et détériorations immobilières" target="dommages lors de tentatives de vol">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Garantie vol et détériorations immobilières" target="remplacement des serrures">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Garantie accident du travail" target="employés à la garde et à l'entretien">
+      <data key="d0">s'applique</data>
+    </edge>
+    <edge source="Garantie accident du travail" target="personnel temporaire">
+      <data key="d0">ne s'applique pas</data>
+    </edge>
+    <edge source="Indemnisation" target="valeur d'usage ou valeur à neuf">
+      <data key="d0">calculée sur</data>
     </edge>
     <edge source="Multirisque PME-PMI" target="protection du patrimoine professionnel">
       <data key="d0">assure</data>
@@ -959,85 +2486,169 @@
       <data key="d0">destinée à</data>
     </edge>
     <edge source="Multirisque PME-PMI" target="patrimoine professionnel">
-      <data key="d0">couvre</data>
+      <data key="d0">assure</data>
     </edge>
-    <edge source="Multirisque PME-PMI" target="frais et pertes suite à dommage">
-      <data key="d0">couvre</data>
+    <edge source="Multirisque PME-PMI" target="frais et pertes suite à dommage garanti">
+      <data key="d0">assure</data>
     </edge>
     <edge source="Multirisque PME-PMI" target="responsabilité Civile Chef d'entreprise">
-      <data key="d0">couvre</data>
+      <data key="d0">assure</data>
     </edge>
     <edge source="Multirisque PME-PMI" target="pertes financières en cas de sinistre">
+      <data key="d0">assure</data>
+    </edge>
+    <edge source="Multirisque PME-PMI" target="non obligatoire">
+      <data key="d0">est</data>
+    </edge>
+    <edge source="Multirisque PME-PMI" target="fortement recommandée">
+      <data key="d0">est</data>
+    </edge>
+    <edge source="Assurance Multirisque PME-PMI" target="Dirigeant">
+      <data key="d0">cible</data>
+    </edge>
+    <edge source="Assurance Multirisque PME-PMI" target="Chef d'entreprise">
+      <data key="d0">cible</data>
+    </edge>
+    <edge source="Assurance Multirisque PME-PMI" target="Gérant de PME/PMI">
+      <data key="d0">cible</data>
+    </edge>
+    <edge source="Assurance Multirisque PME-PMI" target="152 activités de la nomenclature spécifique">
+      <data key="d0">nécessite activité</data>
+    </edge>
+    <edge source="Assurance Multirisque PME-PMI" target="moins de 50 salariés">
+      <data key="d0">condition de souscription</data>
+    </edge>
+    <edge source="Assurance Multirisque PME-PMI" target="superficie inférieure ou égale à 2000 m²">
+      <data key="d0">condition de souscription</data>
+    </edge>
+    <edge source="Assurance Multirisque PME-PMI" target="contenu d'une valeur inférieure ou égale à 5 000 000 DH">
+      <data key="d0">condition de souscription</data>
+    </edge>
+    <edge source="Assurance Multirisque PME-PMI" target="bâtiment d'une valeur inférieure ou égale à 15 000 000 DH">
+      <data key="d0">condition de souscription</data>
+    </edge>
+    <edge source="Assurance Multirisque PME-PMI" target="activité parmi 152 activités de la nomenclature">
+      <data key="d0">condition de souscription</data>
+    </edge>
+    <edge source="Assurance Multirisque PME-PMI" target="activité exercée sur un seul site">
+      <data key="d0">condition de souscription</data>
+    </edge>
+    <edge source="Assurance Multirisque PME-PMI" target="compagnie">
+      <data key="d0">doit être déclarée à</data>
+    </edge>
+    <edge source="Assurance Multirisque PME-PMI" target="couverture complète">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="Assurance Multirisque PME-PMI" target="tarif compétitif et flexible">
+      <data key="d0">a</data>
+    </edge>
+    <edge source="Assurance Multirisque PME-PMI" target="plus de 152 activités">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="Multirisque PME-PMI" target="activité parmi 152 activités spécifiques">
-      <data key="d0">conditions de souscription incluent</data>
+    <edge source="Assurance Multirisque PME-PMI" target="éventail étendu de garanties et d'extensions">
+      <data key="d0">inclut</data>
     </edge>
-    <edge source="Multirisque PME-PMI" target="moins de 50 salariés">
-      <data key="d0">conditions de souscription incluent</data>
+    <edge source="Assurance Multirisque PME-PMI" target="souscription facile et rapide en agence">
+      <data key="d0">permet</data>
     </edge>
-    <edge source="Multirisque PME-PMI" target="superficie ≤ 2000 m²">
-      <data key="d0">conditions de souscription incluent</data>
+    <edge source="Dirigeant" target="secteur industriel">
+      <data key="d0">peut être de</data>
     </edge>
-    <edge source="Multirisque PME-PMI" target="valeur du contenu ≤ 5000000 DH">
-      <data key="d0">conditions de souscription incluent</data>
+    <edge source="Dirigeant" target="secteur commercial">
+      <data key="d0">peut être de</data>
     </edge>
-    <edge source="Multirisque PME-PMI" target="valeur du bâtiment ≤ 15000000 DH">
-      <data key="d0">conditions de souscription incluent</data>
+    <edge source="Dirigeant" target="secteur de service">
+      <data key="d0">peut être de</data>
     </edge>
-    <edge source="Multirisque PME-PMI" target="activité sur un seul site">
-      <data key="d0">conditions de souscription incluent</data>
+    <edge source="Chef d'entreprise" target="secteur industriel">
+      <data key="d0">peut être de</data>
     </edge>
-    <edge source="Multirisque PME-PMI" target="couverture complète">
-      <data key="d0">offre</data>
+    <edge source="Chef d'entreprise" target="secteur commercial">
+      <data key="d0">peut être de</data>
     </edge>
-    <edge source="Multirisque PME-PMI" target="tarif compétitif et flexible">
-      <data key="d0">offre</data>
+    <edge source="Chef d'entreprise" target="secteur de service">
+      <data key="d0">peut être de</data>
     </edge>
-    <edge source="Multirisque PME-PMI" target="plus de 152 activités couvertes">
-      <data key="d0">offre</data>
+    <edge source="Gérant de PME/PMI" target="secteur industriel">
+      <data key="d0">peut être de</data>
     </edge>
-    <edge source="Multirisque PME-PMI" target="eventail étendu de garanties et d'extensions">
-      <data key="d0">offre</data>
+    <edge source="Gérant de PME/PMI" target="secteur commercial">
+      <data key="d0">peut être de</data>
     </edge>
-    <edge source="Multirisque PME-PMI" target="facile et rapide en agence">
-      <data key="d0">souscription</data>
+    <edge source="Gérant de PME/PMI" target="secteur de service">
+      <data key="d0">peut être de</data>
     </edge>
-    <edge source="Dirigeant/Chef d'entreprise/Gérant" target="Multirisque PME-PMI">
-      <data key="d0">cible de</data>
+    <edge source="Contenu" target="de 150 000 à 5 millions de dirhams">
+      <data key="d0">montant couvert</data>
     </edge>
     <edge source="Gestion déléguée" target="offres Packagée et Modulable">
-      <data key="d0">appliquée à</data>
+      <data key="d0">applicable à</data>
     </edge>
-    <edge source="Gestion réservée au siège" target="valeurs ou risques dépassent seuils">
-      <data key="d0">appliquée lorsque</data>
+    <edge source="Gestion déléguée" target="respect des limites de capitaux">
+      <data key="d0">sous condition</data>
     </edge>
-    <edge source="Garanties dommages" target="Maroc">
-      <data key="d0">limitées à</data>
+    <edge source="Garanties dommages" target="exclusivement au Maroc">
+      <data key="d0">étendue géographique</data>
     </edge>
-    <edge source="Garanties Responsabilité civile" target="Maroc">
-      <data key="d0">limitées à</data>
+    <edge source="Garanties Responsabilité civile" target="exclusivement au Maroc">
+      <data key="d0">étendue géographique</data>
     </edge>
-    <edge source="Garanties Responsabilité civile" target="dommages à l'étranger">
-      <data key="d0">applicables à</data>
+    <edge source="Garanties Responsabilité civile" target="dommages survenus à l'étranger">
+      <data key="d0">applicable à</data>
+    </edge>
+    <edge source="Garanties Responsabilité civile" target="séjour ne dépasse pas 90 jours">
+      <data key="d0">condition</data>
     </edge>
     <edge source="Option Packagée" target="5 garanties de base">
       <data key="d0">inclut</data>
     </edge>
-    <edge source="Option Packagée" target="garanties optionnelles">
-      <data key="d0">permet ajout de</data>
+    <edge source="Option Packagée" target="ajout de garanties optionnelles">
+      <data key="d0">permet</data>
     </edge>
     <edge source="Option Modulable" target="2 garanties de base">
       <data key="d0">inclut</data>
     </edge>
     <edge source="Option Modulable" target="6 garanties optionnelles">
-      <data key="d0">permet choix de</data>
+      <data key="d0">inclut</data>
     </edge>
-    <edge source="Sinistre" target="compagnie dans 5 jours">
-      <data key="d0">doit être déclaré à</data>
+    <edge source="Option Modulable" target="2 garanties complémentaires">
+      <data key="d0">inclut</data>
     </edge>
-    <edge source="RC après livraison des Produits" target="responsabilité pour dommages après livraison/réalisation">
+    <edge source="Garanties de base dans Option Modulable" target="Incendie">
+      <data key="d0">comprend</data>
+    </edge>
+    <edge source="Garanties de base dans Option Modulable" target="Evénements Catastrophiques">
+      <data key="d0">comprend</data>
+    </edge>
+    <edge source="personnel" target="Accident de travail">
+      <data key="d0">peut être assuré en</data>
+    </edge>
+    <edge source="RC après livraison des Produits ou achèvement des travaux" target="RC Exploitation">
+      <data key="d0">complète</data>
+    </edge>
+    <edge source="RC après livraison des Produits ou achèvement des travaux" target="responsabilité de l'entreprise pour des dommages après livraison/réalisation">
       <data key="d0">couvre</data>
+    </edge>
+    <edge source="tarif pour la multirisque" target="activité, valeur des biens, adresse, dispositifs de protection, garanties choisies">
+      <data key="d0">varie en fonction de</data>
+    </edge>
+    <edge source="souscription à la multirisque" target="à tout moment">
+      <data key="d0">peut être faite</data>
+    </edge>
+    <edge source="souscription à la multirisque" target="au démarrage ou en cours d'activité">
+      <data key="d0">peut être faite</data>
+    </edge>
+    <edge source="souscription" target="informations relatives à la profession">
+      <data key="d0">nécessite</data>
+    </edge>
+    <edge source="services inclus" target="Conseil et suivi RMA, Programme de prévention RMA, Souscription déléguée">
+      <data key="d0">sont</data>
+    </edge>
+    <edge source="intermédiaire" target="client signe les trois copies du contrat">
+      <data key="d0">doit s'assurer que</data>
+    </edge>
+    <edge source="intermédiaire" target="copie du contrat au siège">
+      <data key="d0">envoie</data>
     </edge>
     <edge source="Contrat Global Santé" target="contrat collectif complémentaire">
       <data key="d0">est</data>
@@ -1048,104 +2659,248 @@
     <edge source="Contrat Global Santé" target="prise en charge des frais excédant plafond du contrat de base">
       <data key="d0">permet</data>
     </edge>
-    <edge source="Contrat Global Santé" target="décès et incapacité">
+    <edge source="Contrat Global Santé" target="décès">
       <data key="d0">exclut</data>
     </edge>
-    <edge source="Contrat Global Santé" target="prestations de prise en charge des frais de soins">
-      <data key="d0">fait bénéficier</data>
+    <edge source="Contrat Global Santé" target="incapacité">
+      <data key="d0">exclut</data>
     </edge>
-    <edge source="Personne morale" target="police de base DIM en vigueur">
+    <edge source="Garantie Maladie-Maternité" target="cadre de base Décès-Incapacité-Maladie">
+      <data key="d0">acquise dans</data>
+    </edge>
+    <edge source="Assurance Global Santé" target="toute personne morale">
+      <data key="d0">cible</data>
+    </edge>
+    <edge source="Assurance Global Santé" target="faire bénéficier les assurés de prestations de prise en charge des frais de soins">
+      <data key="d0">a pour objectif</data>
+    </edge>
+    <edge source="Assurance Global Santé" target="régime de base DIM">
+      <data key="d0">complète</data>
+    </edge>
+    <edge source="Assurance Global Santé" target="frais médicaux et pharmaceutiques">
+      <data key="d0">rembourse</data>
+    </edge>
+    <edge source="Assurance Global Santé" target="frais chirurgicaux">
+      <data key="d0">rembourse</data>
+    </edge>
+    <edge source="Assurance Global Santé" target="frais d'hospitalisation">
+      <data key="d0">rembourse</data>
+    </edge>
+    <edge source="Assurance Global Santé" target="actes de pratiques médicales">
+      <data key="d0">rembourse</data>
+    </edge>
+    <edge source="Assurance Global Santé" target="frais de transport et de garde du malade">
+      <data key="d0">rembourse</data>
+    </edge>
+    <edge source="Assurance Global Santé" target="frais de séjour en clinique ou en hôpital">
+      <data key="d0">rembourse</data>
+    </edge>
+    <edge source="Assurance Global Santé" target="soins et prothèses dentaires">
+      <data key="d0">rembourse</data>
+    </edge>
+    <edge source="Assurance Global Santé" target="examens biologiques et radiologiques">
+      <data key="d0">rembourse</data>
+    </edge>
+    <edge source="Assurance Global Santé" target="épuisement du plafond du contrat de base DIM">
+      <data key="d0">intervient après</data>
+    </edge>
+    <edge source="Assurance Global Santé" target="1.000.000 DH par personne par maladie par an">
+      <data key="d0">a un plafond de remboursement de</data>
+    </edge>
+    <edge source="Assurance Global Santé" target="imprimé de prise en charge">
+      <data key="d0">nécessite en mode tiers payant</data>
+    </edge>
+    <edge source="Assurance Global Santé" target="prescription médicale">
+      <data key="d0">nécessite en mode remboursement</data>
+    </edge>
+    <edge source="Assurance Global Santé" target="comptes rendus des analyses">
+      <data key="d0">nécessite en mode tiers payant</data>
+    </edge>
+    <edge source="Assurance Global Santé" target="déclaration Maladie">
+      <data key="d0">nécessite en mode remboursement</data>
+    </edge>
+    <edge source="Assurance Global Santé" target="facture détaillée">
+      <data key="d0">nécessite toujours</data>
+    </edge>
+    <edge source="Assurance Global Santé" target="notes d'honoraires">
+      <data key="d0">nécessite toujours</data>
+    </edge>
+    <edge source="Assurance Global Santé" target="ordonnance">
+      <data key="d0">nécessite toujours</data>
+    </edge>
+    <edge source="Assurance Global Santé" target="trois mois après cessation des soins">
+      <data key="d0">limite de remise des pièces</data>
+    </edge>
+    <edge source="Assurance Global Santé" target="service accessible 24h/24 et 7j/7">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="Assurance Global Santé" target="réception de remboursements sur compte de l'entreprise">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="Assurance Global Santé" target="réception de remboursements sur comptes des salariés">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="toute personne morale" target="police de base « DIM »">
       <data key="d0">doit avoir</data>
     </edge>
-    <edge source="Garanties du Contrat Global Santé" target="Maroc">
-      <data key="d0">limitées à</data>
+    <edge source="toute personne morale" target="salariés">
+      <data key="d0">au profit de</data>
+    </edge>
+    <edge source="toute personne morale" target="collaborateurs">
+      <data key="d0">au profit de</data>
+    </edge>
+    <edge source="toute personne morale" target="membres">
+      <data key="d0">au profit de</data>
+    </edge>
+    <edge source="police de base « DIM »" target="en vigueur">
+      <data key="d0">doit être</data>
+    </edge>
+    <edge source="police de base « DIM »" target="RMA">
+      <data key="d0">est auprès de</data>
     </edge>
     <edge source="Hospitalisations à l'étranger" target="accord préalable de l'assureur">
       <data key="d0">nécessitent</data>
     </edge>
-    <edge source="Remboursements" target="au Maroc en Dirhams">
+    <edge source="Remboursements" target="au Maroc">
       <data key="d0">sont réglés</data>
     </edge>
-    <edge source="Remboursements" target="sur compte de l'entreprise ou directement sur comptes des salariés">
-      <data key="d0">peuvent être reçus</data>
+    <edge source="Remboursements" target="Dirhams">
+      <data key="d0">réglés en</data>
     </edge>
-    <edge source="Remboursement" target="frais médicaux et pharmaceutiques">
-      <data key="d0">concerne</data>
+    <edge source="Adhérent" target="assuré au titre de la police de base">
+      <data key="d0">doit être</data>
     </edge>
-    <edge source="Remboursement" target="frais chirurgicaux">
-      <data key="d0">concerne</data>
+    <edge source="Adhérent" target="Assureur en cas d'hospitalisation programmée">
+      <data key="d0">doit informer</data>
     </edge>
-    <edge source="Remboursement" target="frais d'hospitalisation">
-      <data key="d0">concerne</data>
+    <edge source="Adhérent" target="bulletin d'adhésion modificatif">
+      <data key="d0">doit remplir</data>
     </edge>
-    <edge source="Remboursement" target="actes de pratiques médicales">
-      <data key="d0">concerne</data>
+    <edge source="Adhérent" target="bulletin d'adhésion modificatif à l'assureur">
+      <data key="d0">doit transmettre</data>
     </edge>
-    <edge source="Remboursement" target="frais de transport et de garde du malade">
-      <data key="d0">concerne</data>
+    <edge source="Adhérent" target="justificatifs">
+      <data key="d0">doit fournir</data>
     </edge>
-    <edge source="Remboursement" target="frais de séjour en clinique ou hôpital">
-      <data key="d0">concerne</data>
+    <edge source="Adhérent" target="au travail au moment de son adhésion">
+      <data key="d0">doit être</data>
     </edge>
-    <edge source="Remboursement" target="soins et prothèses dentaires">
-      <data key="d0">concerne</data>
+    <edge source="Adhérent" target="réduction d'horaire pour raison de santé">
+      <data key="d0">ne doit pas avoir</data>
     </edge>
-    <edge source="Remboursement" target="examens biologiques et radiologiques">
-      <data key="d0">concerne</data>
+    <edge source="Adhérent" target="déclaration de reprise de travail, certificat médical, bulletin d'adhésion">
+      <data key="d0">doit fournir</data>
     </edge>
-    <edge source="Remboursement" target="après épuisement du plafond du contrat de base DIM">
-      <data key="d0">intervient</data>
+    <edge source="Adhérent" target="bulletin d'adhésion avec questionnaire médical">
+      <data key="d0">doit remplir et signer</data>
     </edge>
-    <edge source="Adhérent" target="au titre de la police de base DIM">
-      <data key="d0">doit être assuré</data>
+    <edge source="Adhérent" target="bulletin d'adhésion">
+      <data key="d0">doit signer</data>
     </edge>
-    <edge source="Entreprises" target="si moins de 20 adhérents à la souscription">
-      <data key="d0">peuvent souscrire</data>
+    <edge source="Adhérent" target="incapacité temporaire de travail">
+      <data key="d0">doit déclarer</data>
     </edge>
-    <edge source="Entreprises" target="si 10 adhérents après deux années d'adhésion">
-      <data key="d0">peuvent souscrire</data>
+    <edge source="Adhérent" target="indemnité journalière">
+      <data key="d0">peut percevoir</data>
     </edge>
-    <edge source="Souscription" target="siège">
-      <data key="d0">remonte à</data>
+    <edge source="Adhérent" target="déclaration de maladie">
+      <data key="d0">doit transmettre</data>
     </edge>
-    <edge source="Souscription" target="NOV AS">
-      <data key="d0">se fait sur</data>
+    <edge source="Adhérent" target="ordonnances et factures">
+      <data key="d0">doit transmettre</data>
     </edge>
-    <edge source="Délai de carence pour frais médicaux liés à grossesse" target="10 mois après adhésion">
-      <data key="d0">est de</data>
+    <edge source="Adhérent" target="vignettes des médicaments">
+      <data key="d0">doit transmettre</data>
     </edge>
-    <edge source="Délai de carence pour frais d'affections psychiatriques" target="24 mois après date d'effet du contrat">
-      <data key="d0">est de</data>
+    <edge source="Adhérent" target="adhésion à l'assurance DIM">
+      <data key="d0">peut mettre fin à</data>
     </edge>
-    <edge source="Cessation de l'adhésion" target="date de retraite ou rupture du contrat de travail">
-      <data key="d0">survient à</data>
+    <edge source="Adhérent" target="résiliation selon loi 17-99">
+      <data key="d0">peut demander</data>
     </edge>
-    <edge source="Cessation de l'adhésion" target="date de résiliation du contrat ou en cas de fraude">
-      <data key="d0">survient à</data>
+    <edge source="Police de base" target="RMA DIM">
+      <data key="d0">est chez</data>
     </edge>
-    <edge source="Service Global Santé" target="24h/24 et 7j/7 via site web et application mobile RMA">
-      <data key="d0">accessible</data>
+    <edge source="Entreprises" target="moins de 20 adhérents à la souscription">
+      <data key="d0">peuvent souscrire si</data>
     </edge>
-    <edge source="Carte RMA Cash" target="recevoir remboursements même sans être bancarisé">
+    <edge source="Entreprises" target="10 adhérents après deux années d'adhésion">
+      <data key="d0">peuvent souscrire si</data>
+    </edge>
+    <edge source="Frais médicaux liés à la grossesse et la maternité" target="dix mois après la date d'adhésion">
+      <data key="d0">droit prend effet</data>
+    </edge>
+    <edge source="Frais résultant d'affections psychiatriques" target="vingt-quatre mois après la date d'effet du contrat">
+      <data key="d0">droit prend effet</data>
+    </edge>
+    <edge source="Adhésion" target="date de retraite">
+      <data key="d0">cesse à</data>
+    </edge>
+    <edge source="Adhésion" target="rupture du contrat de travail">
+      <data key="d0">cesse à</data>
+    </edge>
+    <edge source="Adhésion" target="adhérent n'est plus sur les bordereaux">
+      <data key="d0">cesse si</data>
+    </edge>
+    <edge source="Adhésion" target="date de résiliation du contrat">
+      <data key="d0">cesse à</data>
+    </edge>
+    <edge source="Adhésion" target="fraude">
+      <data key="d0">cesse en cas de</data>
+    </edge>
+    <edge source="Adhésion" target="à la date d'entrée en jouissance de la retraite">
+      <data key="d0">cesse</data>
+    </edge>
+    <edge source="Adhésion" target="à la date de rupture du contrat de travail">
+      <data key="d0">cesse</data>
+    </edge>
+    <edge source="Adhésion" target="si l'adhérent cesse de figurer sur les bordereaux trimestriels">
+      <data key="d0">cesse</data>
+    </edge>
+    <edge source="Adhésion" target="à la date de résiliation du contrat">
+      <data key="d0">cesse</data>
+    </edge>
+    <edge source="Adhésion" target="si l'assureur prouve la fraude de l'adhérent">
+      <data key="d0">cesse</data>
+    </edge>
+    <edge source="Service accessible 24h/24 et 7j/7" target="site web">
+      <data key="d0">accessible via</data>
+    </edge>
+    <edge source="Service accessible 24h/24 et 7j/7" target="application mobile RMA">
+      <data key="d0">est disponible via</data>
+    </edge>
+    <edge source="Service accessible 24h/24 et 7j/7" target="site web www.rmaassurance.com">
+      <data key="d0">est disponible via</data>
+    </edge>
+    <edge source="Carte RMA Cash" target="réception de remboursements sur carte monétique">
       <data key="d0">permet</data>
     </edge>
-    <edge source="Carte RMA Cash" target="réception des remboursements">
+    <edge source="Carte RMA Cash" target="réception de remboursements sans être bancarisé">
       <data key="d0">permet</data>
     </edge>
-    <edge source="Carte RMA Cash" target="retrait d'argent">
+    <edge source="Carte RMA Cash" target="réception des remboursements de dossiers de maladie sur carte monétique rechargeable">
       <data key="d0">permet</data>
     </edge>
-    <edge source="Couverture médicale complémentaire" target="assurance facultative qui complète couverture de base DIM">
+    <edge source="Carte RMA Cash" target="entreprise de se décharger de la gestion des remboursements des dossiers santé">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="Carte RMA Cash" target="retrait d'argent des remboursements dans réseau des GAB">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="Carte RMA Cash" target="paiement des achats auprès des commerçants affiliés à Visa">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="Couverture médicale complémentaire" target="assurance facultative">
       <data key="d0">est</data>
     </edge>
-    <edge source="Conjoint et enfants" target="couverts">
-      <data key="d0">sont</data>
+    <edge source="Couverture médicale complémentaire" target="couverture de base (DIM)">
+      <data key="d0">complète</data>
     </edge>
-    <edge source="Ascendants de l'adhérent" target="non couverts">
-      <data key="d0">sont</data>
+    <edge source="Conjoint et enfants" target="Oui">
+      <data key="d0">sont couverts</data>
     </edge>
-    <edge source="Changement de situation familiale" target="remplir bulletin d'adhésion modificatif">
-      <data key="d0">nécessite</data>
+    <edge source="Ascendants de l'adhérent" target="Non">
+      <data key="d0">sont couverts</data>
     </edge>
     <edge source="Enfants" target="21 ans">
       <data key="d0">peuvent être assurés jusqu'à</data>
@@ -1153,7 +2908,7 @@
     <edge source="Enfants en études" target="25 ans">
       <data key="d0">peuvent être assurés jusqu'à</data>
     </edge>
-    <edge source="Adhésion à Global Santé" target="adhésion à assurance de base DIM">
+    <edge source="Adhésion à Global Santé" target="adhésion à l'assurance de base DIM">
       <data key="d0">nécessite</data>
     </edge>
     <edge source="Retraite Active Entreprise" target="contrat collectif d'épargne retraite">
@@ -1162,17 +2917,26 @@
     <edge source="Retraite Active Entreprise" target="salariés">
       <data key="d0">destiné à</data>
     </edge>
-    <edge source="Retraite Active Entreprise" target="entreprises publiques et privées">
-      <data key="d0">s'adresse à</data>
+    <edge source="Retraite Active Entreprise" target="cotisations salariales et patronales">
+      <data key="d0">inclut</data>
     </edge>
-    <edge source="Retraite Active Entreprise" target="administrations">
-      <data key="d0">s'adresse à</data>
+    <edge source="Retraite Active Entreprise" target="revalorisation aux taux minimum garanti annuellement">
+      <data key="d0">offre</data>
     </edge>
-    <edge source="Retraite Active Entreprise" target="associations">
-      <data key="d0">s'adresse à</data>
+    <edge source="Retraite Active Entreprise" target="participation aux bénéfices de 90%">
+      <data key="d0">offre</data>
     </edge>
-    <edge source="salariés" target="épargne retraite complémentaire">
-      <data key="d0">constituer</data>
+    <edge source="Retraite Active Entreprise" target="retraite complémentaire">
+      <data key="d0">agit comme</data>
+    </edge>
+    <edge source="Retraite Active Entreprise" target="revenus à la retraite">
+      <data key="d0">renforce</data>
+    </edge>
+    <edge source="Retraite Active Entreprise" target="fidélisation des salariés">
+      <data key="d0">contribue à</data>
+    </edge>
+    <edge source="Retraite Active Entreprise" target="attraction des meilleurs profils">
+      <data key="d0">contribue à</data>
     </edge>
     <edge source="épargne retraite complémentaire" target="cotisations salariales">
       <data key="d0">alimentée par</data>
@@ -1180,170 +2944,389 @@
     <edge source="épargne retraite complémentaire" target="cotisations patronales">
       <data key="d0">alimentée par</data>
     </edge>
-    <edge source="cotisations" target="régulièrement jusqu'à l'âge de départ à la retraite">
-      <data key="d0">versées</data>
+    <edge source="cotisations" target="âge de départ à la retraite">
+      <data key="d0">versées jusqu'à</data>
     </edge>
-    <edge source="cotisations" target="périodiques">
-      <data key="d0">sont</data>
+    <edge source="sommes accumulées" target="taux minimum garanti">
+      <data key="d0">revalorisées selon</data>
     </edge>
-    <edge source="sommes accumulées" target="chaque année">
-      <data key="d0">revalorisées</data>
+    <edge source="sommes accumulées" target="participation aux bénéfices fixée à 90%">
+      <data key="d0">ajoute</data>
     </edge>
-    <edge source="revalorisation" target="taux minimum garanti">
+    <edge source="Guide Retraite Active" target="entreprises publiques">
+      <data key="d0">s'adresse à</data>
+    </edge>
+    <edge source="Guide Retraite Active" target="entreprises privées">
+      <data key="d0">s'adresse à</data>
+    </edge>
+    <edge source="Guide Retraite Active" target="administrations">
+      <data key="d0">s'adresse à</data>
+    </edge>
+    <edge source="Guide Retraite Active" target="associations">
+      <data key="d0">s'adresse à</data>
+    </edge>
+    <edge source="Guide Retraite Active" target="collaborateurs">
+      <data key="d0">pour le bénéfice de</data>
+    </edge>
+    <edge source="Guide Retraite Active" target="membres">
+      <data key="d0">pour le bénéfice de</data>
+    </edge>
+    <edge source="Guide Retraite Active" target="Garanties">
       <data key="d0">inclut</data>
     </edge>
-    <edge source="revalorisation" target="participation aux bénéfices de 90%">
+    <edge source="Guide Retraite Active" target="fidélisation des collaborateurs">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="Guide Retraite Active" target="amélioration du climat social">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="Guide Retraite Active" target="participation financière ajustable">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="Guide Retraite Active" target="choix de sortie de la part patronale">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="Guide Retraite Active" target="déductions fiscales sur part patronale">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="Guide Retraite Active" target="bilan de retraite gratuit">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="Guide Retraite Active" target="relevé annuel du plan épargne">
+      <data key="d0">fournit</data>
+    </edge>
+    <edge source="Guide Retraite Active" target="gestion souple des cotisations">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="Guide Retraite Active" target="primes dès encaissement">
+      <data key="d0">capitalise</data>
+    </edge>
+    <edge source="Guide Retraite Active" target="rendement certain et attractif">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="Guide Retraite Active" target="fiscalité avantageuse">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="Guide Retraite Active" target="disponibilité de l'épargne revalorisée">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="Guide Retraite Active" target="options de sortie diversifiées">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="Guide Retraite Active" target="réversibilité au profit du conjoint">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="Guide Retraite Active" target="garanties complémentaires">
       <data key="d0">inclut</data>
     </edge>
-    <edge source="salariés adhérents" target="plus de 18 ans">
+    <edge source="Salariés adhérents" target="plus de 18 ans">
       <data key="d0">doivent être âgés de</data>
     </edge>
-    <edge source="salariés adhérents" target="moins de 60 ans à la souscription">
+    <edge source="Salariés adhérents" target="moins de 60 ans">
       <data key="d0">doivent être âgés de</data>
     </edge>
-    <edge source="salariés adhérents" target="augmenter cotisations">
+    <edge source="Salariés adhérents" target="augmenter les cotisations">
       <data key="d0">ont la possibilité de</data>
     </edge>
-    <edge source="salariés adhérents" target="diminuer cotisations">
+    <edge source="Salariés adhérents" target="diminuer les cotisations">
       <data key="d0">ont la possibilité de</data>
     </edge>
-    <edge source="salariés adhérents" target="suspendre cotisations">
+    <edge source="Salariés adhérents" target="suspendre provisoirement les cotisations">
       <data key="d0">ont la possibilité de</data>
     </edge>
-    <edge source="salariés adhérents" target="versements exceptionnels">
-      <data key="d0">faire</data>
+    <edge source="Salariés adhérents" target="versements exceptionnels">
+      <data key="d0">ont la possibilité de faire</data>
     </edge>
-    <edge source="cotisation minimale" target="200 DH / mois">
+    <edge source="Salariés adhérents" target="cotisations">
+      <data key="d0">peuvent modifier</data>
+    </edge>
+    <edge source="Cotisation minimale" target="200 DH / mois">
       <data key="d0">est de</data>
     </edge>
-    <edge source="salarié adhérent" target="rachat partiel ou total">
-      <data key="d0">peut demander</data>
+    <edge source="Cotisation minimale" target="600 DH / trimestre">
+      <data key="d0">est de</data>
     </edge>
-    <edge source="salarié adhérent" target="avance">
-      <data key="d0">peut demander</data>
+    <edge source="Cotisation minimale" target="1200 DH / semestre">
+      <data key="d0">est de</data>
     </edge>
-    <edge source="salarié adhérent" target="bilan de retraite gratuit">
-      <data key="d0">reçoit</data>
+    <edge source="Cotisation minimale" target="2400 DH / an">
+      <data key="d0">est de</data>
     </edge>
-    <edge source="salarié adhérent" target="relevé annuel du plan épargne">
-      <data key="d0">reçoit</data>
+    <edge source="Cotisations" target="périodiques">
+      <data key="d0">sont</data>
     </edge>
-    <edge source="salarié adhérent" target="souplesse de gestion des cotisations">
-      <data key="d0">a</data>
+    <edge source="Cotisations" target="annuelles">
+      <data key="d0">peuvent être</data>
     </edge>
-    <edge source="salarié adhérent" target="possibilité de suspendre les cotisations">
-      <data key="d0">a</data>
+    <edge source="Cotisations" target="semestrielles">
+      <data key="d0">peuvent être</data>
     </edge>
-    <edge source="salarié adhérent" target="rendement certain et attractif">
-      <data key="d0">a</data>
+    <edge source="Cotisations" target="trimestrielles">
+      <data key="d0">peuvent être</data>
     </edge>
-    <edge source="salarié adhérent" target="fiscalité avantageuse">
-      <data key="d0">a</data>
+    <edge source="Cotisations" target="mensuelles">
+      <data key="d0">peuvent être</data>
     </edge>
-    <edge source="salarié adhérent" target="disponibilité de l'épargne revalorisée">
-      <data key="d0">a</data>
+    <edge source="Versements exceptionnels" target="1000 Dhs">
+      <data key="d0">ont un minimum de</data>
     </edge>
-    <edge source="salarié adhérent" target="options de sortie au choix">
-      <data key="d0">a</data>
+    <edge source="Impôt" target="15%">
+      <data key="d0">est de</data>
     </edge>
-    <edge source="salarié adhérent" target="réversibilité possible au profit du conjoint">
-      <data key="d0">a</data>
+    <edge source="Avant terme" target="durée du contrat inférieure à 8 ans ou âge de l'assuré inférieur à 45 ans">
+      <data key="d0">défini comme</data>
     </edge>
-    <edge source="salarié adhérent" target="garanties complémentaires incluses">
-      <data key="d0">a</data>
+    <edge source="Liquidation de Capital au terme" target="Versement du capital constitué revalorisé">
+      <data key="d0">consiste en</data>
     </edge>
-    <edge source="options à terme" target="Versement de la totalité de l'épargne constituée">
-      <data key="d0">incluent</data>
+    <edge source="Liquidation en Rente" target="Rente viagère trimestrielle">
+      <data key="d0">inclut</data>
     </edge>
-    <edge source="options à terme" target="Versement d'une rente viagère">
-      <data key="d0">incluent</data>
+    <edge source="Liquidation en Rente" target="Rente Certaine trimestrielle">
+      <data key="d0">inclut</data>
     </edge>
-    <edge source="options à terme" target="Versement d'une rente certaine">
-      <data key="d0">incluent</data>
+    <edge source="Liquidation Mixte" target="Rachat partiel et liquidation sous forme de rente">
+      <data key="d0">consiste en</data>
     </edge>
-    <edge source="options à terme" target="Combinaison entre rente et capital">
-      <data key="d0">incluent</data>
+    <edge source="Décès naturel" target="Versement d'un capital décès complémentaire">
+      <data key="d0">entraîne</data>
     </edge>
-    <edge source="entreprise adhérente" target="intermédiaire d'assurance en cas de sinistre">
-      <data key="d0">informe</data>
+    <edge source="Décès accidentel" target="Versement d'un capital décès complémentaire doublé">
+      <data key="d0">entraîne</data>
     </edge>
-    <edge source="entreprise" target="fidélisation des collaborateurs">
-      <data key="d0">offre</data>
+    <edge source="Incapacité totale temporaire de travail" target="Prise en charge des versements de la part salariale">
+      <data key="d0">entraîne</data>
     </edge>
-    <edge source="entreprise" target="amélioration du climat social">
-      <data key="d0">offre</data>
-    </edge>
-    <edge source="entreprise" target="à hauteur du pourcentage désiré">
-      <data key="d0">participe</data>
-    </edge>
-    <edge source="Assurance Décès - Invalidité - Maladie" target="assurance de groupe">
-      <data key="d0">est</data>
-    </edge>
-    <edge source="Assurance Décès - Invalidité - Maladie" target="assurance collective">
-      <data key="d0">est</data>
-    </edge>
-    <edge source="Assurance Décès - Invalidité - Maladie" target="prise en charge des frais">
+    <edge source="Disponibilité de l'épargne" target="rachat partiel ou total ou une avance">
       <data key="d0">permet</data>
     </edge>
-    <edge source="Assurance Décès - Invalidité - Maladie" target="conséquences financières">
-      <data key="d0">amortit</data>
+    <edge source="Rachat Total ou Partiel" target="tout moment">
+      <data key="d0">possible à</data>
     </edge>
-    <edge source="Assurance Décès - Invalidité - Maladie" target="personne physique ou morale">
-      <data key="d0">cible</data>
+    <edge source="Avance" target="remboursement de toute autre avance consentie">
+      <data key="d0">subordonnée à</data>
     </edge>
-    <edge source="Assurance Décès - Invalidité - Maladie" target="remboursement complémentaire">
-      <data key="d0">permet</data>
+    <edge source="Options à terme" target="Versement de la totalité de l'épargne constituée">
+      <data key="d0">inclut</data>
     </edge>
-    <edge source="Assurance Décès - Invalidité - Maladie" target="famille/bénéficiaires">
-      <data key="d0">met à l'abri</data>
+    <edge source="Options à terme" target="Versement d'une rente viagère">
+      <data key="d0">inclut</data>
     </edge>
-    <edge source="Garanties du contrat" target="Maroc">
-      <data key="d0">limitées</data>
+    <edge source="Options à terme" target="Versement d'une rente certaine">
+      <data key="d0">inclut</data>
     </edge>
-    <edge source="Garanties du contrat" target="accord préalable de l'assureur">
-      <data key="d0">nécessitent</data>
-    </edge>
-    <edge source="Garanties en cas de décès" target="versement du capital">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="Garanties en cas de décès" target="rente viagère">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="Garanties en cas d'invalidité" target="versement d'une indemnité journalière">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="Garanties en cas d'invalidité" target="service d'une rente">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="Garanties en cas de maladie et maternité" target="remboursement des frais médicaux">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="Souscription au contrat" target="entreprises avec au moins 5 salariés">
-      <data key="d0">réservée</data>
-    </edge>
-    <edge source="Conditions d'adhésion" target="être au travail">
-      <data key="d0">nécessitent</data>
-    </edge>
-    <edge source="Conditions d'adhésion" target="bulletin d'adhésion signé">
-      <data key="d0">nécessitent</data>
-    </edge>
-    <edge source="Assurance DIM" target="date d'adhésion">
-      <data key="d0">prend effet</data>
-    </edge>
-    <edge source="Assurance DIM" target="conséquences d'actes volontaires">
-      <data key="d0">exclut</data>
-    </edge>
-    <edge source="Procédure de remboursement" target="transmission de documents">
+    <edge source="Formalité en cas de sinistre" target="déclaration par l'entreprise adhérente">
       <data key="d0">nécessite</data>
     </edge>
-    <edge source="Fin d'adhésion à l'assurance DIM" target="retraite">
-      <data key="d0">causée par</data>
+    <edge source="Cas d'une avance ou d'un rachat partiel" target="demande signée et authentifiée">
+      <data key="d0">nécessite</data>
     </edge>
-    <edge source="Fin d'adhésion à l'assurance DIM" target="rupture du contrat de travail">
-      <data key="d0">causée par</data>
+    <edge source="Cas d'un rachat total" target="demande de rachat total signée et authentifiée">
+      <data key="d0">nécessite</data>
     </edge>
-    <edge source="Fin d'adhésion à l'assurance DIM" target="non-paiement des primes">
-      <data key="d0">causée par</data>
+    <edge source="Cas d'une Option au terme" target="demande de liquidation de l'épargne signée et authentifiée">
+      <data key="d0">nécessite</data>
+    </edge>
+    <edge source="Cas d'un Décès" target="déclaration de décès">
+      <data key="d0">nécessite</data>
+    </edge>
+    <edge source="Cas d'une Invalidité Totale et Absolue" target="déclaration d'invalidité">
+      <data key="d0">nécessite</data>
+    </edge>
+    <edge source="Cas d'une Incapacité de travail" target="déclaration d'arrêt de travail">
+      <data key="d0">nécessite</data>
+    </edge>
+    <edge source="Produit Retraite Active" target="constitution d'une retraite complémentaire par capitalisation">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Produit Retraite Active Entreprise" target="constitution d'une épargne retraite complémentaire">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="Rachats avant terme" target="impôt de 15%">
+      <data key="d0">soumis à</data>
+    </edge>
+    <edge source="Rentes et capital" target="impôts en vigueur lors de leur liquidation">
+      <data key="d0">soumis à</data>
+    </edge>
+    <edge source="Épargne" target="80% de la valeur du rachat">
+      <data key="d0">peut être avancée jusqu'à</data>
+    </edge>
+    <edge source="Avance sur épargne" target="5 ans">
+      <data key="d0">remboursable sous</data>
+    </edge>
+    <edge source="Participation de l'employeur" target="facultative">
+      <data key="d0">est</data>
+    </edge>
+    <edge source="Entreprise" target="pourcentage de cotisation">
+      <data key="d0">peut décider</data>
+    </edge>
+    <edge source="Entreprise" target="marge brute prévisionnelle">
+      <data key="d0">doit communiquer</data>
+    </edge>
+    <edge source="Entreprise" target="période d'indemnisation souhaitée">
+      <data key="d0">doit communiquer</data>
+    </edge>
+    <edge source="Capital décès naturel" target="100 000 DH">
+      <data key="d0">plafonné à</data>
+    </edge>
+    <edge source="Capital décès accidentel" target="200 000 DH">
+      <data key="d0">plafonné à</data>
+    </edge>
+    <edge source="Assurance Décès, Invalidité et Maladie (DIM)" target="assurance de groupe">
+      <data key="d0">est</data>
+    </edge>
+    <edge source="Assurance Décès, Invalidité et Maladie (DIM)" target="assurance collective">
+      <data key="d0">est</data>
+    </edge>
+    <edge source="Assurance collective" target="personne physique ou morale">
+      <data key="d0">souscrit par</data>
+    </edge>
+    <edge source="Assurance collective" target="prise en charge des frais engagés par l'adhérent et les personnes à sa charge">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="Personnes à charge" target="conjoint et enfants">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="Assurance Décès Invalidité - Maladie" target="amortissement des conséquences financières">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="Assurance Décès Invalidité - Maladie" target="entreprises avec au moins 5 salariés">
+      <data key="d0">est réservée à</data>
+    </edge>
+    <edge source="Assurance Décès - Invalidité - Maladie" target="toute personne physique ou morale">
+      <data key="d0">cible</data>
+    </edge>
+    <edge source="Assurance Décès - Invalidité - Maladie" target="ensemble de personnes">
+      <data key="d0">au profit de</data>
+    </edge>
+    <edge source="Assurance Décès - Invalidité - Maladie" target="capital garanti aux bénéficiaires désignés">
+      <data key="d0">verse en cas de décès</data>
+    </edge>
+    <edge source="Assurance Décès - Invalidité - Maladie" target="rente viagère au conjoint survivant">
+      <data key="d0">verse en cas de décès</data>
+    </edge>
+    <edge source="Assurance Décès - Invalidité - Maladie" target="rente temporaire aux enfants orphelins jusqu'à 25 ans">
+      <data key="d0">verse en cas de décès</data>
+    </edge>
+    <edge source="Assurance Décès - Invalidité - Maladie" target="rente viagère au conjoint et aux enfants orphelins">
+      <data key="d0">combine en cas de décès</data>
+    </edge>
+    <edge source="Assurance Décès - Invalidité - Maladie" target="indemnité journalière en cas d'incapacité temporaire totale de travail">
+      <data key="d0">verse en cas d'invalidité permanente totale ou partielle</data>
+    </edge>
+    <edge source="Assurance Décès - Invalidité - Maladie" target="rente en cas d'invalidité permanente totale ou partielle">
+      <data key="d0">verse en cas d'invalidité permanente totale ou partielle</data>
+    </edge>
+    <edge source="Assurance Décès - Invalidité - Maladie" target="paiement des primes">
+      <data key="d0">exonère en cas d'invalidité permanente totale ou partielle</data>
+    </edge>
+    <edge source="Assurance Décès - Invalidité - Maladie" target="frais médicaux et pharmaceutiques">
+      <data key="d0">rembourse en cas de maladie et maternité</data>
+    </edge>
+    <edge source="Assurance Décès - Invalidité - Maladie" target="frais d'hospitalisation">
+      <data key="d0">rembourse en cas de maladie et maternité</data>
+    </edge>
+    <edge source="Assurance Décès - Invalidité - Maladie" target="frais chirurgicaux">
+      <data key="d0">rembourse en cas de maladie et maternité</data>
+    </edge>
+    <edge source="Assurance Décès - Invalidité - Maladie" target="frais de soins et prothèse dentaire">
+      <data key="d0">rembourse en cas de maladie et maternité</data>
+    </edge>
+    <edge source="Assurance Décès - Invalidité - Maladie" target="frais de transport sanitaire">
+      <data key="d0">rembourse en cas de maladie et maternité</data>
+    </edge>
+    <edge source="ensemble de personnes" target="salariés d'une entreprise">
+      <data key="d0">peut être</data>
+    </edge>
+    <edge source="Assurance DIM" target="remboursement">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="Assurance DIM" target="personnes au travail">
+      <data key="d0">est ouverte à</data>
+    </edge>
+    <edge source="Remboursement" target="indemnités CNSS">
+      <data key="d0">complément de</data>
+    </edge>
+    <edge source="Remboursement" target="autre couverture d'assurances">
+      <data key="d0">complément de</data>
+    </edge>
+    <edge source="Contrat" target="protection financière des bénéficiaires en cas de décès de l'adhérent">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="Garanties du contrat Décès Invalidité Maladie" target="Maroc">
+      <data key="d0">limitées à</data>
+    </edge>
+    <edge source="Hospitalisation à l'étranger" target="accord préalable de l'assureur">
+      <data key="d0">nécessite</data>
+    </edge>
+    <edge source="Nombre des adhérents" target="au moins 75% de l'effectif du personnel du souscripteur">
+      <data key="d0">doit comprendre</data>
+    </edge>
+    <edge source="Adhérent absent pour maladie ou accident" target="premier jour du 2ème mois suivant la reprise de travail">
+      <data key="d0">peut être admis</data>
+    </edge>
+    <edge source="Souscripteur" target="exemplaire du contrat, liste des adhérents, bulletin d'adhésion signé">
+      <data key="d0">doit fournir à l'assureur</data>
+    </edge>
+    <edge source="Souscripteur" target="avis trimestriel des primes">
+      <data key="d0">doit fournir chaque trimestre</data>
+    </edge>
+    <edge source="Garantie du contrat maladie" target="au jour de l'adhésion">
+      <data key="d0">prend effet</data>
+    </edge>
+    <edge source="Garantie pour certaines maladies" target="expiration d'un délai d'attente">
+      <data key="d0">est accordée après</data>
+    </edge>
+    <edge source="Délai d'attente pour cataracte et ulcère gastroduodénaux" target="6 mois">
+      <data key="d0">est de</data>
+    </edge>
+    <edge source="Délai d'attente pour tumeurs et maladies des organes génitaux féminins" target="9 mois">
+      <data key="d0">est de</data>
+    </edge>
+    <edge source="Formulaire de déclaration" target="BO">
+      <data key="d0">publié au</data>
+    </edge>
+    <edge source="Formulaire de déclaration" target="décret d'application de la loi 18/12">
+      <data key="d0">cadre de</data>
+    </edge>
+    <edge source="Décret d'application de la loi 18/12" target="22/01/2015">
+      <data key="d0">date de</data>
+    </edge>
+    <edge source="Dossier Accident du travail" target="certificat initial">
+      <data key="d0">comprend</data>
+    </edge>
+    <edge source="Dossier Accident du travail" target="certificat de prolongation">
+      <data key="d0">comprend</data>
+    </edge>
+    <edge source="Dossier Accident du travail" target="certificat de reprise du travail">
+      <data key="d0">comprend</data>
+    </edge>
+    <edge source="Dossier Accident du travail" target="certificat de consolidation">
+      <data key="d0">comprend</data>
+    </edge>
+    <edge source="Dossier Accident du travail" target="certificat de guérison">
+      <data key="d0">comprend</data>
+    </edge>
+    <edge source="Dossier Accident du travail" target="trois derniers bordereaux de CNSS">
+      <data key="d0">comprend</data>
+    </edge>
+    <edge source="Salariés assurés" target="suivi en ligne de leurs dossiers de remboursement santé">
+      <data key="d0">peuvent faire</data>
+    </edge>
+    <edge source="Souscripteurs" target="remboursements des dossiers de maladie sur compte de l'entreprise">
+      <data key="d0">ont la possibilité de recevoir</data>
+    </edge>
+    <edge source="Souscripteurs" target="remboursements des dossiers de maladie sur comptes de leurs salariés">
+      <data key="d0">ont la possibilité de recevoir</data>
+    </edge>
+    <edge source="Salariés des souscripteurs" target="remboursements santé sans attendre remboursement de l'AMO">
+      <data key="d0">recevront</data>
+    </edge>
+    <edge source="Invalidité totale" target="rente annuelle">
+      <data key="d0">permet perception de</data>
+    </edge>
+    <edge source="Invalidité partielle" target="rente proportionnelle">
+      <data key="d0">permet perception de</data>
     </edge>
     <edge source="Assurance Perte d'Exploitation après Incendie" target="replacer l'entreprise dans la situation financière antérieure">
       <data key="d0">a pour objet</data>
@@ -1354,74 +3337,98 @@
     <edge source="Assurance Perte d'Exploitation après Incendie" target="charges fixes">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="Assurance Perte d'Exploitation après Incendie" target="frais supplémentaires pour rétablir l'activité">
+    <edge source="Assurance Perte d'Exploitation après Incendie" target="frais supplémentaires">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="Assurance Perte d'Exploitation après Incendie" target="toutes les entreprises industrielles ou commerciales">
+    <edge source="Assurance Perte d'Exploitation Après Incendie" target="entreprises">
       <data key="d0">s'adresse à</data>
     </edge>
-    <edge source="Assurance Perte d'Exploitation après Incendie" target="santé financière de l'entreprise">
-      <data key="d0">protège</data>
-    </edge>
-    <edge source="Assurance Perte d'Exploitation après Incendie" target="confiance des partenaires et des clients">
-      <data key="d0">maintient</data>
-    </edge>
-    <edge source="Assurance Perte d'Exploitation après Incendie" target="continuité de l'exploitation">
-      <data key="d0">permet</data>
-    </edge>
-    <edge source="Assurance Perte d'Exploitation après Incendie" target="risques d'incendie ou explosion">
+    <edge source="Assurance Perte d'Exploitation Après Incendie" target="continuité des activités après incendie">
       <data key="d0">garantit</data>
     </edge>
-    <edge source="Assurance Perte d'Exploitation après Incendie" target="extensions de garantie">
+    <edge source="entreprises" target="industrielles ou commerciales">
+      <data key="d0">peuvent être</data>
+    </edge>
+    <edge source="Perte d'Exploitation Après Incendie" target="santé financière de l'entreprise">
+      <data key="d0">protège</data>
+    </edge>
+    <edge source="Perte d'Exploitation Après Incendie" target="confiance des partenaires et des clients">
+      <data key="d0">maintient</data>
+    </edge>
+    <edge source="Perte d'Exploitation Après Incendie" target="continuité de l'exploitation">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="Perte d'Exploitation Après Incendie" target="Produit d'assurance">
+      <data key="d0">est un</data>
+    </edge>
+    <edge source="Perte d'Exploitation Après Incendie" target="perte d'exploitation après incendie">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Perte d'Exploitation Après Incendie" target="perte d'exploitation après explosion">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Perte d'Exploitation Après Incendie" target="frais supplémentaires additionnels">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="Perte d'Exploitation Après Incendie" target="honoraires d'expert">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="Perte d'Exploitation Après Incendie" target="pertes d'exploitation après dommages électriques">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="Perte d'Exploitation Après Incendie" target="Incendie">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Perte d'Exploitation Après Incendie" target="explosion">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Perte d'Exploitation Après Incendie" target="dommages électriques">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="Perte d'Exploitation Après Incendie" target="protection financière">
       <data key="d0">offre</data>
     </edge>
-    <edge source="Assurance Perte d'Exploitation après Incendie" target="couverture étendue">
+    <edge source="Perte d'Exploitation Après Incendie" target="flexibilité">
       <data key="d0">offre</data>
     </edge>
-    <edge source="Assurance Perte d'Exploitation après Incendie" target="protection financière">
-      <data key="d0">offre</data>
+    <edge source="Perte d'Exploitation Après Incendie" target="tolérance d'écart jusqu'à 20% sur la marge brute">
+      <data key="d0">a</data>
     </edge>
-    <edge source="Assurance Perte d'Exploitation après Incendie" target="flexibilité">
-      <data key="d0">offre</data>
+    <edge source="Perte d'Exploitation Après Incendie" target="services plus">
+      <data key="d0">inclut</data>
     </edge>
-    <edge source="Assurance Perte d'Exploitation après Incendie" target="écart jusqu'à 20% sur la marge brute">
-      <data key="d0">tolère</data>
-    </edge>
-    <edge source="Assurance Perte d'Exploitation après Incendie" target="services plus">
-      <data key="d0">offre</data>
-    </edge>
-    <edge source="Assurance Perte d'Exploitation" target="si le risque est couvert par une police d'assurance directe">
+    <edge source="Assurance Perte d'Exploitation" target="si risque couvert par police d'assurance directe">
       <data key="d0">intervient</data>
     </edge>
-    <edge source="Assurance Perte d'Exploitation" target="fortement conseillée">
+    <edge source="Assurance Perte d'Exploitation" target="non obligatoire mais fortement conseillée">
       <data key="d0">est</data>
     </edge>
     <edge source="Conditions Particulières" target="période d'indemnisation">
       <data key="d0">fixent</data>
     </edge>
-    <edge source="Entreprise" target="marge brute prévisionnelle">
-      <data key="d0">doit communiquer</data>
+    <edge source="services plus" target="Conseil et suivi RMA">
+      <data key="d0">inclut</data>
     </edge>
-    <edge source="Entreprise" target="période d'indemnisation souhaitée">
-      <data key="d0">doit communiquer</data>
+    <edge source="services plus" target="programme de prévention RMA">
+      <data key="d0">inclut</data>
     </edge>
     <edge source="Marge brute à assurer" target="dernier bilan clos">
       <data key="d0">se base sur</data>
     </edge>
-    <edge source="Marge brute réelle" target="réduction de l'indemnité par règle proportionnelle">
-      <data key="d0">est plus élevée que la déclarée</data>
+    <edge source="Marge brute à assurer" target="perspectives d'activité">
+      <data key="d0">doit être ajustée selon</data>
     </edge>
-    <edge source="Frais supplémentaires" target="frais nécessaires à la poursuite ou reprise rapide de l'activité">
-      <data key="d0">peuvent être remboursés</data>
+    <edge source="Marge brute réelle" target="marge brute déclarée">
+      <data key="d0">est plus élevée que</data>
+    </edge>
+    <edge source="Règle proportionnelle" target="indemnité">
+      <data key="d0">réduit</data>
+    </edge>
+    <edge source="Frais supplémentaires remboursables" target="frais nécessaires à la poursuite ou reprise rapide de l'activité">
+      <data key="d0">incluent</data>
     </edge>
     <edge source="Délai d'indemnisation" target="complexité du sinistre">
       <data key="d0">dépend de</data>
-    </edge>
-    <edge source="Intermédiaire" target="client signe les trois copies du contrat">
-      <data key="d0">doit s'assurer</data>
-    </edge>
-    <edge source="Intermédiaire" target="copie du contrat au siège">
-      <data key="d0">envoyer</data>
     </edge>
   </graph>
 </graphml>

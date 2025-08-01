@@ -44,6 +44,56 @@ def load_resources():
 
 client, collection, G, AZURE_DEPLOYMENT_CHAT = load_resources()
 
+# ==== NOUVELLE FONCTION : RÉÉCRITURE DE LA QUESTION ====
+def rewrite_question_with_history(question: str, history: list):
+    # Si l'historique est court ou si la question semble déjà complète, on ne réécrit pas.
+    if len(history) < 2 or len(question.split()) > 10:
+        return question
+
+    # Concaténer l'historique pour le contexte
+    history_str = ""
+    for msg in history[-4:]: # On prend les 4 derniers messages pour le contexte
+        history_str += f"{msg['role']}: {msg['content']}\n"
+
+    system_prompt = f"""
+    Étant donné l'historique de la conversation et la question de suivi, reformule la question de suivi pour qu'elle soit une question autonome et complète.
+    Combine le contexte de l'historique avec la nouvelle question.
+
+    Exemple 1:
+    Historique:
+    user: Parle-moi de l'assurance Multirisque Hôtel DIAFA.
+    assistant: Bien sûr, l'assurance DIAFA couvre les bâtiments, le mobilier...
+    Question de suivi: et pour les garanties ?
+    Question reformulée: Quelles sont les garanties de l'assurance Multirisque Hôtel DIAFA ?
+
+    Exemple 2:
+    Historique:
+    user: Quelles sont les conditions pour la perte d'exploitation ?
+    assistant: Il faut une police directe préalable et déclarer une marge brute.
+    Question de suivi: en cas de sinistre ?
+    Question reformulée: Que faut-il faire en cas de sinistre pour l'assurance Perte d'Exploitation ?
+    """
+
+    messages = [
+        {"role": "system", "content": system_prompt},
+        {"role": "user", "content": f"Historique:\n{history_str}\nQuestion de suivi: {question}"}
+    ]
+
+    try:
+        response = client.chat.completions.create(
+            model=AZURE_DEPLOYMENT_CHAT,
+            messages=messages,
+            temperature=0.0,
+            max_tokens=100
+        )
+        rewritten_question = response.choices[0].message.content.replace("Question reformulée:", "").strip()
+        print(f"--- Question originale: '{question}'")
+        print(f"--- Question réécrite: '{rewritten_question}'")
+        return rewritten_question
+    except Exception as e:
+        print(f"Erreur lors de la réécriture de la question : {e}")
+        return question # En cas d'erreur, on retourne la question originale
+
 # ==== 2. MOTEUR INTELLIGENT DE QA ====
 def decompose_question(question_utilisateur):
     system_prompt = """
@@ -104,24 +154,15 @@ def retrieve_detailed_chunks(concepts):
 
 
 
-def final_synthesis(question, graph_context, detailed_chunks):
+def final_synthesis(question, standalone_question, graph_context, detailed_chunks):
     system_prompt = """
-    Tu es un assistant expert de l'assurance RMA. Ton rôle est de synthétiser les informations fournies pour répondre à la question de l'utilisateur.
+    Tu es un assistant expert de l'assurance RMA. Ton rôle est de synthétiser les informations fournies pour répondre à la question ORIGINALE de l'utilisateur.
+    Utilise le contexte fourni, qui a été récupéré sur la base de la "Question Complète pour Recherche".
 
     FORMAT DE SORTIE OBLIGATOIRE :
     Un objet JSON avec :
-    1. "reponse": Une réponse claire, détaillée et informative basée sur les données fournies, quand la réponse est détailler merci de fournir la réponse sous format de 1., 2..
-    2. "suggestions": Une liste de 2 objets, chacune étant une question de suivi pertinente que l'utilisateur pourrait poser:
-
-    Exemple :
-    {
-      "reponse": "Oui, l'assurance DIM couvre l'incapacité permanente totale. Elle prévoit le versement d'une rente mensuelle proportionnelle au salaire brut, jusqu'à l'âge de la retraite. Le calcul prend en compte le taux d'invalidité reconnu et l'ancienneté dans l'entreprise.",
-      "suggestions": [
-        { "question": "Comment est calculé le montant de la rente d'invalidité ?", "type": "précision" },
-        { "question": "Quelles sont les conditions pour déclarer une incapacité ?", "type": "exemple" },
-        { "question": "La couverture DIM s'arrête-t-elle si je quitte l'entreprise ?", "type": "question liée" }
-      ]
-    }
+    1. "reponse": Une réponse claire et détaillée à la question originale. Si la réponse est détaillée, utilise une liste numérotée (1., 2., ...).
+    2. "suggestions": Une liste de 2 questions de suivi pertinentes.
     """
 
     history_context = ""
@@ -132,15 +173,17 @@ def final_synthesis(question, graph_context, detailed_chunks):
     **CONTEXTE DE CONVERSATION :**
     {history_context}
 
-    **QUESTION UTILISATEUR :**
+    **QUESTION ORIGINALE DE L'UTILISATEUR :**
     "{question}"
 
-    **1. Contexte du Graphe :**
-    ```
-    {graph_context}
+    **QUESTION COMPLÈTE POUR RECHERCHE (générée à partir de l'historique) :**
+    "{standalone_question}"
+
+    **1. Contexte du Graphe (basé sur la question complète) :**
+    ```    {graph_context}
     ```
 
-    **2. Détails des Documents :**
+    **2. Détails des Documents (basés sur la question complète) :**
     ```
     {detailed_chunks}
     ```
@@ -166,70 +209,116 @@ def final_synthesis(question, graph_context, detailed_chunks):
 
 
 # ==== 3. INTERFACE STREAMLIT ====
+# ==== 3. INTERFACE STREAMLIT (Version avec Mémoire de Conversation) ====
+
 st.set_page_config(page_title="Chatbot RMA Avancé", layout="wide")
 st.title("🤖 Chatbot Avancé RMA")
 st.caption("Un assistant capable de raisonner sur l'ensemble des documents de connaissance.")
 
+# Initialisation de l'état de la session
 if "messages" not in st.session_state:
     st.session_state.messages = []
 if "question" not in st.session_state:
     st.session_state.question = ""
 
+# Fonction pour gérer le clic sur une suggestion
 def handle_suggestion_click(suggestion):
     st.session_state.question = suggestion
 
+# Affichage de l'historique des messages
 for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
+        # Afficher les suggestions sous la réponse de l'assistant
         if message.get("suggestions"):
             cols = st.columns(len(message["suggestions"]))
             for i, suggestion in enumerate(message["suggestions"]):
+                # Utiliser un timestamp ou un ID unique pour les clés des boutons
+                unique_key = f"sugg_{message.get('timestamp', i)}_{i}"
                 cols[i].button(
                     suggestion, 
-                    key=f"sugg_{message.get('timestamp', i)}_{i}", 
+                    key=unique_key, 
                     on_click=handle_suggestion_click, 
                     args=[suggestion]
                 )
 
+# Champ de saisie du chat
 prompt = st.chat_input("Posez votre question ici...", key="chat_input")
 if prompt:
     st.session_state.question = prompt
 
+# Logique de traitement si une nouvelle question est posée
 if st.session_state.question:
     current_question = st.session_state.question
-    st.session_state.question = ""
+    st.session_state.question = "" # Réinitialiser pour éviter une ré-exécution en boucle
 
+    # Ajouter la question de l'utilisateur à l'historique et l'afficher
     st.session_state.messages.append({"role": "user", "content": current_question})
     with st.chat_message("user"):
         st.markdown(current_question)
 
+    # Afficher la réponse de l'assistant
     with st.chat_message("assistant"):
         message_placeholder = st.empty()
         with st.spinner(""):
-            concepts = decompose_question(current_question)
+            
+            # ==================================================================
+            # ==== ÉTAPE 1 : RÉÉCRIRE LA QUESTION AVEC LE CONTEXTE (LA CLÉ) ====
+            # ==================================================================
+            # On passe l'historique complet pour que la fonction ait tout le contexte.
+            standalone_question = rewrite_question_with_history(current_question, st.session_state.messages)
+
+            # ==================================================================
+            # ==== ÉTAPE 2 : RECHERCHE BASÉE SUR LA QUESTION AUTONOME ========
+            # ==================================================================
+            concepts = decompose_question(standalone_question)
             graph_context = find_context_in_graph(concepts)
             detailed_chunks = retrieve_detailed_chunks(concepts)
-            response_data = final_synthesis(current_question, graph_context, detailed_chunks)
+            
+            # ==================================================================
+            # ==== ÉTAPE 3 : SYNTHÈSE FINALE ===================================
+            # ==================================================================
+            # On passe la question originale (pour la réponse) et la question réécrite (pour le contexte)
+            response_data = final_synthesis(
+                question=current_question,
+                standalone_question=standalone_question,
+                graph_context=graph_context, 
+                detailed_chunks=detailed_chunks
+            )
 
-            reponse_concise = response_data.get("reponse", "Désolé, une erreur est survenue.")
+            raw_response = response_data.get("reponse", "Désolé, une erreur est survenue.")
 
-            # 🔧 Nettoyage Markdown
-            reponse_concise = re.sub(r"(#+)([^\s#])", r"\1 \2", reponse_concise)  # Espace après ##
+            # 1. On s'assure que la réponse est bien une chaîne de caractères
+            if isinstance(raw_response, list):
+                # Si c'est une liste, on joint tous les éléments avec un saut de ligne
+                reponse_concise = "\n".join(map(str, raw_response))
+            else:
+                # Sinon, on s'assure que c'est bien une chaîne (au cas où ce serait autre chose)
+                reponse_concise = str(raw_response)
+
+            # 🔧 Nettoyage du Markdown pour un affichage propre
+            reponse_concise = re.sub(r"(#+)([^\s#])", r"\1 \2", reponse_concise)
             reponse_concise = re.sub(r"(##[^\n]*)", r"\n\n\1\n\n", reponse_concise)
             reponse_concise = re.sub(r"([^\n])(\n- )", r"\1\n\n\2", reponse_concise)
             reponse_concise = re.sub(r"\n{3,}", r"\n\n", reponse_concise)
-            reponse_concise = re.sub(r"(?<!\n)(\d+\. )", r"\n\n\1", reponse_concise)  # <<< ICI ajout pour listes numérotées
+            reponse_concise = re.sub(r"(?<!\n)(\d+\. )", r"\n\n\1", reponse_concise)
             reponse_concise = reponse_concise.strip()
 
+            # Extraire les suggestions de la réponse
             suggestions_data = response_data.get("suggestions", [])
             suggestions = [s["question"] if isinstance(s, dict) else s for s in suggestions_data]
 
+            # Afficher la réponse finale
             message_placeholder.markdown(reponse_concise, unsafe_allow_html=False)
 
+            # Ajouter la réponse complète de l'assistant à l'historique
             st.session_state.messages.append({
                 "role": "assistant",
                 "content": reponse_concise,
                 "suggestions": suggestions,
-                "timestamp": datetime.datetime.now()
+                "timestamp": datetime.datetime.now().isoformat() # Utiliser un format standard pour la clé
             })
+            
+            # Forcer la ré-exécution du script pour afficher les boutons de suggestion
             st.rerun()
+
