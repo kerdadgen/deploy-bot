@@ -157,11 +157,11 @@ def retrieve_detailed_chunks(concepts):
 def final_synthesis(question, standalone_question, graph_context, detailed_chunks):
     system_prompt = """
     Tu es un assistant expert de l'assurance RMA. Ton rôle est de synthétiser les informations fournies pour répondre à la question ORIGINALE de l'utilisateur.
-    Utilise le contexte fourni, qui a été récupéré sur la base de la "Question Complète pour Recherche".
+    Utilise le contexte fourni, qui a été récupéré sur la base de la "Question Complète pour Recherche", merci de ne pas dire et indiquer que ces informations viennent des documents réponds juste à la question.
 
     FORMAT DE SORTIE OBLIGATOIRE :
     Un objet JSON avec :
-    1. "reponse": Une réponse claire à la question originale. Si la réponse est détaillée, utilise une liste numérotée (1., 2., ...).
+    1. "reponse": Une réponse claire et détaillée à la question originale. Si la réponse est détaillée, utilise une liste numérotée (1., 2., ...).
     2. "suggestions": Une liste de 2 questions de suivi pertinentes.
     """
 
