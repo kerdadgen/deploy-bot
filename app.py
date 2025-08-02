@@ -178,7 +178,7 @@ RÈGLES :
 
     FORMAT DE SORTIE OBLIGATOIRE :
     Un objet JSON avec :
-    1. "reponse": Une réponse claire et détaillée à la question originale. Si la réponse est détaillée, utilise une liste numérotée (1., 2., ...).
+    1. "reponse": Une réponse claire à la question originale. Si la réponse est détaillée, utilise une liste numérotée (1., 2., ...).
     2. "suggestions": Une liste de 2 questions de suivi pertinentes.
     """
 
