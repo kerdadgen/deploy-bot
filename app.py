@@ -144,20 +144,37 @@ def find_context_in_graph(concepts, threshold=0.8):
             context_summary += f"- Le concept '{node}' est lié à '{neighbor}' par la relation '{relation}'.\n"
     return context_summary if context_summary else "Aucun lien direct trouvé dans le graphe."
 
-def retrieve_detailed_chunks(concepts):
-    all_results = []
-    for concept in concepts:
-        results = collection.query(query_texts=[concept], n_results=2)
-        docs = results.get('documents', [[]])[0]
-        all_results.extend(docs)
-    return "\n\n---\n\n".join(all_results[:5])
+def retrieve_detailed_chunks_alternative(standalone_question: str):
+    """
+    Cherche les chunks pertinents en utilisant la question complète et autonome,
+    ce qui est souvent plus efficace que de chercher des concepts isolés.
+    """
+    # On utilise directement la question complète pour la recherche sémantique.
+    # On augmente n_results pour s'assurer de récupérer un contexte riche.
+    results = collection.query(
+        query_texts=[standalone_question], 
+        n_results=10  # On récupère directement 10 chunks pertinents pour la question globale
+    )
+    
+    docs = results.get('documents', [[]])[0]
+    
+    if not docs:
+        return "Aucun document pertinent n'a été trouvé dans la base de connaissances."
+        
+    return "\n\n---\n\n".join(docs)
+
 
 
 
 def final_synthesis(question, standalone_question, graph_context, detailed_chunks):
     system_prompt = """
-    Tu es un assistant expert de l'assurance RMA. Ton rôle est de synthétiser les informations fournies pour répondre à la question ORIGINALE de l'utilisateur.
-    Utilise le contexte fourni, qui a été récupéré sur la base de la "Question Complète pour Recherche", merci de ne pas dire et indiquer que ces informations viennent des documents réponds juste à la question.
+    Tu es un assistant expert pour les courtiers de l'assurance RMA. Ton rôle est de fournir des réponses précises, complètes et basées **exclusivement** sur les documents fournis.
+
+RÈGLES :
+1.  **Exhaustivité :** Synthétise TOUTES les informations pertinentes des documents pour répondre à la question.
+2.  **Clarté :** Structure ta réponse avec des titres, des listes à puces ou numérotées pour une lisibilité maximale.
+3.  **Ne jamais inventer :** Si l'information n'est pas dans les documents, dis-le clairement.
+4.  **Tu peux répondre aux remerciements
 
     FORMAT DE SORTIE OBLIGATOIRE :
     Un objet JSON avec :
@@ -260,7 +277,7 @@ if st.session_state.question:
     # Afficher la réponse de l'assistant
     with st.chat_message("assistant"):
         message_placeholder = st.empty()
-        with st.spinner(""):
+        with st.spinner("Analyse de la conversation et recherche d'informations..."):
             
             # ==================================================================
             # ==== ÉTAPE 1 : RÉÉCRIRE LA QUESTION AVEC LE CONTEXTE (LA CLÉ) ====
@@ -268,12 +285,13 @@ if st.session_state.question:
             # On passe l'historique complet pour que la fonction ait tout le contexte.
             standalone_question = rewrite_question_with_history(current_question, st.session_state.messages)
 
+
             # ==================================================================
             # ==== ÉTAPE 2 : RECHERCHE BASÉE SUR LA QUESTION AUTONOME ========
             # ==================================================================
             concepts = decompose_question(standalone_question)
             graph_context = find_context_in_graph(concepts)
-            detailed_chunks = retrieve_detailed_chunks(concepts)
+            detailed_chunks = retrieve_detailed_chunks_alternative(standalone_question)
             
             # ==================================================================
             # ==== ÉTAPE 3 : SYNTHÈSE FINALE ===================================
@@ -295,7 +313,7 @@ if st.session_state.question:
             else:
                 # Sinon, on s'assure que c'est bien une chaîne (au cas où ce serait autre chose)
                 reponse_concise = str(raw_response)
-
+                
             # 🔧 Nettoyage du Markdown pour un affichage propre
             reponse_concise = re.sub(r"(#+)([^\s#])", r"\1 \2", reponse_concise)
             reponse_concise = re.sub(r"(##[^\n]*)", r"\n\n\1\n\n", reponse_concise)
