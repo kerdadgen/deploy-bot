@@ -2,584 +2,362 @@
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
   <key id="d0" for="edge" attr.name="label" attr.type="string" />
   <graph edgedefault="directed">
-    <node id="Multirisque PME-PMI" />
-    <node id="protection du patrimoine professionnel" />
-    <node id="PME-PMI" />
-    <node id="patrimoine professionnel" />
-    <node id="frais et pertes suite à un dommage garanti" />
-    <node id="responsabilité Civile Chef d’entreprise" />
-    <node id="pertes financières en cas de sinistre" />
-    <node id="besoins spécifiques du Dirigeant, Chef d’entreprise ou Gérant" />
-    <node id="secteur industriel" />
-    <node id="secteur commercial" />
-    <node id="secteur de service" />
-    <node id="activité parmi les 152 activités de la nomenclature spécifique" />
-    <node id="Contenu" />
-    <node id="de 150 000 DH à 5 000 000 DH" />
-    <node id="Bâtiment" />
-    <node id="de 150 000 DH à 15 000 000 DH" />
-    <node id="Guide Assurance Multirisque PME-PMI" />
-    <node id="assurance" />
-    <node id="Souscription au contrat Multirisque PME-PMI" />
-    <node id="outil ASSURLINE" />
+    <node id="assurance pme-pmi" />
+    <node id="protection complète du patrimoine professionnel" />
+    <node id="biens immobiliers et mobiliers" />
+    <node id="frais et pertes suite à sinistre" />
+    <node id="responsabilité civile du dirigeant" />
+    <node id="pertes financières liées à l’arrêt d’activité" />
+    <node id="petites et moyennes entreprises/industries" />
+    <node id="continuité et pérennité de l’activité en cas de dommage" />
+    <node id="dirigeant, chef d’entreprise ou gérant" />
+    <node id="activité parmi les 152 activités listées dans la nomenclature rma" />
+    <node id="100% digitale via assurline" />
     <node id="intermédiaires" />
-    <node id="Intermédiaires" />
-    <node id="agents" />
-    <node id="courtiers" />
-    <node id="Gestion" />
-    <node id="Cas" />
-    <node id="siège" />
-    <node id="Valeurs contenu/bâtiment ou risques locatifs" />
-    <node id="seuils produits" />
-    <node id="Garanties/Extensions" />
-    <node id="supérieurs au barème produit" />
-    <node id="Entreprise" />
-    <node id="moins de 50 salariés" />
-    <node id="superficie ≤ 2000 m²" />
-    <node id="contenu ≤ 5000000 DH" />
-    <node id="bâtiment ≤ 15000000 DH" />
-    <node id="activité listée parmi les 152 activités du produit" />
-    <node id="un seul site d’exploitation" />
-    <node id="Garanties dommages" />
-    <node id="activités au Maroc" />
-    <node id="Conditions Particulières" />
-    <node id="Garanties Responsabilité civile" />
-    <node id="Maroc" />
-    <node id="dommages à l'étranger" />
-    <node id="Dommages à l'étranger" />
-    <node id="USA/Canada" />
-    <node id="missions/stages/salons" />
-    <node id="Séjour à l'étranger" />
+    <node id="dossiers" />
+    <node id="siège rma pour validation" />
+    <node id="garanties dommages" />
+    <node id="lieux désignés au maroc" />
+    <node id="responsabilité civile" />
+    <node id="maroc" />
+    <node id="missions/stages/salons à l’étranger" />
+    <node id="usa/canada" />
+    <node id="couverture à l'étranger" />
     <node id="90 jours" />
-    <node id="Garanties de base" />
-    <node id="Incendie" />
-    <node id="risques annexes" />
-    <node id="Evénements catastrophiques" />
-    <node id="Dégâts des eaux" />
-    <node id="Vol" />
-    <node id="Responsabilité Civile Exploitation" />
-    <node id="avec ou sans" />
-    <node id="certaines activités" />
-    <node id="Responsabilité Civile après livraison des Produits" />
-    <node id="Responsabilité Civile après achèvement des travaux" />
-    <node id="Garanties optionnelles" />
-    <node id="Garanties annexes Incendie" />
-    <node id="catastrophes naturelles" />
-    <node id="tremblement de terre" />
-    <node id="Inondation" />
-    <node id="évènements climatiques" />
-    <node id="tempête" />
-    <node id="grêle" />
-    <node id="chute de la neige" />
-    <node id="émeutes et mouvements populaires" />
-    <node id="Bris de glaces" />
-    <node id="enseignes lumineuses" />
-    <node id="Bris de matériels professionnels" />
-    <node id="matériels informatiques" />
-    <node id="matériels bureautiques" />
-    <node id="Bris de machines" />
-    <node id="certaines activités uniquement" />
-    <node id="Perte d’exploitation après incendie-explosion" />
-    <node id="Garanties de bases" />
-    <node id="Evènements catastrophiques" />
-    <node id="Dégât des eaux" />
-    <node id="Bris de glaces et enseignes lumineuses" />
-    <node id="Garanties complémentaires" />
-    <node id="Perte d’exploitation après Incendie – explosion" />
-    <node id="Produit d'assurance" />
     <node id="offre packagée" />
-    <node id="3 formules" />
-    <node id="formules" />
-    <node id="capitaux assurés" />
+    <node id="trois formules progressives" />
+    <node id="chaque formule" />
+    <node id="5 garanties de base" />
     <node id="client" />
     <node id="garanties optionnelles" />
-    <node id="offre modulable" />
-    <node id="Incendie et Evt Cat" />
-    <node id="au moins 2 garanties optionnelles" />
+    <node id="incendie &amp; risques annexes" />
+    <node id="événements catastrophiques" />
+    <node id="dégâts des eaux" />
+    <node id="vol" />
+    <node id="responsabilité civile exploitation" />
+    <node id="annexes incendie" />
+    <node id="catastrophes naturelles" />
+    <node id="événements climatiques" />
+    <node id="émeutes et mouvements populaires" />
+    <node id="bris de glaces &amp; enseignes lumineuses" />
+    <node id="bris de glaces" />
+    <node id="bris d'enseignes lumineuses" />
+    <node id="bris de matériels professionnels" />
+    <node id="matériels informatiques et bureautiques" />
+    <node id="bris de machines" />
+    <node id="machines pour activités ciblées" />
+    <node id="perte d’exploitation" />
+    <node id="incendie-explosion" />
+    <node id="option modulable" />
+    <node id="clients expérimentés" />
+    <node id="composer couverture" />
+    <node id="choisir capitaux" />
+    <node id="socle obligatoire" />
+    <node id="2 garanties de base" />
+    <node id="2 garanties optionnelles" />
+    <node id="garanties de base obligatoires" />
+    <node id="choix de garanties optionnelles" />
+    <node id="rc exploitation" />
+    <node id="bris de glaces &amp; enseignes" />
+    <node id="bris de matériels pro/it" />
     <node id="garanties complémentaires" />
-    <node id="capitaux" />
-    <node id="limite du minimum et maximum définis par garantie" />
-    <node id="assuré" />
-    <node id="prendre toutes les mesures nécessaires pour limiter les dégâts" />
-    <node id="déclarer le sinistre à la compagnie" />
-    <node id="délai de déclaration de sinistre" />
-    <node id="cinq jours" />
-    <node id="délai de déclaration de vol" />
+    <node id="perte d’exploitation après incendie-explosion" />
+    <node id="3 formules évolutives" />
+    <node id="capitaux prédéfinis" />
+    <node id="options au choix" />
+    <node id="offre modulable" />
+    <node id="socle incendie" />
+    <node id="evt cat" />
+    <node id="au moins 2 options" />
+    <node id="compléments" />
+    <node id="formalités en cas de sinistre" />
+    <node id="mesures conservatoires immédiates" />
+    <node id="déclaration à rma" />
+    <node id="5 jours" />
+    <node id="déclaration en cas de vol" />
     <node id="48 heures" />
-    <node id="copie du procès-verbal" />
-    <node id="Couverture complète biens &amp; responsabilités" />
-    <node id="avantage compétitif" />
-    <node id="Tarif compétitif et flexible" />
-    <node id="152 activités couvertes" />
-    <node id="Souscription rapide en agence via ASSURLINE" />
-    <node id="Large éventail d’extensions" />
-    <node id="fortement recommandée" />
-    <node id="patrimoine" />
-    <node id="continuité de l’entreprise" />
-    <node id="Accidents du Travail" />
-    <node id="contrat distinct AT PME-PMI" />
-    <node id="RC Exploitation" />
-    <node id="incidents pendant l’activité courante" />
-    <node id="RC Professionnelle" />
-    <node id="erreurs/omissions lors de la réalisation d’une prestation spécifique" />
-    <node id="Tarif contrat Multirisque PME-PMI" />
-    <node id="activité de l'entreprise" />
-    <node id="niveau d’exposition aux risques" />
-    <node id="valeur des biens assurés" />
-    <node id="adresse du risque" />
-    <node id="dispositifs de protection installés" />
-    <node id="option et formule d'assurance choisies" />
-    <node id="garanties souscrites" />
-    <node id="Nature d’activité" />
-    <node id="souscription" />
-    <node id="Adresse du risque" />
-    <node id="Superficie" />
-    <node id="Valeurs des locaux - Bâtiment" />
-    <node id="Valeur du contenu" />
-    <node id="Le choix de l’option et de la formule" />
-    <node id="Choix des garanties optionnelles" />
-    <node id="Responsabilité Civile après livraison des Produits ou achèvement des travaux" />
-    <node id="garantie optionnelle" />
-    <node id="produit d'assurance" />
-    <node id="Conseil &amp; suivi RMA" />
-    <node id="identification des risques" />
-    <node id="recommandations" />
-    <node id="Programme de prévention RMA" />
-    <node id="culture de prévention" />
-    <node id="analyse approfondie" />
-    <node id="Souscription déléguée en agence" />
+    <node id="numéro de police, date-heure, causes, circonstances, victimes, pièces justificatives" />
+    <node id="plainte + pv police/gendarmerie" />
+    <node id="biens &amp; responsabilités" />
+    <node id="tarif flexible et compétitif" />
+    <node id="+152 activités" />
+    <node id="souscription rapide en agence via assurline" />
+    <node id="large éventail d’extensions" />
+    <node id="nature d'activité" />
+    <node id="adresse" />
+    <node id="superficie" />
+    <node id="valeurs bâtiment &amp; contenu" />
+    <node id="choix packagée/formule ou modulable" />
+    <node id="rc après-livraison" />
+    <node id="perte d'exploitation" />
+    <node id="conseil &amp; suivi" />
+    <node id="risques" />
+    <node id="mesures" />
+    <node id="programme de prévention rma" />
+    <node id="culture prévention" />
+    <node id="souscription déléguée" />
     <node id="émission immédiate du contrat" />
-    <node id="Intermédiaire" />
-    <node id="3 exemplaires du contrat" />
-    <node id="copie au siège" />
-    <node id="Envoi" />
-    <node id="20 jours suivant l'émission" />
-    <node id="PME" />
-    <node id="Petite et Moyenne Entreprise" />
-    <node id="PMI" />
-    <node id="Petite et Moyenne Industrie" />
-    <node id="RMA" />
-    <node id="Royale Marocaine d’Assurance" />
-    <node id="RC" />
-    <node id="Responsabilité Civile" />
-    <node id="dommages pendant exploitation de l’entreprise" />
-    <node id="RC Après‑livraison" />
-    <node id="dommages par produits ou travaux après livraison" />
-    <node id="fautes, erreurs ou omissions dans prestation de service" />
-    <node id="AT" />
-    <node id="Evt Cat" />
-    <node id="Événements Catastrophiques" />
-    <node id="Bris IT" />
-    <node id="Bris de matériels informatiques et équipements électroniques" />
-    <node id="ASSURLINE" />
-    <node id="Plateforme digitale de souscription et gestion déléguée" />
-    <edge source="Multirisque PME-PMI" target="protection du patrimoine professionnel">
+    <node id="dommages causés à des tiers lors des activités courantes" />
+    <node id="dommages causés après livraison des produits ou achèvement des travaux" />
+    <node id="activité, valeurs assurées, adresse, protections, formule et garanties choisies" />
+    <node id="conseil &amp; suivi, programme de prévention, souscription déléguée" />
+    <edge source="assurance pme-pmi" target="protection complète du patrimoine professionnel">
       <data key="d0">assure</data>
     </edge>
-    <edge source="Multirisque PME-PMI" target="PME-PMI">
-      <data key="d0">destinée à</data>
-    </edge>
-    <edge source="Multirisque PME-PMI" target="patrimoine professionnel">
+    <edge source="assurance pme-pmi" target="biens immobiliers et mobiliers">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="Multirisque PME-PMI" target="frais et pertes suite à un dommage garanti">
+    <edge source="assurance pme-pmi" target="frais et pertes suite à sinistre">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="Multirisque PME-PMI" target="responsabilité Civile Chef d’entreprise">
+    <edge source="assurance pme-pmi" target="responsabilité civile du dirigeant">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="Multirisque PME-PMI" target="pertes financières en cas de sinistre">
+    <edge source="assurance pme-pmi" target="pertes financières liées à l’arrêt d’activité">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="Multirisque PME-PMI" target="besoins spécifiques du Dirigeant, Chef d’entreprise ou Gérant">
-      <data key="d0">s'adapte</data>
+    <edge source="assurance pme-pmi" target="petites et moyennes entreprises/industries">
+      <data key="d0">conçu pour</data>
     </edge>
-    <edge source="Multirisque PME-PMI" target="secteur industriel">
-      <data key="d0">cible</data>
+    <edge source="assurance pme-pmi" target="continuité et pérennité de l’activité en cas de dommage">
+      <data key="d0">garantit</data>
     </edge>
-    <edge source="Multirisque PME-PMI" target="secteur commercial">
-      <data key="d0">cible</data>
+    <edge source="assurance pme-pmi" target="dirigeant, chef d’entreprise ou gérant">
+      <data key="d0">s'adresse à</data>
     </edge>
-    <edge source="Multirisque PME-PMI" target="secteur de service">
-      <data key="d0">cible</data>
+    <edge source="assurance pme-pmi" target="activité parmi les 152 activités listées dans la nomenclature rma">
+      <data key="d0">requiert</data>
     </edge>
-    <edge source="Multirisque PME-PMI" target="activité parmi les 152 activités de la nomenclature spécifique">
-      <data key="d0">nécessite</data>
-    </edge>
-    <edge source="Multirisque PME-PMI" target="fortement recommandée">
+    <edge source="assurance pme-pmi" target="100% digitale via assurline">
       <data key="d0">est</data>
     </edge>
-    <edge source="Multirisque PME-PMI" target="patrimoine">
-      <data key="d0">protège</data>
+    <edge source="assurance pme-pmi" target="intermédiaires">
+      <data key="d0">gérée par</data>
     </edge>
-    <edge source="Multirisque PME-PMI" target="continuité de l’entreprise">
-      <data key="d0">assure</data>
-    </edge>
-    <edge source="Contenu" target="de 150 000 DH à 5 000 000 DH">
-      <data key="d0">valeur assurable</data>
-    </edge>
-    <edge source="Bâtiment" target="de 150 000 DH à 15 000 000 DH">
-      <data key="d0">valeur assurable</data>
-    </edge>
-    <edge source="Guide Assurance Multirisque PME-PMI" target="assurance">
-      <data key="d0">est un produit d'</data>
-    </edge>
-    <edge source="Guide Assurance Multirisque PME-PMI" target="PME-PMI">
-      <data key="d0">est un produit d'assurance pour</data>
-    </edge>
-    <edge source="Guide Assurance Multirisque PME-PMI" target="Produit d'assurance">
-      <data key="d0">est</data>
-    </edge>
-    <edge source="Guide Assurance Multirisque PME-PMI" target="produit d'assurance">
-      <data key="d0">est un</data>
-    </edge>
-    <edge source="Souscription au contrat Multirisque PME-PMI" target="outil ASSURLINE">
-      <data key="d0">s'effectue via</data>
-    </edge>
-    <edge source="Souscription au contrat Multirisque PME-PMI" target="intermédiaires">
-      <data key="d0">confiée à</data>
-    </edge>
-    <edge source="Intermédiaires" target="agents">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="Intermédiaires" target="courtiers">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="Gestion" target="intermédiaires">
-      <data key="d0">déléguée à</data>
-    </edge>
-    <edge source="Cas" target="siège">
-      <data key="d0">soumis au</data>
-    </edge>
-    <edge source="Valeurs contenu/bâtiment ou risques locatifs" target="seuils produits">
-      <data key="d0">dépassant</data>
-    </edge>
-    <edge source="Garanties/Extensions" target="supérieurs au barème produit">
-      <data key="d0">avec capitaux</data>
-    </edge>
-    <edge source="Entreprise" target="moins de 50 salariés">
-      <data key="d0">peut être éligible si</data>
-    </edge>
-    <edge source="Entreprise" target="superficie ≤ 2000 m²">
-      <data key="d0">peut être éligible si</data>
-    </edge>
-    <edge source="Entreprise" target="contenu ≤ 5000000 DH">
-      <data key="d0">peut être éligible si</data>
-    </edge>
-    <edge source="Entreprise" target="bâtiment ≤ 15000000 DH">
-      <data key="d0">peut être éligible si</data>
-    </edge>
-    <edge source="Entreprise" target="activité listée parmi les 152 activités du produit">
-      <data key="d0">peut être éligible si</data>
-    </edge>
-    <edge source="Entreprise" target="un seul site d’exploitation">
-      <data key="d0">peut être éligible si</data>
-    </edge>
-    <edge source="Garanties dommages" target="activités au Maroc">
-      <data key="d0">limitée à</data>
-    </edge>
-    <edge source="Garanties dommages" target="Conditions Particulières">
-      <data key="d0">désignées dans</data>
-    </edge>
-    <edge source="Garanties Responsabilité civile" target="Maroc">
-      <data key="d0">couvre</data>
-    </edge>
-    <edge source="Garanties Responsabilité civile" target="dommages à l'étranger">
-      <data key="d0">couvre</data>
-    </edge>
-    <edge source="Dommages à l'étranger" target="USA/Canada">
-      <data key="d0">exclut</data>
-    </edge>
-    <edge source="Dommages à l'étranger" target="missions/stages/salons">
+    <edge source="assurance pme-pmi" target="incendie &amp; risques annexes">
       <data key="d0">inclut</data>
     </edge>
-    <edge source="Séjour à l'étranger" target="90 jours">
-      <data key="d0">durée maximale de</data>
-    </edge>
-    <edge source="Garanties de base" target="Incendie">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="Garanties de base" target="risques annexes">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="Garanties de base" target="Evénements catastrophiques">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="Garanties de base" target="Dégâts des eaux">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="Garanties de base" target="Vol">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="Garanties de base" target="Responsabilité Civile Exploitation">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="Responsabilité Civile Exploitation" target="avec ou sans">
-      <data key="d0">option</data>
-    </edge>
-    <edge source="Responsabilité Civile Exploitation" target="certaines activités">
-      <data key="d0">pour</data>
-    </edge>
-    <edge source="Responsabilité Civile Exploitation" target="Responsabilité Civile après livraison des Produits">
-      <data key="d0">peut inclure</data>
-    </edge>
-    <edge source="Responsabilité Civile Exploitation" target="Responsabilité Civile après achèvement des travaux">
-      <data key="d0">peut inclure</data>
-    </edge>
-    <edge source="Responsabilité Civile après livraison des Produits" target="Responsabilité Civile Exploitation">
-      <data key="d0">est une option de</data>
-    </edge>
-    <edge source="Responsabilité Civile après achèvement des travaux" target="Responsabilité Civile Exploitation">
-      <data key="d0">est une option de</data>
-    </edge>
-    <edge source="Garanties optionnelles" target="Garanties annexes Incendie">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="Garanties optionnelles" target="Bris de glaces">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="Garanties optionnelles" target="enseignes lumineuses">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="Garanties optionnelles" target="Bris de matériels professionnels">
+    <edge source="assurance pme-pmi" target="événements catastrophiques">
       <data key="d0">inclut</data>
     </edge>
-    <edge source="Garanties optionnelles" target="Bris de machines">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="Garanties optionnelles" target="Perte d’exploitation après incendie-explosion">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="Garanties optionnelles" target="Dégât des eaux">
+    <edge source="assurance pme-pmi" target="dégâts des eaux">
       <data key="d0">inclut</data>
     </edge>
-    <edge source="Garanties optionnelles" target="Vol">
+    <edge source="assurance pme-pmi" target="vol">
       <data key="d0">inclut</data>
     </edge>
-    <edge source="Garanties optionnelles" target="Responsabilité Civile Exploitation">
+    <edge source="assurance pme-pmi" target="responsabilité civile exploitation">
       <data key="d0">inclut</data>
     </edge>
-    <edge source="Garanties optionnelles" target="Bris de glaces et enseignes lumineuses">
-      <data key="d0">inclut</data>
+    <edge source="assurance pme-pmi" target="garanties de base obligatoires">
+      <data key="d0">requiert</data>
     </edge>
-    <edge source="Garanties annexes Incendie" target="catastrophes naturelles">
-      <data key="d0">inclut</data>
-    </edge>
-    <edge source="Garanties annexes Incendie" target="évènements climatiques">
-      <data key="d0">inclut</data>
-    </edge>
-    <edge source="Garanties annexes Incendie" target="émeutes et mouvements populaires">
-      <data key="d0">inclut</data>
-    </edge>
-    <edge source="catastrophes naturelles" target="tremblement de terre">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="catastrophes naturelles" target="Inondation">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="évènements climatiques" target="tempête">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="évènements climatiques" target="grêle">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="évènements climatiques" target="chute de la neige">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="Bris de matériels professionnels" target="matériels informatiques">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="Bris de matériels professionnels" target="matériels bureautiques">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="Bris de machines" target="certaines activités uniquement">
-      <data key="d0">pour</data>
-    </edge>
-    <edge source="Bris de machines" target="garantie optionnelle">
-      <data key="d0">est une</data>
-    </edge>
-    <edge source="Garanties de bases" target="Incendie">
-      <data key="d0">inclut</data>
-    </edge>
-    <edge source="Garanties de bases" target="risques annexes">
-      <data key="d0">inclut</data>
-    </edge>
-    <edge source="Garanties de bases" target="Evènements catastrophiques">
-      <data key="d0">inclut</data>
-    </edge>
-    <edge source="Garanties complémentaires" target="Bris de machines">
-      <data key="d0">inclut</data>
-    </edge>
-    <edge source="Garanties complémentaires" target="Perte d’exploitation après Incendie – explosion">
-      <data key="d0">inclut</data>
-    </edge>
-    <edge source="Perte d’exploitation après Incendie – explosion" target="garantie optionnelle">
-      <data key="d0">est une</data>
-    </edge>
-    <edge source="Produit d'assurance" target="Guide Assurance Multirisque PME-PMI">
-      <data key="d0">est</data>
-    </edge>
-    <edge source="offre packagée" target="3 formules">
-      <data key="d0">comprend</data>
-    </edge>
-    <edge source="formules" target="capitaux assurés">
-      <data key="d0">évoluent en fonction de</data>
-    </edge>
-    <edge source="client" target="garanties optionnelles">
-      <data key="d0">a le choix de</data>
-    </edge>
-    <edge source="offre modulable" target="Incendie et Evt Cat">
-      <data key="d0">a comme socle de base</data>
-    </edge>
-    <edge source="offre modulable" target="au moins 2 garanties optionnelles">
-      <data key="d0">comprend</data>
-    </edge>
-    <edge source="offre modulable" target="garanties complémentaires">
-      <data key="d0">peut inclure</data>
-    </edge>
-    <edge source="capitaux" target="limite du minimum et maximum définis par garantie">
-      <data key="d0">sont choisis librement dans</data>
-    </edge>
-    <edge source="assuré" target="prendre toutes les mesures nécessaires pour limiter les dégâts">
-      <data key="d0">doit</data>
-    </edge>
-    <edge source="assuré" target="déclarer le sinistre à la compagnie">
-      <data key="d0">doit</data>
-    </edge>
-    <edge source="assuré" target="copie du procès-verbal">
-      <data key="d0">doit fournir en cas de vol</data>
-    </edge>
-    <edge source="délai de déclaration de sinistre" target="cinq jours">
-      <data key="d0">est de</data>
-    </edge>
-    <edge source="délai de déclaration de vol" target="48 heures">
-      <data key="d0">est de</data>
-    </edge>
-    <edge source="Couverture complète biens &amp; responsabilités" target="avantage compétitif">
-      <data key="d0">est un</data>
-    </edge>
-    <edge source="Tarif compétitif et flexible" target="avantage compétitif">
-      <data key="d0">est un</data>
-    </edge>
-    <edge source="152 activités couvertes" target="avantage compétitif">
-      <data key="d0">est un</data>
-    </edge>
-    <edge source="Souscription rapide en agence via ASSURLINE" target="avantage compétitif">
-      <data key="d0">est un</data>
-    </edge>
-    <edge source="Large éventail d’extensions" target="avantage compétitif">
-      <data key="d0">est un</data>
-    </edge>
-    <edge source="Accidents du Travail" target="contrat distinct AT PME-PMI">
-      <data key="d0">pris en charge via</data>
-    </edge>
-    <edge source="RC Exploitation" target="incidents pendant l’activité courante">
-      <data key="d0">concerne</data>
-    </edge>
-    <edge source="RC Exploitation" target="dommages pendant exploitation de l’entreprise">
-      <data key="d0">couvre</data>
-    </edge>
-    <edge source="RC Professionnelle" target="erreurs/omissions lors de la réalisation d’une prestation spécifique">
-      <data key="d0">concerne</data>
-    </edge>
-    <edge source="RC Professionnelle" target="fautes, erreurs ou omissions dans prestation de service">
-      <data key="d0">liée à</data>
-    </edge>
-    <edge source="Tarif contrat Multirisque PME-PMI" target="activité de l'entreprise">
-      <data key="d0">varie en fonction de</data>
-    </edge>
-    <edge source="Tarif contrat Multirisque PME-PMI" target="niveau d’exposition aux risques">
-      <data key="d0">varie en fonction de</data>
-    </edge>
-    <edge source="Tarif contrat Multirisque PME-PMI" target="valeur des biens assurés">
-      <data key="d0">varie en fonction de</data>
-    </edge>
-    <edge source="Tarif contrat Multirisque PME-PMI" target="adresse du risque">
-      <data key="d0">varie en fonction de</data>
-    </edge>
-    <edge source="Tarif contrat Multirisque PME-PMI" target="dispositifs de protection installés">
-      <data key="d0">varie en fonction de</data>
-    </edge>
-    <edge source="Tarif contrat Multirisque PME-PMI" target="option et formule d'assurance choisies">
-      <data key="d0">varie en fonction de</data>
-    </edge>
-    <edge source="Tarif contrat Multirisque PME-PMI" target="garanties souscrites">
-      <data key="d0">varie en fonction de</data>
-    </edge>
-    <edge source="Nature d’activité" target="souscription">
-      <data key="d0">est une information à fournir pour</data>
-    </edge>
-    <edge source="Adresse du risque" target="souscription">
-      <data key="d0">est une information à fournir pour</data>
-    </edge>
-    <edge source="Superficie" target="souscription">
-      <data key="d0">est une information à fournir pour</data>
-    </edge>
-    <edge source="Valeurs des locaux - Bâtiment" target="souscription">
-      <data key="d0">est une information à fournir pour</data>
-    </edge>
-    <edge source="Valeur du contenu" target="souscription">
-      <data key="d0">est une information à fournir pour</data>
-    </edge>
-    <edge source="Le choix de l’option et de la formule" target="souscription">
-      <data key="d0">est une information à fournir pour</data>
-    </edge>
-    <edge source="Choix des garanties optionnelles" target="souscription">
-      <data key="d0">est une information à fournir pour</data>
-    </edge>
-    <edge source="Responsabilité Civile après livraison des Produits ou achèvement des travaux" target="garantie optionnelle">
-      <data key="d0">est une</data>
-    </edge>
-    <edge source="Conseil &amp; suivi RMA" target="identification des risques">
-      <data key="d0">inclut</data>
-    </edge>
-    <edge source="Conseil &amp; suivi RMA" target="recommandations">
-      <data key="d0">inclut</data>
-    </edge>
-    <edge source="Programme de prévention RMA" target="culture de prévention">
-      <data key="d0">inclut</data>
-    </edge>
-    <edge source="Programme de prévention RMA" target="analyse approfondie">
-      <data key="d0">inclut</data>
-    </edge>
-    <edge source="Souscription déléguée en agence" target="émission immédiate du contrat">
+    <edge source="assurance pme-pmi" target="choix de garanties optionnelles">
       <data key="d0">permet</data>
     </edge>
-    <edge source="Intermédiaire" target="3 exemplaires du contrat">
-      <data key="d0">doit faire signer</data>
+    <edge source="assurance pme-pmi" target="garanties complémentaires">
+      <data key="d0">offre</data>
     </edge>
-    <edge source="Intermédiaire" target="copie au siège">
-      <data key="d0">envoyer</data>
-    </edge>
-    <edge source="Envoi" target="20 jours suivant l'émission">
-      <data key="d0">doit être fait dans</data>
-    </edge>
-    <edge source="PME" target="Petite et Moyenne Entreprise">
-      <data key="d0">est</data>
-    </edge>
-    <edge source="PMI" target="Petite et Moyenne Industrie">
-      <data key="d0">est</data>
-    </edge>
-    <edge source="RMA" target="Royale Marocaine d’Assurance">
-      <data key="d0">est</data>
-    </edge>
-    <edge source="RC" target="Responsabilité Civile">
-      <data key="d0">est</data>
-    </edge>
-    <edge source="RC Après‑livraison" target="dommages par produits ou travaux après livraison">
+    <edge source="assurance pme-pmi" target="biens &amp; responsabilités">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="AT" target="Accidents du Travail">
-      <data key="d0">est</data>
+    <edge source="assurance pme-pmi" target="tarif flexible et compétitif">
+      <data key="d0">offre</data>
     </edge>
-    <edge source="Evt Cat" target="Événements Catastrophiques">
-      <data key="d0">est</data>
+    <edge source="assurance pme-pmi" target="+152 activités">
+      <data key="d0">admet</data>
     </edge>
-    <edge source="Bris IT" target="Bris de matériels informatiques et équipements électroniques">
-      <data key="d0">est</data>
+    <edge source="assurance pme-pmi" target="souscription rapide en agence via assurline">
+      <data key="d0">permet</data>
     </edge>
-    <edge source="ASSURLINE" target="Plateforme digitale de souscription et gestion déléguée">
-      <data key="d0">est</data>
+    <edge source="assurance pme-pmi" target="large éventail d’extensions">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="assurance pme-pmi" target="nature d'activité">
+      <data key="d0">requiert</data>
+    </edge>
+    <edge source="assurance pme-pmi" target="adresse">
+      <data key="d0">requiert</data>
+    </edge>
+    <edge source="assurance pme-pmi" target="superficie">
+      <data key="d0">requiert</data>
+    </edge>
+    <edge source="assurance pme-pmi" target="valeurs bâtiment &amp; contenu">
+      <data key="d0">requiert</data>
+    </edge>
+    <edge source="assurance pme-pmi" target="choix packagée/formule ou modulable">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="assurance pme-pmi" target="garanties optionnelles">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="assurance pme-pmi" target="rc après-livraison">
+      <data key="d0">peut inclure</data>
+    </edge>
+    <edge source="assurance pme-pmi" target="bris de machines">
+      <data key="d0">peut inclure</data>
+    </edge>
+    <edge source="assurance pme-pmi" target="perte d'exploitation">
+      <data key="d0">peut inclure</data>
+    </edge>
+    <edge source="assurance pme-pmi" target="dommages causés à des tiers lors des activités courantes">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="assurance pme-pmi" target="activité, valeurs assurées, adresse, protections, formule et garanties choisies">
+      <data key="d0">varie selon</data>
+    </edge>
+    <edge source="assurance pme-pmi" target="conseil &amp; suivi, programme de prévention, souscription déléguée">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="dossiers" target="siège rma pour validation">
+      <data key="d0">routés vers</data>
+    </edge>
+    <edge source="garanties dommages" target="lieux désignés au maroc">
+      <data key="d0">concernent</data>
+    </edge>
+    <edge source="responsabilité civile" target="maroc">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="responsabilité civile" target="missions/stages/salons à l’étranger">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="responsabilité civile" target="usa/canada">
+      <data key="d0">exclut</data>
+    </edge>
+    <edge source="couverture à l'étranger" target="90 jours">
+      <data key="d0">limitée à</data>
+    </edge>
+    <edge source="offre packagée" target="trois formules progressives">
+      <data key="d0">comporte</data>
+    </edge>
+    <edge source="offre packagée" target="3 formules évolutives">
+      <data key="d0">comprend</data>
+    </edge>
+    <edge source="offre packagée" target="capitaux prédéfinis">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="offre packagée" target="options au choix">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="chaque formule" target="5 garanties de base">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="client" target="garanties optionnelles">
+      <data key="d0">peut ajouter</data>
+    </edge>
+    <edge source="garanties optionnelles" target="dégâts des eaux">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="garanties optionnelles" target="vol">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="garanties optionnelles" target="rc exploitation">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="garanties optionnelles" target="annexes incendie">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="garanties optionnelles" target="bris de glaces &amp; enseignes">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="garanties optionnelles" target="bris de matériels pro/it">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="vol" target="plainte + pv police/gendarmerie">
+      <data key="d0">requiert</data>
+    </edge>
+    <edge source="annexes incendie" target="catastrophes naturelles">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="annexes incendie" target="événements climatiques">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="annexes incendie" target="émeutes et mouvements populaires">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="bris de glaces &amp; enseignes lumineuses" target="bris de glaces">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="bris de glaces &amp; enseignes lumineuses" target="bris d'enseignes lumineuses">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="bris de matériels professionnels" target="matériels informatiques et bureautiques">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="bris de machines" target="machines pour activités ciblées">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="perte d’exploitation" target="incendie-explosion">
+      <data key="d0">survient après</data>
+    </edge>
+    <edge source="option modulable" target="clients expérimentés">
+      <data key="d0">destinée à</data>
+    </edge>
+    <edge source="option modulable" target="composer couverture">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="option modulable" target="choisir capitaux">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="option modulable" target="2 garanties optionnelles">
+      <data key="d0">requiert</data>
+    </edge>
+    <edge source="socle obligatoire" target="2 garanties de base">
+      <data key="d0">comporte</data>
+    </edge>
+    <edge source="garanties de base obligatoires" target="incendie &amp; risques annexes">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="garanties de base obligatoires" target="événements catastrophiques">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="rc exploitation" target="dommages causés après livraison des produits ou achèvement des travaux">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="garanties complémentaires" target="bris de machines">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="garanties complémentaires" target="perte d’exploitation après incendie-explosion">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="offre modulable" target="socle incendie">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="offre modulable" target="evt cat">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="offre modulable" target="au moins 2 options">
+      <data key="d0">requiert</data>
+    </edge>
+    <edge source="offre modulable" target="compléments">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="formalités en cas de sinistre" target="mesures conservatoires immédiates">
+      <data key="d0">requiert</data>
+    </edge>
+    <edge source="déclaration à rma" target="5 jours">
+      <data key="d0">doit être faite sous</data>
+    </edge>
+    <edge source="déclaration à rma" target="numéro de police, date-heure, causes, circonstances, victimes, pièces justificatives">
+      <data key="d0">requiert</data>
+    </edge>
+    <edge source="déclaration en cas de vol" target="48 heures">
+      <data key="d0">doit être faite sous</data>
+    </edge>
+    <edge source="conseil &amp; suivi" target="risques">
+      <data key="d0">identifie</data>
+    </edge>
+    <edge source="conseil &amp; suivi" target="mesures">
+      <data key="d0">recommande</data>
+    </edge>
+    <edge source="programme de prévention rma" target="risques">
+      <data key="d0">analyse</data>
+    </edge>
+    <edge source="programme de prévention rma" target="culture prévention">
+      <data key="d0">cultive</data>
+    </edge>
+    <edge source="souscription déléguée" target="émission immédiate du contrat">
+      <data key="d0">permet</data>
     </edge>
   </graph>
 </graphml>
