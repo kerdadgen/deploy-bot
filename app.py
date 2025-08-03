@@ -168,32 +168,37 @@ def retrieve_detailed_chunks_alternative(standalone_question: str):
 
 
 def final_synthesis(question, standalone_question, graph_context, detailed_chunks):
-    # (Le system_prompt et le user_prompt restent les mêmes)
+    
+    # Le seul changement est dans le system_prompt.
     system_prompt = """
-    Tu es un assistant expert pour les courtiers de l'assurance RMA. Ton rôle est de fournir des réponses précises, complètes et basées **exclusivement** sur les documents fournis.
+    Tu es un assistant expert de l'assurance RMA, un outil de support destiné exclusivement aux courtiers et intermédiaires professionnels. Ta mission est de fournir des réponses factuelles, précises et immédiatement exploitables.
 
-    RÈGLES :
-    1.  **Exhaustivité :** Synthétise TOUTES les informations pertinentes des documents pour répondre à la question.
-    2.  **Clarté :** Structure ta réponse avec des titres, des listes à puces ou numérotées pour une lisibilité maximale.
-    3.  **Ne jamais inventer :** Si l'information n'est pas dans les documents, dis-le clairement.
-    4.  **Tu peux répondre aux remerciements.**
+    **PRINCIPES DIRECTEURS :**
+
+    1.  **PERTINENCE AVANT TOUT :** Ta tâche principale est de répondre **précisément et uniquement** à la QUESTION ORIGINALE DE L'UTILISATEUR. Ne fournis pas d'informations qui ne répondent pas directement à cette question, même si elles sont présentes dans les documents de contexte. Sois concis si la question est simple.
+
+    2.  **EXHAUSTIVITÉ CONTRÔLÉE :** Si la question est large (ex: "Parle-moi du produit X"), alors synthétise les informations les plus importantes de manière structurée. Si la question est spécifique (ex: "Quel est le plafond pour le vol ?"), donne uniquement cette information précise.
+
+    3.  **PRÉCISION ABSOLUE :** Ta réponse doit être basée **exclusivement** sur les extraits de documents fournis. Ne jamais inventer ou supposer. Si l'information n'est pas présente, indique-le clairement.
+
+    4.  **CLARTÉ PROFESSIONNELLE :** Structure tes réponses avec des titres `###` et des listes à puces `-` pour une lisibilité maximale.
 
     ================================================================
-    INSTRUCTION DE FORMATAGE CRITIQUE :
-    Ta sortie DOIT être un objet JSON valide.
-    L'intégralité de la réponse textuelle, y compris les titres, les listes et toute autre information pour l'utilisateur, DOIT être contenue dans une SEULE chaîne de caractères sous la clé "reponse".
-    NE PAS créer de JSON imbriqué ou de structure complexe à l'intérieur de la clé "reponse".
+    **INSTRUCTION DE FORMATAGE CRITIQUE :**
+    Ta sortie DOIT être un objet JSON valide. L'intégralité de la réponse textuelle DOIT être contenue dans une SEULE chaîne de caractères sous la clé "reponse".
     ================================================================
 
-    FORMAT DE SORTIE OBLIGATOIRE :
+    **FORMAT DE SORTIE OBLIGATOIRE :**
     {
-    "reponse": "...", // TOUT le contenu pour l'utilisateur va ici en tant que chaîne de caractères.
-    "suggestions": [
+      "reponse": "...", // TOUT le contenu pour l'utilisateur va ici en tant que chaîne de caractères formatée en Markdown.
+      "suggestions": [
         {"question": "Question de suivi 1"},
         {"question": "Question de suivi 2"}
-    ]
+      ]
     }
     """
+
+    # Le reste de la fonction est identique à votre version.
     history_context = ""
     for msg in st.session_state.messages[-5:]:
         history_context += f"{msg['role'].upper()} : {msg['content']}\n"
@@ -219,7 +224,7 @@ def final_synthesis(question, standalone_question, graph_context, detailed_chunk
         {"role": "user", "content": user_prompt}
     ]
 
-    # --- Étape 1 : Tentative d'appel avec le mode JSON forcé ---
+    # La logique de tentative/réparation reste la même, elle est très bien.
     try:
         response = client.chat.completions.create(
             model=AZURE_DEPLOYMENT_CHAT,
@@ -228,20 +233,14 @@ def final_synthesis(question, standalone_question, graph_context, detailed_chunk
             max_tokens=2000,
             response_format={"type": "json_object"}
         )
-        # Si l'appel réussit, on essaie de parser le JSON
         response_content = response.choices[0].message.content
         return json.loads(response_content)
-
     except Exception as e:
         print(f"⚠️ AVERTISSEMENT : Le modèle n'a pas retourné un JSON valide. Erreur : {e}")
         print("--- Tentative de réparation : nouvel appel au LLM pour extraire la réponse. ---")
-        
-        # --- Étape 2 : Plan B - Le modèle n'a pas respecté le format JSON ---
-        # On refait un appel en lui demandant d'extraire la réponse de son propre texte confus.
         repair_prompt = f"""
         Le texte suivant devait être un JSON mais a échoué. Extrais-en la réponse principale destinée à l'utilisateur.
         Ignore les clés JSON comme "reponse" ou "suggestions". Donne juste le texte de la réponse.
-
         Texte à analyser :
         ---
         {response.choices[0].message.content if 'response' in locals() else 'Contenu non disponible'}
@@ -255,12 +254,10 @@ def final_synthesis(question, standalone_question, graph_context, detailed_chunk
                 temperature=0.0,
                 max_tokens=1500
             )
-            # On retourne un dictionnaire formaté correctement avec la réponse "réparée".
             repaired_text = repair_response.choices[0].message.content
             return {"reponse": repaired_text, "suggestions": []}
         except Exception as final_e:
             print(f"❌ ERREUR : La tentative de réparation a également échoué. Erreur : {final_e}")
-            # En dernier recours, on retourne un message d'erreur clair.
             return {"reponse": "Désolé, je n'ai pas pu formater la réponse correctement. Veuillez réessayer.", "suggestions": []}
 
 
