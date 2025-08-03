@@ -178,10 +178,21 @@ def final_synthesis(question, standalone_question, graph_context, detailed_chunk
     3.  **Ne jamais inventer :** Si l'information n'est pas dans les documents, dis-le clairement.
     4.  **Tu peux répondre aux remerciements.**
 
+    ================================================================
+    INSTRUCTION DE FORMATAGE CRITIQUE :
+    Ta sortie DOIT être un objet JSON valide.
+    L'intégralité de la réponse textuelle, y compris les titres, les listes et toute autre information pour l'utilisateur, DOIT être contenue dans une SEULE chaîne de caractères sous la clé "reponse".
+    NE PAS créer de JSON imbriqué ou de structure complexe à l'intérieur de la clé "reponse".
+    ================================================================
+
     FORMAT DE SORTIE OBLIGATOIRE :
-    Un objet JSON avec :
-    1. "reponse": Une réponse claire et détaillée à la question originale.
-    2. "suggestions": Une liste de 2 questions de suivi pertinentes.
+    {
+    "reponse": "...", // TOUT le contenu pour l'utilisateur va ici en tant que chaîne de caractères.
+    "suggestions": [
+        {"question": "Question de suivi 1"},
+        {"question": "Question de suivi 2"}
+    ]
+    }
     """
     history_context = ""
     for msg in st.session_state.messages[-5:]:
@@ -255,37 +266,58 @@ def final_synthesis(question, standalone_question, graph_context, detailed_chunk
 
 
 
-def json_to_markdown(data):
+def format_response_robustly(response_data):
     """
-    Transforme un dictionnaire ou une liste Python en une chaîne de caractères
-    formatée en Markdown pour un affichage clair.
+    Formate la sortie du LLM de manière robuste, en gérant les cas où la réponse
+    est une chaîne, une liste, un dictionnaire, ou un mélange de texte et de dict.
     """
-    if not isinstance(data, (dict, list)):
-        # Si ce n'est pas un dict ou une liste, c'est probablement déjà du texte.
-        return str(data)
+    # Cas 1 : La réponse est un dictionnaire bien formé (le cas idéal)
+    if isinstance(response_data, dict):
+        # On extrait la partie "reponse" qui peut elle-même être un dict, une liste ou une str
+        content = response_data.get("reponse", "Aucun contenu de réponse trouvé.")
+        return format_response_robustly(content) # Appel récursif pour formater le contenu
 
-    markdown_output = ""
-    
-    # Gérer le cas où la donnée est un dictionnaire
-    if isinstance(data, dict):
-        for key, value in data.items():
-            # Utiliser les clés comme des titres
-            markdown_output += f"### {key.replace('_', ' ').title()}\n"
-            if isinstance(value, list):
-                # Formater les listes avec des puces
-                for item in value:
-                    markdown_output += f"- {item}\n"
-            else:
-                # Afficher les autres valeurs directement
-                markdown_output += f"{value}\n"
+    # Cas 2 : La réponse est une liste
+    if isinstance(response_data, list):
+        return "\n".join([f"- {item}" for item in response_data])
+
+    # Cas 3 : La réponse est une chaîne de caractères (le cas le plus complexe)
+    if isinstance(response_data, str):
+        # Cette chaîne peut contenir des dictionnaires Python sous forme de texte.
+        # On utilise une regex pour trouver ces dictionnaires.
+        # Pattern pour trouver des blocs qui commencent par un titre suivi d'un dict
+        pattern = re.compile(r"([A-Za-z\s]+)\n(\{.*?\})", re.DOTALL)
+        matches = pattern.findall(response_data)
+
+        if not matches:
+            # Si aucun dictionnaire n'est trouvé, c'est juste du texte normal.
+            return response_data
+
+        markdown_output = ""
+        for title, dict_str in matches:
+            markdown_output += f"### {title.strip()}\n"
+            try:
+                # On essaie de convertir la chaîne du dictionnaire en vrai dictionnaire
+                data_dict = eval(dict_str) 
+                if isinstance(data_dict, dict):
+                    for key, value in data_dict.items():
+                        markdown_output += f"**{key}**\n"
+                        if isinstance(value, list):
+                            for item in value:
+                                markdown_output += f"- {item}\n"
+                        else:
+                            markdown_output += f"{value}\n"
+                        markdown_output += "\n"
+            except:
+                # Si eval échoue, on affiche la chaîne brute
+                markdown_output += f"{dict_str}\n"
             markdown_output += "\n"
-            
-    # Gérer le cas où la donnée est une liste (moins probable mais plus sûr)
-    elif isinstance(data, list):
-        for item in data:
-            markdown_output += f"- {item}\n"
+        
+        return markdown_output.strip()
 
-    return markdown_output.strip()
+    # Cas par défaut pour tous les autres types
+    return str(response_data)
+
 
 
 # ==== 3. INTERFACE STREAMLIT ====
@@ -365,20 +397,22 @@ if st.session_state.question:
                 graph_context=graph_context, 
                 detailed_chunks=detailed_chunks
             )
+            # Dans la logique Streamlit, remplacez l'ancien bloc de formatage
 
-            raw_response = response_data.get("reponse", "Désolé, une erreur est survenue.")
+            # NOUVEAU BLOC DE FORMATAGE ROBUSTE
+            # On passe l'objet JSON complet à notre nouvelle fonction de formatage.
+            reponse_concise = format_response_robustly(response_data)
 
-            # 1. On utilise notre nouvelle fonction pour transformer la réponse en Markdown propre.
-            #    Cette fonction gère tous les cas (texte, liste, ou dictionnaire/JSON).
-            reponse_concise = json_to_markdown(raw_response)
-
-            # 2. Le nettoyage avec re.sub n'est plus nécessaire car le formatage est déjà fait.
-            #    On peut garder un simple .strip() pour enlever les espaces superflus.
+            # On peut toujours faire un petit nettoyage final
             reponse_concise = reponse_concise.strip()
 
+            # Extraire les suggestions (cette partie ne change pas)
+            suggestions_data = []
+            if isinstance(response_data, dict):
+                suggestions_data = response_data.get("suggestions", [])
 
-            # Extraire les suggestions de la réponse
-            suggestions_data = response_data.get("suggestions", [])
+
+        
             suggestions = [s["question"] if isinstance(s, dict) else s for s in suggestions_data]
 
             # Afficher la réponse finale
