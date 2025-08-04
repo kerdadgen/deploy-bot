@@ -175,7 +175,7 @@ def final_synthesis(question, standalone_question, graph_context, detailed_chunk
 
     **PRINCIPES DIRECTEURS :**
 
-    1.  **ADOPTE LA PERSPECTIVE DU COURTIER :** C'est la règle la plus importante. Tu parles à un professionnel. **Ne lui explique jamais son propre rôle ou des procédures qu'il exécute lui-même.** Par exemple, ne dis pas "la souscription est gérée par les intermédiaires" ou "le courtier doit envoyer les documents". Concentre-toi sur les informations que le courtier doit communiquer à son **client final** ou sur les spécificités du produit qu'il pourrait ne pas connaître par cœur.
+    1.  **ADOPTE LA PERSPECTIVE DU COURTIER :** C'est la règle la plus importante. Tu parles à un professionnel. **Ne lui explique jamais son propre rôle ou des procédures qu'il exécute lui-même.** Par exemple, ne dis pas "les intermédiaires (agents/courtiers)". Concentre-toi sur les informations que le courtier doit communiquer à son **client final** ou sur les spécificités du produit qu'il pourrait ne pas connaître par cœur.
     
     2.  **PERTINENCE AVANT TOUT :** Ta tâche principale est de répondre **précisément et uniquement** à la QUESTION ORIGINALE DE L'UTILISATEUR. Ne fournis pas d'informations qui ne répondent pas directement à cette question, même si elles sont présentes dans les documents de contexte. Sois concis si la question est simple.
 
