@@ -168,21 +168,39 @@ def retrieve_detailed_chunks_alternative(standalone_question: str):
 
 
 def final_synthesis(question, standalone_question, graph_context, detailed_chunks):
-    # (Le system_prompt et le user_prompt restent les mêmes)
+    
+    # Le seul changement est dans le system_prompt.
     system_prompt = """
-    Tu es un assistant expert pour les courtiers de l'assurance RMA. Ton rôle est de fournir des réponses précises, complètes et basées **exclusivement** sur les documents fournis.
+    Tu es un assistant expert de l'assurance RMA, un outil de support destiné exclusivement aux courtiers et intermédiaires professionnels. Ta mission est de fournir des réponses factuelles, précises et immédiatement exploitables.
 
-    RÈGLES :
-    1.  **Exhaustivité :** Synthétise TOUTES les informations pertinentes des documents pour répondre à la question.
-    2.  **Clarté :** Structure ta réponse avec des titres, des listes à puces ou numérotées pour une lisibilité maximale.
-    3.  **Ne jamais inventer :** Si l'information n'est pas dans les documents, dis-le clairement.
-    4.  **Tu peux répondre aux remerciements.**
+    **PRINCIPES DIRECTEURS :**
 
-    FORMAT DE SORTIE OBLIGATOIRE :
-    Un objet JSON avec :
-    1. "reponse": Une réponse claire et détaillée à la question originale.
-    2. "suggestions": Une liste de 2 questions de suivi pertinentes.
+    1.  **ADOPTE LA PERSPECTIVE DU COURTIER :** C'est la règle la plus importante. Tu parles à un professionnel. **Ne lui explique jamais son propre rôle ou des procédures qu'il exécute lui-même.** Par exemple, ne dis pas "les intermédiaires (agents/courtiers)". Concentre-toi sur les informations que le courtier doit communiquer à son **client final** ou sur les spécificités du produit qu'il pourrait ne pas connaître par cœur.
+    
+    2.  **PERTINENCE AVANT TOUT :** Ta tâche principale est de répondre **précisément et uniquement** à la QUESTION ORIGINALE DE L'UTILISATEUR. Ne fournis pas d'informations qui ne répondent pas directement à cette question, même si elles sont présentes dans les documents de contexte. Sois concis si la question est simple.
+
+    3.  **EXHAUSTIVITÉ CONTRÔLÉE :** Si la question est large (ex: "Parle-moi du produit X"), alors synthétise les informations les plus importantes de manière structurée. Si la question est spécifique (ex: "Quel est le plafond pour le vol ?"), donne uniquement cette information précise.
+
+    4.  **PRÉCISION ABSOLUE :** Ta réponse doit être basée **exclusivement** sur les extraits de documents fournis. Ne jamais inventer ou supposer. Si l'information n'est pas présente, indique-le clairement.
+
+    5.  **CLARTÉ PROFESSIONNELLE :** Structure tes réponses avec des titres `###` et des listes à puces `-` pour une lisibilité maximale.
+
+    ================================================================
+    **INSTRUCTION DE FORMATAGE CRITIQUE :**
+    Ta sortie DOIT être un objet JSON valide. L'intégralité de la réponse textuelle DOIT être contenue dans une SEULE chaîne de caractères sous la clé "reponse".
+    ================================================================
+
+    **FORMAT DE SORTIE OBLIGATOIRE :**
+    {
+      "reponse": "...", // TOUT le contenu pour l'utilisateur va ici en tant que chaîne de caractères formatée en Markdown.
+      "suggestions": [
+        {"question": "Question de suivi 1"},
+        {"question": "Question de suivi 2"}
+      ]
+    }
     """
+
+    # Le reste de la fonction est identique à votre version.
     history_context = ""
     for msg in st.session_state.messages[-5:]:
         history_context += f"{msg['role'].upper()} : {msg['content']}\n"
@@ -208,7 +226,7 @@ def final_synthesis(question, standalone_question, graph_context, detailed_chunk
         {"role": "user", "content": user_prompt}
     ]
 
-    # --- Étape 1 : Tentative d'appel avec le mode JSON forcé ---
+    # La logique de tentative/réparation reste la même, elle est très bien.
     try:
         response = client.chat.completions.create(
             model=AZURE_DEPLOYMENT_CHAT,
@@ -217,20 +235,14 @@ def final_synthesis(question, standalone_question, graph_context, detailed_chunk
             max_tokens=2000,
             response_format={"type": "json_object"}
         )
-        # Si l'appel réussit, on essaie de parser le JSON
         response_content = response.choices[0].message.content
         return json.loads(response_content)
-
     except Exception as e:
         print(f"⚠️ AVERTISSEMENT : Le modèle n'a pas retourné un JSON valide. Erreur : {e}")
         print("--- Tentative de réparation : nouvel appel au LLM pour extraire la réponse. ---")
-        
-        # --- Étape 2 : Plan B - Le modèle n'a pas respecté le format JSON ---
-        # On refait un appel en lui demandant d'extraire la réponse de son propre texte confus.
         repair_prompt = f"""
         Le texte suivant devait être un JSON mais a échoué. Extrais-en la réponse principale destinée à l'utilisateur.
         Ignore les clés JSON comme "reponse" ou "suggestions". Donne juste le texte de la réponse.
-
         Texte à analyser :
         ---
         {response.choices[0].message.content if 'response' in locals() else 'Contenu non disponible'}
@@ -244,48 +256,67 @@ def final_synthesis(question, standalone_question, graph_context, detailed_chunk
                 temperature=0.0,
                 max_tokens=1500
             )
-            # On retourne un dictionnaire formaté correctement avec la réponse "réparée".
             repaired_text = repair_response.choices[0].message.content
             return {"reponse": repaired_text, "suggestions": []}
         except Exception as final_e:
             print(f"❌ ERREUR : La tentative de réparation a également échoué. Erreur : {final_e}")
-            # En dernier recours, on retourne un message d'erreur clair.
             return {"reponse": "Désolé, je n'ai pas pu formater la réponse correctement. Veuillez réessayer.", "suggestions": []}
 
 
 
 
-def json_to_markdown(data):
+def format_response_robustly(response_data):
     """
-    Transforme un dictionnaire ou une liste Python en une chaîne de caractères
-    formatée en Markdown pour un affichage clair.
+    Formate la sortie du LLM de manière robuste, en gérant les cas où la réponse
+    est une chaîne, une liste, un dictionnaire, ou un mélange de texte et de dict.
     """
-    if not isinstance(data, (dict, list)):
-        # Si ce n'est pas un dict ou une liste, c'est probablement déjà du texte.
-        return str(data)
+    # Cas 1 : La réponse est un dictionnaire bien formé (le cas idéal)
+    if isinstance(response_data, dict):
+        # On extrait la partie "reponse" qui peut elle-même être un dict, une liste ou une str
+        content = response_data.get("reponse", "Aucun contenu de réponse trouvé.")
+        return format_response_robustly(content) # Appel récursif pour formater le contenu
 
-    markdown_output = ""
-    
-    # Gérer le cas où la donnée est un dictionnaire
-    if isinstance(data, dict):
-        for key, value in data.items():
-            # Utiliser les clés comme des titres
-            markdown_output += f"### {key.replace('_', ' ').title()}\n"
-            if isinstance(value, list):
-                # Formater les listes avec des puces
-                for item in value:
-                    markdown_output += f"- {item}\n"
-            else:
-                # Afficher les autres valeurs directement
-                markdown_output += f"{value}\n"
+    # Cas 2 : La réponse est une liste
+    if isinstance(response_data, list):
+        return "\n".join([f"- {item}" for item in response_data])
+
+    # Cas 3 : La réponse est une chaîne de caractères (le cas le plus complexe)
+    if isinstance(response_data, str):
+        # Cette chaîne peut contenir des dictionnaires Python sous forme de texte.
+        # On utilise une regex pour trouver ces dictionnaires.
+        # Pattern pour trouver des blocs qui commencent par un titre suivi d'un dict
+        pattern = re.compile(r"([A-Za-z\s]+)\n(\{.*?\})", re.DOTALL)
+        matches = pattern.findall(response_data)
+
+        if not matches:
+            # Si aucun dictionnaire n'est trouvé, c'est juste du texte normal.
+            return response_data
+
+        markdown_output = ""
+        for title, dict_str in matches:
+            markdown_output += f"### {title.strip()}\n"
+            try:
+                # On essaie de convertir la chaîne du dictionnaire en vrai dictionnaire
+                data_dict = eval(dict_str) 
+                if isinstance(data_dict, dict):
+                    for key, value in data_dict.items():
+                        markdown_output += f"**{key}**\n"
+                        if isinstance(value, list):
+                            for item in value:
+                                markdown_output += f"- {item}\n"
+                        else:
+                            markdown_output += f"{value}\n"
+                        markdown_output += "\n"
+            except:
+                # Si eval échoue, on affiche la chaîne brute
+                markdown_output += f"{dict_str}\n"
             markdown_output += "\n"
-            
-    # Gérer le cas où la donnée est une liste (moins probable mais plus sûr)
-    elif isinstance(data, list):
-        for item in data:
-            markdown_output += f"- {item}\n"
+        
+        return markdown_output.strip()
 
-    return markdown_output.strip()
+    # Cas par défaut pour tous les autres types
+    return str(response_data)
+
 
 
 # ==== 3. INTERFACE STREAMLIT ====
@@ -365,20 +396,22 @@ if st.session_state.question:
                 graph_context=graph_context, 
                 detailed_chunks=detailed_chunks
             )
+            # Dans la logique Streamlit, remplacez l'ancien bloc de formatage
 
-            raw_response = response_data.get("reponse", "Désolé, une erreur est survenue.")
+            # NOUVEAU BLOC DE FORMATAGE ROBUSTE
+            # On passe l'objet JSON complet à notre nouvelle fonction de formatage.
+            reponse_concise = format_response_robustly(response_data)
 
-            # 1. On utilise notre nouvelle fonction pour transformer la réponse en Markdown propre.
-            #    Cette fonction gère tous les cas (texte, liste, ou dictionnaire/JSON).
-            reponse_concise = json_to_markdown(raw_response)
-
-            # 2. Le nettoyage avec re.sub n'est plus nécessaire car le formatage est déjà fait.
-            #    On peut garder un simple .strip() pour enlever les espaces superflus.
+            # On peut toujours faire un petit nettoyage final
             reponse_concise = reponse_concise.strip()
 
+            # Extraire les suggestions (cette partie ne change pas)
+            suggestions_data = []
+            if isinstance(response_data, dict):
+                suggestions_data = response_data.get("suggestions", [])
 
-            # Extraire les suggestions de la réponse
-            suggestions_data = response_data.get("suggestions", [])
+
+        
             suggestions = [s["question"] if isinstance(s, dict) else s for s in suggestions_data]
 
             # Afficher la réponse finale
