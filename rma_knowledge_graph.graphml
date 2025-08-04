@@ -2,50 +2,128 @@
 <graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
   <key id="d0" for="edge" attr.name="label" attr.type="string" />
   <graph edgedefault="directed">
+    <node id="assurance hôtel diafa" />
+    <node id="hôtels et établissements touristiques contre les sinistres" />
+    <node id="bâtiments, mobiliers, équipements professionnels" />
+    <node id="responsabilité civile vis‑à‑vis des clients et des tiers" />
+    <node id="garantie de base incendie" />
+    <node id="garanties optionnelles adaptées aux risques hôteliers" />
+    <node id="hôtels situés en montagne" />
+    <node id="hôtels à plus d’un quart d’heure des services de secours" />
+    <node id="établissements situés au maroc" />
+    <node id="bâtiment construit et couvert en dur" />
+    <node id="normes incendie respectées" />
+    <node id="inoccupation supérieure à 90 jours" />
+    <node id="situation en zone montagneuse ou éloignée des secours" />
+    <node id="conformité à l'article 21 du code des assurances" />
+    <node id="dommages matériels par incendie" />
+    <node id="dommages matériels par explosion" />
+    <node id="dommages matériels par implosion" />
+    <node id="dommages électriques" />
+    <node id="cataclysmes naturels" />
+    <node id="responsabilité civile effets clientèle" />
+    <node id="responsabilité civile tiers" />
+    <node id="recours voisins et tiers" />
+    <node id="frais de reconstruction de documents" />
+    <node id="frais de déblais et démolition" />
+    <node id="frais de déplacement et remplacement d'objets" />
+    <node id="honoraires d'expert" />
+    <node id="pertes de loyers" />
+    <node id="privation de jouissance" />
+    <node id="véhicules au parking" />
+    <node id="renonciation à recours" />
+    <node id="pertes indirectes" />
+    <node id="émeutes et mouvements populaires" />
+    <node id="vol &amp; vandalisme" />
+    <node id="détériorations dues au vol/tentative de vol" />
+    <node id="matériel professionnel" />
+    <node id="mobilier professionnel" />
+    <node id="effets clientèle/tiers" />
+    <node id="biens précieux en coffre-fort" />
+    <node id="espèces/valeurs en coffre et tiroir-caisse" />
+    <node id="frais de clôture/gardiennage" />
+    <node id="reconstruction de documents" />
+    <node id="vol pendant transport" />
+    <node id="hausse du capital espèces/valeurs" />
+    <node id="dégâts des eaux" />
+    <node id="fuites" />
+    <node id="infiltrations" />
+    <node id="ruptures" />
+    <node id="rc envers tiers" />
+    <node id="dommages eaux de refoulement d’égouts" />
+    <node id="recours voisins/tiers" />
+    <node id="frais de recherche de fuite" />
+    <node id="déblais" />
+    <node id="reconstitution de documents" />
+    <node id="bris de glaces" />
+    <node id="casse de vitres, vitrines, enseignes lumineuses" />
+    <node id="fermeture provisoire" />
+    <node id="gardiennage post-sinistre" />
+    <node id="responsabilité civile de l’hôtelier option 1" />
+    <node id="dommages corporels" />
+    <node id="dommages matériels" />
+    <node id="dommages immatériels" />
+    <node id="vol par employés" />
+    <node id="assistance juridique" />
+    <node id="intoxication alimentaire" />
+    <node id="vol véhicules parking" />
+    <node id="rc biens confiés" />
+    <node id="responsabilité civile de l’hôtelier option 2" />
+    <node id="protection renforcée" />
+    <node id="mêmes extensions que option 1" />
+    <node id="déclaration sous 5 jours ouvrés" />
+    <node id="assuré" />
+    <node id="existence &amp; valeur des biens" />
+    <node id="expertise pour accélérer l’indemnisation" />
+    <node id="large palette de garanties &amp; extensions dédiées à l’hôtellerie" />
+    <node id="souplesse de composition" />
+    <node id="frais de reconstitution de documents" />
+    <node id="frais de déblais/démolition" />
+    <node id="frais de déplacement/remplacement" />
+    <node id="indemnisation rapide grâce à l’expertise accélérée" />
+    <node id="risques imprévisibles" />
+    <node id="toute taille d'hôtel" />
+    <node id="vol" />
+    <node id="bris" />
+    <node id="responsabilité civile" />
+    <node id="rc effets clientèle" />
+    <node id="effets personnels clients" />
+    <node id="modification des garanties" />
+    <node id="actes intentionnels" />
+    <node id="vols sans effraction" />
+    <node id="objets de valeur non sécurisés" />
+    <node id="guerre/émeutes" />
     <node id="assurance pme-pmi" />
-    <node id="protection complète du patrimoine professionnel" />
+    <node id="protection du patrimoine professionnel" />
     <node id="biens immobiliers et mobiliers" />
     <node id="frais et pertes suite à sinistre" />
     <node id="responsabilité civile du dirigeant" />
     <node id="pertes financières liées à l’arrêt d’activité" />
-    <node id="petites et moyennes entreprises/industries" />
-    <node id="continuité et pérennité de l’activité en cas de dommage" />
     <node id="dirigeant, chef d’entreprise ou gérant" />
     <node id="activité parmi les 152 activités listées dans la nomenclature rma" />
-    <node id="100% digitale via assurline" />
     <node id="intermédiaires" />
     <node id="dossiers" />
     <node id="siège rma pour validation" />
     <node id="garanties dommages" />
     <node id="lieux désignés au maroc" />
-    <node id="responsabilité civile" />
     <node id="maroc" />
-    <node id="missions/stages/salons à l’étranger" />
+    <node id="missions/stages/salons à l'étranger" />
     <node id="usa/canada" />
-    <node id="couverture à l'étranger" />
-    <node id="90 jours" />
+    <node id="missions/stages/salons à l'étranger à 90 jours" />
     <node id="offre packagée" />
-    <node id="trois formules progressives" />
-    <node id="chaque formule" />
     <node id="5 garanties de base" />
-    <node id="client" />
-    <node id="garanties optionnelles" />
+    <node id="ajout de garanties optionnelles" />
     <node id="incendie &amp; risques annexes" />
     <node id="événements catastrophiques" />
-    <node id="dégâts des eaux" />
-    <node id="vol" />
     <node id="responsabilité civile exploitation" />
     <node id="annexes incendie" />
     <node id="catastrophes naturelles" />
     <node id="événements climatiques" />
-    <node id="émeutes et mouvements populaires" />
     <node id="bris de glaces &amp; enseignes lumineuses" />
-    <node id="bris de glaces" />
-    <node id="bris d'enseignes lumineuses" />
     <node id="bris de matériels professionnels" />
     <node id="matériels informatiques et bureautiques" />
     <node id="bris de machines" />
-    <node id="machines pour activités ciblées" />
+    <node id="activités ciblées" />
     <node id="perte d’exploitation" />
     <node id="incendie-explosion" />
     <node id="option modulable" />
@@ -55,8 +133,10 @@
     <node id="socle obligatoire" />
     <node id="2 garanties de base" />
     <node id="2 garanties optionnelles" />
+    <node id="ajouter garanties complémentaires" />
     <node id="garanties de base obligatoires" />
     <node id="choix de garanties optionnelles" />
+    <node id="garanties optionnelles" />
     <node id="rc exploitation" />
     <node id="bris de glaces &amp; enseignes" />
     <node id="bris de matériels pro/it" />
@@ -99,9 +179,287 @@
     <node id="émission immédiate du contrat" />
     <node id="dommages causés à des tiers lors des activités courantes" />
     <node id="dommages causés après livraison des produits ou achèvement des travaux" />
-    <node id="activité, valeurs assurées, adresse, protections, formule et garanties choisies" />
-    <node id="conseil &amp; suivi, programme de prévention, souscription déléguée" />
-    <edge source="assurance pme-pmi" target="protection complète du patrimoine professionnel">
+    <node id="programme de prévention" />
+    <edge source="assurance hôtel diafa" target="hôtels et établissements touristiques contre les sinistres">
+      <data key="d0">protège</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="bâtiments, mobiliers, équipements professionnels">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="responsabilité civile vis‑à‑vis des clients et des tiers">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="garanties optionnelles adaptées aux risques hôteliers">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="hôtels situés en montagne">
+      <data key="d0">exclut</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="hôtels à plus d’un quart d’heure des services de secours">
+      <data key="d0">exclut</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="établissements situés au maroc">
+      <data key="d0">s'applique à</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="bâtiment construit et couvert en dur">
+      <data key="d0">requiert</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="normes incendie respectées">
+      <data key="d0">requiert</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="inoccupation supérieure à 90 jours">
+      <data key="d0">exclut</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="situation en zone montagneuse ou éloignée des secours">
+      <data key="d0">exclut</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="conformité à l'article 21 du code des assurances">
+      <data key="d0">requiert</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="assurance hôtel diafa">
+      <data key="d0">requiert</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="dommages matériels par incendie">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="dommages matériels par explosion">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="dommages matériels par implosion">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="dommages électriques">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="cataclysmes naturels">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="responsabilité civile effets clientèle">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="responsabilité civile tiers">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="recours voisins et tiers">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="frais de reconstruction de documents">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="frais de déblais et démolition">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="frais de déplacement et remplacement d'objets">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="honoraires d'expert">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="pertes de loyers">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="privation de jouissance">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="véhicules au parking">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="renonciation à recours">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="pertes indirectes">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="émeutes et mouvements populaires">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="déclaration sous 5 jours ouvrés">
+      <data key="d0">requiert</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="expertise pour accélérer l’indemnisation">
+      <data key="d0">engage</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="large palette de garanties &amp; extensions dédiées à l’hôtellerie">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="souplesse de composition">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="frais de reconstitution de documents">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="frais de déblais/démolition">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="frais de déplacement/remplacement">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="indemnisation rapide grâce à l’expertise accélérée">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="risques imprévisibles">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="toute taille d'hôtel">
+      <data key="d0">modulable</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="vol">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="dégâts des eaux">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="bris">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="responsabilité civile">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="modification des garanties">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="actes intentionnels">
+      <data key="d0">exclut</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="vols sans effraction">
+      <data key="d0">exclut</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="objets de valeur non sécurisés">
+      <data key="d0">exclut</data>
+    </edge>
+    <edge source="assurance hôtel diafa" target="guerre/émeutes">
+      <data key="d0">exclut</data>
+    </edge>
+    <edge source="garantie de base incendie" target="assurance hôtel diafa">
+      <data key="d0">est</data>
+    </edge>
+    <edge source="vol &amp; vandalisme" target="détériorations dues au vol/tentative de vol">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="vol &amp; vandalisme" target="matériel professionnel">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="vol &amp; vandalisme" target="mobilier professionnel">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="vol &amp; vandalisme" target="effets clientèle/tiers">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="vol &amp; vandalisme" target="biens précieux en coffre-fort">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="vol &amp; vandalisme" target="espèces/valeurs en coffre et tiroir-caisse">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="vol &amp; vandalisme" target="frais de clôture/gardiennage">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="vol &amp; vandalisme" target="reconstruction de documents">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="vol &amp; vandalisme" target="honoraires d'expert">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="vol &amp; vandalisme" target="vol pendant transport">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="vol &amp; vandalisme" target="hausse du capital espèces/valeurs">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="dégâts des eaux" target="fuites">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="dégâts des eaux" target="infiltrations">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="dégâts des eaux" target="ruptures">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="dégâts des eaux" target="rc envers tiers">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="dégâts des eaux" target="dommages eaux de refoulement d’égouts">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="dégâts des eaux" target="recours voisins/tiers">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="dégâts des eaux" target="frais de recherche de fuite">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="dégâts des eaux" target="déblais">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="dégâts des eaux" target="reconstitution de documents">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="dégâts des eaux" target="pertes de loyers">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="dégâts des eaux" target="privation de jouissance">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="bris de glaces" target="casse de vitres, vitrines, enseignes lumineuses">
+      <data key="d0">indemnise</data>
+    </edge>
+    <edge source="bris de glaces" target="fermeture provisoire">
+      <data key="d0">prend en charge</data>
+    </edge>
+    <edge source="bris de glaces" target="gardiennage post-sinistre">
+      <data key="d0">prend en charge</data>
+    </edge>
+    <edge source="responsabilité civile de l’hôtelier option 1" target="dommages corporels">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="responsabilité civile de l’hôtelier option 1" target="dommages matériels">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="responsabilité civile de l’hôtelier option 1" target="dommages immatériels">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="responsabilité civile de l’hôtelier option 1" target="vol par employés">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="responsabilité civile de l’hôtelier option 1" target="assistance juridique">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="responsabilité civile de l’hôtelier option 1" target="intoxication alimentaire">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="responsabilité civile de l’hôtelier option 1" target="vol véhicules parking">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="responsabilité civile de l’hôtelier option 1" target="rc biens confiés">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="responsabilité civile de l’hôtelier option 2" target="protection renforcée">
+      <data key="d0">offre</data>
+    </edge>
+    <edge source="responsabilité civile de l’hôtelier option 2" target="mêmes extensions que option 1">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="assuré" target="existence &amp; valeur des biens">
+      <data key="d0">doit justifier</data>
+    </edge>
+    <edge source="vol" target="plainte + pv police/gendarmerie">
+      <data key="d0">requiert</data>
+    </edge>
+    <edge source="responsabilité civile" target="maroc">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="responsabilité civile" target="missions/stages/salons à l'étranger">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="responsabilité civile" target="usa/canada">
+      <data key="d0">exclut</data>
+    </edge>
+    <edge source="responsabilité civile" target="missions/stages/salons à l'étranger à 90 jours">
+      <data key="d0">limite</data>
+    </edge>
+    <edge source="rc effets clientèle" target="effets personnels clients">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="assurance pme-pmi" target="protection du patrimoine professionnel">
       <data key="d0">assure</data>
     </edge>
     <edge source="assurance pme-pmi" target="biens immobiliers et mobiliers">
@@ -116,23 +474,14 @@
     <edge source="assurance pme-pmi" target="pertes financières liées à l’arrêt d’activité">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="assurance pme-pmi" target="petites et moyennes entreprises/industries">
-      <data key="d0">conçu pour</data>
-    </edge>
-    <edge source="assurance pme-pmi" target="continuité et pérennité de l’activité en cas de dommage">
-      <data key="d0">garantit</data>
-    </edge>
     <edge source="assurance pme-pmi" target="dirigeant, chef d’entreprise ou gérant">
       <data key="d0">s'adresse à</data>
     </edge>
     <edge source="assurance pme-pmi" target="activité parmi les 152 activités listées dans la nomenclature rma">
       <data key="d0">requiert</data>
     </edge>
-    <edge source="assurance pme-pmi" target="100% digitale via assurline">
-      <data key="d0">est</data>
-    </edge>
     <edge source="assurance pme-pmi" target="intermédiaires">
-      <data key="d0">gérée par</data>
+      <data key="d0">est gérée par</data>
     </edge>
     <edge source="assurance pme-pmi" target="incendie &amp; risques annexes">
       <data key="d0">inclut</data>
@@ -186,49 +535,43 @@
       <data key="d0">requiert</data>
     </edge>
     <edge source="assurance pme-pmi" target="choix packagée/formule ou modulable">
-      <data key="d0">offre</data>
+      <data key="d0">permet</data>
     </edge>
     <edge source="assurance pme-pmi" target="garanties optionnelles">
-      <data key="d0">offre</data>
+      <data key="d0">permet</data>
     </edge>
     <edge source="assurance pme-pmi" target="rc après-livraison">
-      <data key="d0">peut inclure</data>
+      <data key="d0">permet</data>
     </edge>
     <edge source="assurance pme-pmi" target="bris de machines">
-      <data key="d0">peut inclure</data>
+      <data key="d0">permet</data>
     </edge>
     <edge source="assurance pme-pmi" target="perte d'exploitation">
-      <data key="d0">peut inclure</data>
+      <data key="d0">permet</data>
     </edge>
     <edge source="assurance pme-pmi" target="dommages causés à des tiers lors des activités courantes">
       <data key="d0">couvre</data>
     </edge>
-    <edge source="assurance pme-pmi" target="activité, valeurs assurées, adresse, protections, formule et garanties choisies">
-      <data key="d0">varie selon</data>
+    <edge source="assurance pme-pmi" target="conseil &amp; suivi">
+      <data key="d0">inclut</data>
     </edge>
-    <edge source="assurance pme-pmi" target="conseil &amp; suivi, programme de prévention, souscription déléguée">
+    <edge source="assurance pme-pmi" target="programme de prévention">
+      <data key="d0">inclut</data>
+    </edge>
+    <edge source="assurance pme-pmi" target="souscription déléguée">
       <data key="d0">inclut</data>
     </edge>
     <edge source="dossiers" target="siège rma pour validation">
-      <data key="d0">routés vers</data>
+      <data key="d0">sont routés vers</data>
     </edge>
     <edge source="garanties dommages" target="lieux désignés au maroc">
       <data key="d0">concernent</data>
     </edge>
-    <edge source="responsabilité civile" target="maroc">
-      <data key="d0">couvre</data>
+    <edge source="offre packagée" target="5 garanties de base">
+      <data key="d0">inclut</data>
     </edge>
-    <edge source="responsabilité civile" target="missions/stages/salons à l’étranger">
-      <data key="d0">couvre</data>
-    </edge>
-    <edge source="responsabilité civile" target="usa/canada">
-      <data key="d0">exclut</data>
-    </edge>
-    <edge source="couverture à l'étranger" target="90 jours">
-      <data key="d0">limitée à</data>
-    </edge>
-    <edge source="offre packagée" target="trois formules progressives">
-      <data key="d0">comporte</data>
+    <edge source="offre packagée" target="ajout de garanties optionnelles">
+      <data key="d0">permet</data>
     </edge>
     <edge source="offre packagée" target="3 formules évolutives">
       <data key="d0">comprend</data>
@@ -239,11 +582,50 @@
     <edge source="offre packagée" target="options au choix">
       <data key="d0">permet</data>
     </edge>
-    <edge source="chaque formule" target="5 garanties de base">
-      <data key="d0">inclut</data>
+    <edge source="annexes incendie" target="catastrophes naturelles">
+      <data key="d0">couvre</data>
     </edge>
-    <edge source="client" target="garanties optionnelles">
-      <data key="d0">peut ajouter</data>
+    <edge source="annexes incendie" target="événements climatiques">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="annexes incendie" target="émeutes et mouvements populaires">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="bris de glaces &amp; enseignes lumineuses" target="assurance pme-pmi">
+      <data key="d0">est une garantie pour</data>
+    </edge>
+    <edge source="bris de matériels professionnels" target="matériels informatiques et bureautiques">
+      <data key="d0">couvre</data>
+    </edge>
+    <edge source="bris de machines" target="activités ciblées">
+      <data key="d0">est spécifique à</data>
+    </edge>
+    <edge source="perte d’exploitation" target="incendie-explosion">
+      <data key="d0">survient après</data>
+    </edge>
+    <edge source="option modulable" target="clients expérimentés">
+      <data key="d0">destinée à</data>
+    </edge>
+    <edge source="option modulable" target="composer couverture">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="option modulable" target="choisir capitaux">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="option modulable" target="2 garanties optionnelles">
+      <data key="d0">requiert</data>
+    </edge>
+    <edge source="option modulable" target="ajouter garanties complémentaires">
+      <data key="d0">permet</data>
+    </edge>
+    <edge source="socle obligatoire" target="2 garanties de base">
+      <data key="d0">comporte</data>
+    </edge>
+    <edge source="garanties de base obligatoires" target="incendie &amp; risques annexes">
+      <data key="d0">incluent</data>
+    </edge>
+    <edge source="garanties de base obligatoires" target="événements catastrophiques">
+      <data key="d0">incluent</data>
     </edge>
     <edge source="garanties optionnelles" target="dégâts des eaux">
       <data key="d0">incluent</data>
@@ -261,54 +643,6 @@
       <data key="d0">incluent</data>
     </edge>
     <edge source="garanties optionnelles" target="bris de matériels pro/it">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="vol" target="plainte + pv police/gendarmerie">
-      <data key="d0">requiert</data>
-    </edge>
-    <edge source="annexes incendie" target="catastrophes naturelles">
-      <data key="d0">couvre</data>
-    </edge>
-    <edge source="annexes incendie" target="événements climatiques">
-      <data key="d0">couvre</data>
-    </edge>
-    <edge source="annexes incendie" target="émeutes et mouvements populaires">
-      <data key="d0">couvre</data>
-    </edge>
-    <edge source="bris de glaces &amp; enseignes lumineuses" target="bris de glaces">
-      <data key="d0">couvre</data>
-    </edge>
-    <edge source="bris de glaces &amp; enseignes lumineuses" target="bris d'enseignes lumineuses">
-      <data key="d0">couvre</data>
-    </edge>
-    <edge source="bris de matériels professionnels" target="matériels informatiques et bureautiques">
-      <data key="d0">couvre</data>
-    </edge>
-    <edge source="bris de machines" target="machines pour activités ciblées">
-      <data key="d0">couvre</data>
-    </edge>
-    <edge source="perte d’exploitation" target="incendie-explosion">
-      <data key="d0">survient après</data>
-    </edge>
-    <edge source="option modulable" target="clients expérimentés">
-      <data key="d0">destinée à</data>
-    </edge>
-    <edge source="option modulable" target="composer couverture">
-      <data key="d0">permet</data>
-    </edge>
-    <edge source="option modulable" target="choisir capitaux">
-      <data key="d0">permet</data>
-    </edge>
-    <edge source="option modulable" target="2 garanties optionnelles">
-      <data key="d0">requiert</data>
-    </edge>
-    <edge source="socle obligatoire" target="2 garanties de base">
-      <data key="d0">comporte</data>
-    </edge>
-    <edge source="garanties de base obligatoires" target="incendie &amp; risques annexes">
-      <data key="d0">incluent</data>
-    </edge>
-    <edge source="garanties de base obligatoires" target="événements catastrophiques">
       <data key="d0">incluent</data>
     </edge>
     <edge source="rc exploitation" target="dommages causés après livraison des produits ou achèvement des travaux">
