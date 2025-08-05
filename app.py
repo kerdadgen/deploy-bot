@@ -44,6 +44,7 @@ def load_resources():
 
 client, collection, G, AZURE_DEPLOYMENT_CHAT = load_resources()
 
+
 # ==== NOUVELLE FONCTION : RÉÉCRITURE DE LA QUESTION ====
 def rewrite_question_with_history(question: str, history: list):
     # Si l'historique est court ou si la question semble déjà complète, on ne réécrit pas.
@@ -167,21 +168,39 @@ def retrieve_detailed_chunks_alternative(standalone_question: str):
 
 
 def final_synthesis(question, standalone_question, graph_context, detailed_chunks):
+    
+    # Le seul changement est dans le system_prompt.
     system_prompt = """
-    Tu es un assistant expert pour les courtiers de l'assurance RMA. Ton rôle est de fournir des réponses précises, complètes et basées **exclusivement** sur les documents fournis.
+    Tu es un assistant expert de l'assurance RMA, un outil de support destiné exclusivement aux courtiers et intermédiaires professionnels. Ta mission est de fournir des réponses factuelles, précises et immédiatement exploitables.
 
-RÈGLES :
-1.  **Exhaustivité :** Synthétise TOUTES les informations pertinentes des documents pour répondre à la question.
-2.  **Clarté :** Structure ta réponse avec des titres, des listes à puces ou numérotées pour une lisibilité maximale.
-3.  **Ne jamais inventer :** Si l'information n'est pas dans les documents, dis-le clairement.
-4.  **Tu peux répondre aux remerciements
+    **PRINCIPES DIRECTEURS :**
 
-    FORMAT DE SORTIE OBLIGATOIRE :
-    Un objet JSON avec :
-    1. "reponse": Une réponse claire et détaillée à la question originale. Si la réponse est détaillée, utilise une liste numérotée (1., 2., ...).
-    2. "suggestions": Une liste de 2 questions de suivi pertinentes.
+    1.  **ADOPTE LA PERSPECTIVE DU COURTIER :** C'est la règle la plus importante. Tu parles à un professionnel. **Ne lui explique jamais son propre rôle ou des procédures qu'il exécute lui-même.** Par exemple, ne dis pas "les intermédiaires (agents/courtiers)". Concentre-toi sur les informations que le courtier doit communiquer à son **client final** ou sur les spécificités du produit qu'il pourrait ne pas connaître par cœur.
+    
+    2.  **PERTINENCE AVANT TOUT :** Ta tâche principale est de répondre **précisément et uniquement** à la QUESTION ORIGINALE DE L'UTILISATEUR. Ne fournis pas d'informations qui ne répondent pas directement à cette question, même si elles sont présentes dans les documents de contexte. Sois concis si la question est simple.
+
+    3.  **EXHAUSTIVITÉ CONTRÔLÉE :** Si la question est large (ex: "Parle-moi du produit X"), alors synthétise les informations les plus importantes de manière structurée. Si la question est spécifique (ex: "Quel est le plafond pour le vol ?"), donne uniquement cette information précise.
+
+    4.  **PRÉCISION ABSOLUE :** Ta réponse doit être basée **exclusivement** sur les extraits de documents fournis. Ne jamais inventer ou supposer. Si l'information n'est pas présente, indique-le clairement.
+
+    5.  **CLARTÉ PROFESSIONNELLE :** Structure tes réponses avec des titres `###` et des listes à puces `-` pour une lisibilité maximale.
+
+    ================================================================
+    **INSTRUCTION DE FORMATAGE CRITIQUE :**
+    Ta sortie DOIT être un objet JSON valide. L'intégralité de la réponse textuelle DOIT être contenue dans une SEULE chaîne de caractères sous la clé "reponse".
+    ================================================================
+
+    **FORMAT DE SORTIE OBLIGATOIRE :**
+    {
+      "reponse": "...", // TOUT le contenu pour l'utilisateur va ici en tant que chaîne de caractères formatée en Markdown.
+      "suggestions": [
+        {"question": "Question de suivi 1"},
+        {"question": "Question de suivi 2"}
+      ]
+    }
     """
 
+    # Le reste de la fonction est identique à votre version.
     history_context = ""
     for msg in st.session_state.messages[-5:]:
         history_context += f"{msg['role'].upper()} : {msg['content']}\n"
@@ -189,44 +208,118 @@ RÈGLES :
     user_prompt = f"""
     **CONTEXTE DE CONVERSATION :**
     {history_context}
-
     **QUESTION ORIGINALE DE L'UTILISATEUR :**
     "{question}"
-
     **QUESTION COMPLÈTE POUR RECHERCHE (générée à partir de l'historique) :**
     "{standalone_question}"
-
     **1. Contexte du Graphe (basé sur la question complète) :**
-    ```    {graph_context}
     ```
-
+    {graph_context}
+    ```
     **2. Détails des Documents (basés sur la question complète) :**
     ```
     {detailed_chunks}
     ```
     """
-
     messages = [
         {"role": "system", "content": system_prompt},
         {"role": "user", "content": user_prompt}
     ]
 
-    response = client.chat.completions.create(
-        model=AZURE_DEPLOYMENT_CHAT,
-        messages=messages,
-        temperature=0.0,
-        max_tokens=2000,
-        response_format={"type": "json_object"}
-    )
-
+    # La logique de tentative/réparation reste la même, elle est très bien.
     try:
-        return json.loads(response.choices[0].message.content)
-    except Exception:
-        return {"reponse": response.choices[0].message.content, "suggestions": []}
+        response = client.chat.completions.create(
+            model=AZURE_DEPLOYMENT_CHAT,
+            messages=messages,
+            temperature=0.0,
+            max_tokens=2000,
+            response_format={"type": "json_object"}
+        )
+        response_content = response.choices[0].message.content
+        return json.loads(response_content)
+    except Exception as e:
+        print(f"⚠️ AVERTISSEMENT : Le modèle n'a pas retourné un JSON valide. Erreur : {e}")
+        print("--- Tentative de réparation : nouvel appel au LLM pour extraire la réponse. ---")
+        repair_prompt = f"""
+        Le texte suivant devait être un JSON mais a échoué. Extrais-en la réponse principale destinée à l'utilisateur.
+        Ignore les clés JSON comme "reponse" ou "suggestions". Donne juste le texte de la réponse.
+        Texte à analyser :
+        ---
+        {response.choices[0].message.content if 'response' in locals() else 'Contenu non disponible'}
+        ---
+        """
+        try:
+            repair_response = client.chat.completions.create(
+                model=AZURE_DEPLOYMENT_CHAT,
+                messages=[{"role": "system", "content": "Tu es un expert en nettoyage de texte."},
+                          {"role": "user", "content": repair_prompt}],
+                temperature=0.0,
+                max_tokens=1500
+            )
+            repaired_text = repair_response.choices[0].message.content
+            return {"reponse": repaired_text, "suggestions": []}
+        except Exception as final_e:
+            print(f"❌ ERREUR : La tentative de réparation a également échoué. Erreur : {final_e}")
+            return {"reponse": "Désolé, je n'ai pas pu formater la réponse correctement. Veuillez réessayer.", "suggestions": []}
+
+
+
+
+def format_response_robustly(response_data):
+    """
+    Formate la sortie du LLM de manière robuste, en gérant les cas où la réponse
+    est une chaîne, une liste, un dictionnaire, ou un mélange de texte et de dict.
+    """
+    # Cas 1 : La réponse est un dictionnaire bien formé (le cas idéal)
+    if isinstance(response_data, dict):
+        # On extrait la partie "reponse" qui peut elle-même être un dict, une liste ou une str
+        content = response_data.get("reponse", "Aucun contenu de réponse trouvé.")
+        return format_response_robustly(content) # Appel récursif pour formater le contenu
+
+    # Cas 2 : La réponse est une liste
+    if isinstance(response_data, list):
+        return "\n".join([f"- {item}" for item in response_data])
+
+    # Cas 3 : La réponse est une chaîne de caractères (le cas le plus complexe)
+    if isinstance(response_data, str):
+        # Cette chaîne peut contenir des dictionnaires Python sous forme de texte.
+        # On utilise une regex pour trouver ces dictionnaires.
+        # Pattern pour trouver des blocs qui commencent par un titre suivi d'un dict
+        pattern = re.compile(r"([A-Za-z\s]+)\n(\{.*?\})", re.DOTALL)
+        matches = pattern.findall(response_data)
+
+        if not matches:
+            # Si aucun dictionnaire n'est trouvé, c'est juste du texte normal.
+            return response_data
+
+        markdown_output = ""
+        for title, dict_str in matches:
+            markdown_output += f"### {title.strip()}\n"
+            try:
+                # On essaie de convertir la chaîne du dictionnaire en vrai dictionnaire
+                data_dict = eval(dict_str) 
+                if isinstance(data_dict, dict):
+                    for key, value in data_dict.items():
+                        markdown_output += f"**{key}**\n"
+                        if isinstance(value, list):
+                            for item in value:
+                                markdown_output += f"- {item}\n"
+                        else:
+                            markdown_output += f"{value}\n"
+                        markdown_output += "\n"
+            except:
+                # Si eval échoue, on affiche la chaîne brute
+                markdown_output += f"{dict_str}\n"
+            markdown_output += "\n"
+        
+        return markdown_output.strip()
+
+    # Cas par défaut pour tous les autres types
+    return str(response_data)
+
 
 
 # ==== 3. INTERFACE STREAMLIT ====
-# ==== 3. INTERFACE STREAMLIT (Version avec Mémoire de Conversation) ====
 
 st.set_page_config(page_title="Chatbot RMA Avancé", layout="wide")
 st.title("🤖 Chatbot Avancé RMA")
@@ -303,27 +396,22 @@ if st.session_state.question:
                 graph_context=graph_context, 
                 detailed_chunks=detailed_chunks
             )
+            # Dans la logique Streamlit, remplacez l'ancien bloc de formatage
 
-            raw_response = response_data.get("reponse", "Désolé, une erreur est survenue.")
+            # NOUVEAU BLOC DE FORMATAGE ROBUSTE
+            # On passe l'objet JSON complet à notre nouvelle fonction de formatage.
+            reponse_concise = format_response_robustly(response_data)
 
-            # 1. On s'assure que la réponse est bien une chaîne de caractères
-            if isinstance(raw_response, list):
-                # Si c'est une liste, on joint tous les éléments avec un saut de ligne
-                reponse_concise = "\n".join(map(str, raw_response))
-            else:
-                # Sinon, on s'assure que c'est bien une chaîne (au cas où ce serait autre chose)
-                reponse_concise = str(raw_response)
-                
-            # 🔧 Nettoyage du Markdown pour un affichage propre
-            reponse_concise = re.sub(r"(#+)([^\s#])", r"\1 \2", reponse_concise)
-            reponse_concise = re.sub(r"(##[^\n]*)", r"\n\n\1\n\n", reponse_concise)
-            reponse_concise = re.sub(r"([^\n])(\n- )", r"\1\n\n\2", reponse_concise)
-            reponse_concise = re.sub(r"\n{3,}", r"\n\n", reponse_concise)
-            reponse_concise = re.sub(r"(?<!\n)(\d+\. )", r"\n\n\1", reponse_concise)
+            # On peut toujours faire un petit nettoyage final
             reponse_concise = reponse_concise.strip()
 
-            # Extraire les suggestions de la réponse
-            suggestions_data = response_data.get("suggestions", [])
+            # Extraire les suggestions (cette partie ne change pas)
+            suggestions_data = []
+            if isinstance(response_data, dict):
+                suggestions_data = response_data.get("suggestions", [])
+
+
+        
             suggestions = [s["question"] if isinstance(s, dict) else s for s in suggestions_data]
 
             # Afficher la réponse finale
