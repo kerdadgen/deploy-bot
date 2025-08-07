@@ -129,7 +129,7 @@ def find_context_in_graph(concepts, threshold=0.8):
 
     for concept in concepts:
         for word in concept.split():
-            matches = difflib.get_close_matches(word, all_nodes, n=10, cutoff=threshold)
+            matches = difflib.get_close_matches(word, all_nodes, n=3, cutoff=threshold)
             related_nodes.update(matches)
 
     if len(related_nodes) > 1:
@@ -154,7 +154,7 @@ def retrieve_detailed_chunks_alternative(standalone_question: str):
     # On augmente n_results pour s'assurer de récupérer un contexte riche.
     results = collection.query(
         query_texts=[standalone_question], 
-        n_results=30  # On récupère directement 10 chunks pertinents pour la question globale
+        n_results=10  # On récupère directement 10 chunks pertinents pour la question globale
     )
     
     docs = results.get('documents', [[]])[0]
