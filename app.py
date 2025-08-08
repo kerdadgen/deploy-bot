@@ -154,7 +154,7 @@ def retrieve_detailed_chunks_alternative(standalone_question: str):
     # On augmente n_results pour s'assurer de récupérer un contexte riche.
     results = collection.query(
         query_texts=[standalone_question], 
-        n_results=10  # On récupère directement 10 chunks pertinents pour la question globale
+        n_results=30  # On récupère directement 10 chunks pertinents pour la question globale
     )
     
     docs = results.get('documents', [[]])[0]
@@ -180,7 +180,7 @@ def final_synthesis(question, standalone_question, graph_context, detailed_chunk
     
     2.  **PERTINENCE AVANT TOUT :** Ta tâche principale est de répondre **précisément et uniquement** à la QUESTION ORIGINALE DE L'UTILISATEUR. Ne fournis pas d'informations qui ne répondent pas directement à cette question, même si elles sont présentes dans les documents de contexte. Sois concis si la question est simple.
 
-    3.  **EXHAUSTIVITÉ CONTRÔLÉE :** Si la question est large (ex: "Parle-moi du produit X"), alors synthétise les informations les plus importantes de manière structurée. Si la question est spécifique (ex: "Quel est le plafond pour le vol ?"), donne uniquement cette information précise.
+    3.  **EXHAUSTIVITÉ CONTRÔLÉE :** Si la question est large (ex: "Parle-moi du produit X"), alors EXHAUSTIVE les informations les plus importantes de manière structurée. Si la question est spécifique (ex: "Quel est le plafond pour le vol ?"), donne uniquement cette information précise.
 
     4.  **PRÉCISION ABSOLUE :** Ta réponse doit être basée **exclusivement** sur les extraits de documents fournis. Ne jamais inventer ou supposer. Si l'information n'est pas présente, indique-le clairement.
 
