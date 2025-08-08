@@ -154,7 +154,7 @@ def retrieve_detailed_chunks_alternative(standalone_question: str):
     # On augmente n_results pour s'assurer de récupérer un contexte riche.
     results = collection.query(
         query_texts=[standalone_question], 
-        n_results=30  # On récupère directement 10 chunks pertinents pour la question globale
+        n_results=10  # On récupère directement 10 chunks pertinents pour la question globale
     )
     
     docs = results.get('documents', [[]])[0]
