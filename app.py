@@ -129,7 +129,7 @@ def find_context_in_graph(concepts, threshold=0.8):
 
     for concept in concepts:
         for word in concept.split():
-            matches = difflib.get_close_matches(word, all_nodes, n=10, cutoff=threshold)
+            matches = difflib.get_close_matches(word, all_nodes, n=3, cutoff=threshold)
             related_nodes.update(matches)
 
     if len(related_nodes) > 1:
@@ -180,7 +180,7 @@ def final_synthesis(question, standalone_question, graph_context, detailed_chunk
     
     2.  **PERTINENCE AVANT TOUT :** Ta tâche principale est de répondre **précisément et uniquement** à la QUESTION ORIGINALE DE L'UTILISATEUR. Ne fournis pas d'informations qui ne répondent pas directement à cette question, même si elles sont présentes dans les documents de contexte. Sois concis si la question est simple.
 
-    3.  **EXHAUSTIVITÉ CONTRÔLÉE :** Si la question est large (ex: "Parle-moi du produit X"), alors synthétise les informations les plus importantes de manière structurée. Si la question est spécifique (ex: "Quel est le plafond pour le vol ?"), donne uniquement cette information précise.
+    3.  **EXHAUSTIVITÉ CONTRÔLÉE :** Si la question est large (ex: "Parle-moi du produit X"), alors EXHAUSTIVE les informations les plus importantes de manière structurée. Si la question est spécifique (ex: "Quel est le plafond pour le vol ?"), donne uniquement cette information précise.
 
     4.  **PRÉCISION ABSOLUE :** Ta réponse doit être basée **exclusivement** sur les extraits de documents fournis. Ne jamais inventer ou supposer. Si l'information n'est pas présente, indique-le clairement.
 
