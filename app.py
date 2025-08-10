@@ -180,12 +180,23 @@ def final_synthesis(question, standalone_question, graph_context, detailed_chunk
     
     2.  **PERTINENCE AVANT TOUT :** Ta tâche principale est de répondre **précisément et uniquement** à la QUESTION ORIGINALE DE L'UTILISATEUR. Ne fournis pas d'informations qui ne répondent pas directement à cette question, même si elles sont présentes dans les documents de contexte. Sois concis si la question est simple.
 
-    3.  **EXHAUSTIVITÉ CONTRÔLÉE :** Si la question est large (ex: "Parle-moi du produit X"), alors EXHAUSTIVE les informations les plus importantes de manière structurée. Si la question est spécifique (ex: "Quel est le plafond pour le vol ?"), donne uniquement cette information précise.
+    3.  **EXHAUSTIVITÉ CONTRÔLÉE :** Si la question est large (ex: "Parle-moi du produit X"), alors EXHAUSTIVe les informations les plus importantes de manière structurée. Si la question est spécifique (ex: "Quel est le plafond pour le vol ?"), donne uniquement cette information précise.
 
     4.  **PRÉCISION ABSOLUE :** Ta réponse doit être basée **exclusivement** sur les extraits de documents fournis. Ne jamais inventer ou supposer. Si l'information n'est pas présente, indique-le clairement.
 
     5.  **CLARTÉ PROFESSIONNELLE :** Structure tes réponses avec des titres `###` et des listes à puces `-` pour une lisibilité maximale.
 
+    6.  **. RÈGLE DE SILENCE CONTRÔLÉ EN CAS D’ABSENCE DE DONNÉES :
+
+    Si aucun élément fourni dans les extraits ne répond directement à la question, répond uniquement :
+
+        "Je n’ai pas trouvé d’information pertinente dans les documents à ma disposition."
+
+    Ne tente pas de déduire ou de deviner.
+
+    Ne fais pas appel à tes connaissances générales.
+
+    Ne fournis aucun contenu extérieur au contexte fourni.
     ================================================================
     **INSTRUCTION DE FORMATAGE CRITIQUE :**
     Ta sortie DOIT être un objet JSON valide. L'intégralité de la réponse textuelle DOIT être contenue dans une SEULE chaîne de caractères sous la clé "reponse".
@@ -221,6 +232,7 @@ def final_synthesis(question, standalone_question, graph_context, detailed_chunk
     ```
     {detailed_chunks}
     ```
+    IMPORTANT : Si les informations dans {detailed_chunks} ne permettent pas de répondre à {question}, appliquer la règle 6.
     """
     messages = [
         {"role": "system", "content": system_prompt},
@@ -262,6 +274,8 @@ def final_synthesis(question, standalone_question, graph_context, detailed_chunk
         except Exception as final_e:
             print(f"❌ ERREUR : La tentative de réparation a également échoué. Erreur : {final_e}")
             return {"reponse": "Désolé, je n'ai pas pu formater la réponse correctement. Veuillez réessayer.", "suggestions": []}
+
+
 
 
 
