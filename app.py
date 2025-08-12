@@ -171,7 +171,7 @@ def retrieve_detailed_chunks_alternative(standalone_question: str, product_name=
 
 
 
-def final_synthesis(question, graph_context, detailed_chunks):
+def final_synthesis(question, standalone_question, graph_context, detailed_chunks):
     
     # Le seul changement est dans le system_prompt.
     system_prompt = """
@@ -410,14 +410,15 @@ if st.session_state.question:
             # ==== ÉTAPE 1 : RÉÉCRIRE LA QUESTION AVEC LE CONTEXTE (LA CLÉ) ====
             # ==================================================================
             # On passe l'historique complet pour que la fonction ait tout le contexte.
+            standalone_question = rewrite_question_with_history(current_question, st.session_state.messages)
 
 
             # ==================================================================
             # ==== ÉTAPE 2 : RECHERCHE BASÉE SUR LA QUESTION AUTONOME ========
             # ==================================================================
-            concepts = decompose_question(current_question)
+            concepts = decompose_question(standalone_question)
             graph_context = find_context_in_graph(concepts)
-            detailed_chunks = retrieve_detailed_chunks_alternative(current_question)
+            detailed_chunks = retrieve_detailed_chunks_alternative(standalone_question)
             
             # ==================================================================
             # ==== ÉTAPE 3 : SYNTHÈSE FINALE ===================================
@@ -425,6 +426,7 @@ if st.session_state.question:
             # On passe la question originale (pour la réponse) et la question réécrite (pour le contexte)
             response_data = final_synthesis(
                 question=current_question,
+                standalone_question=standalone_question,
                 graph_context=graph_context, 
                 detailed_chunks=detailed_chunks
             )
