@@ -171,7 +171,7 @@ def retrieve_detailed_chunks_alternative(standalone_question: str, product_name=
 
 
 
-def final_synthesis(question, standalone_question, graph_context, detailed_chunks):
+def final_synthesis(question, graph_context, detailed_chunks):
     
     # Le seul changement est dans le system_prompt.
     system_prompt = """
@@ -197,7 +197,6 @@ def final_synthesis(question, standalone_question, graph_context, detailed_chunk
 
     4. **PRÉCISION ET CITATIONS :**
     - Base ta réponse **exclusivement** sur les documents fournis.
-    - Cite les sources explicitement : "Selon [nom du document], section X : [citation]"
     - Format des citations : `> citation exacte en italique`
     - Ne jamais inventer ou supposer d'informations.
 
@@ -246,8 +245,6 @@ def final_synthesis(question, standalone_question, graph_context, detailed_chunk
     {history_context}
     **QUESTION ORIGINALE DE L'UTILISATEUR :**
     "{question}"
-    **QUESTION COMPLÈTE POUR RECHERCHE (générée à partir de l'historique) :**
-    "{standalone_question}"
     **1. Contexte du Graphe (basé sur la question complète) :**
     ```
     {graph_context}
@@ -298,8 +295,6 @@ def final_synthesis(question, standalone_question, graph_context, detailed_chunk
         except Exception as final_e:
             print(f"❌ ERREUR : La tentative de réparation a également échoué. Erreur : {final_e}")
             return {"reponse": "Désolé, je n'ai pas pu formater la réponse correctement. Veuillez réessayer.", "suggestions": []}
-
-
 
 
 
@@ -415,15 +410,14 @@ if st.session_state.question:
             # ==== ÉTAPE 1 : RÉÉCRIRE LA QUESTION AVEC LE CONTEXTE (LA CLÉ) ====
             # ==================================================================
             # On passe l'historique complet pour que la fonction ait tout le contexte.
-            standalone_question = rewrite_question_with_history(current_question, st.session_state.messages)
 
 
             # ==================================================================
             # ==== ÉTAPE 2 : RECHERCHE BASÉE SUR LA QUESTION AUTONOME ========
             # ==================================================================
-            concepts = decompose_question(standalone_question)
+            concepts = decompose_question(current_question)
             graph_context = find_context_in_graph(concepts)
-            detailed_chunks = retrieve_detailed_chunks_alternative(standalone_question)
+            detailed_chunks = retrieve_detailed_chunks_alternative(current_question)
             
             # ==================================================================
             # ==== ÉTAPE 3 : SYNTHÈSE FINALE ===================================
@@ -431,7 +425,6 @@ if st.session_state.question:
             # On passe la question originale (pour la réponse) et la question réécrite (pour le contexte)
             response_data = final_synthesis(
                 question=current_question,
-                standalone_question=standalone_question,
                 graph_context=graph_context, 
                 detailed_chunks=detailed_chunks
             )
