@@ -129,7 +129,7 @@ def find_context_in_graph(concepts, threshold=0.8):
 
     for concept in concepts:
         for word in concept.split():
-            matches = difflib.get_close_matches(word, all_nodes, n=3, cutoff=threshold)
+            matches = difflib.get_close_matches(word, all_nodes, n=5, cutoff=threshold)
             related_nodes.update(matches)
 
     if len(related_nodes) > 1:
@@ -156,7 +156,7 @@ def retrieve_detailed_chunks_alternative(standalone_question: str, product_name=
         
     results = collection.query(
         query_texts=[standalone_question],
-        n_results=5,
+        n_results=10,
         where=where_filter  # Filtre sur les métadonnées
     )
     
