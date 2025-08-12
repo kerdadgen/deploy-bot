@@ -145,16 +145,19 @@ def find_context_in_graph(concepts, threshold=0.8):
             context_summary += f"- Le concept '{node}' est lié à '{neighbor}' par la relation '{relation}'.\n"
     return context_summary if context_summary else "Aucun lien direct trouvé dans le graphe."
 
-def retrieve_detailed_chunks_alternative(standalone_question: str):
-    """
-    Cherche les chunks pertinents en utilisant la question complète et autonome,
-    ce qui est souvent plus efficace que de chercher des concepts isolés.
-    """
-    # On utilise directement la question complète pour la recherche sémantique.
-    # On augmente n_results pour s'assurer de récupérer un contexte riche.
+def retrieve_detailed_chunks_alternative(standalone_question: str, product_name=None):
+    where_filter = None
+    if product_name:
+        where_filter = {
+            "$and": [
+                {"product_name": {"$eq": product_name}}
+            ]
+        }
+        
     results = collection.query(
-        query_texts=[standalone_question], 
-        n_results=10  # On récupère directement 10 chunks pertinents pour la question globale
+        query_texts=[standalone_question],
+        n_results=5,
+        where=where_filter  # Filtre sur les métadonnées
     )
     
     docs = results.get('documents', [[]])[0]
