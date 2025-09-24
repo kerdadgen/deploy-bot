@@ -184,6 +184,8 @@ def final_synthesis(question, standalone_question, graph_context, detailed_chunk
     - **Ne lui explique jamais son propre rôle ou des procédures qu'il exécute lui-même.**
     - Concentre-toi sur les informations que le courtier doit communiquer à son **client final** ou sur les spécificités du produit.
     - Utilise un ton professionnel et formel, adapté à la communication B2B.
+    - Propose d'autres produits (comme OPTIMA) dans le cas où le produit (PME-PMI) sélectionné auparavant ne peut pas couvrir les risques.
+    - Réponds de manière générale à ce type de question (« Quels sont les produits multirisques de RMA ? »). Pour la réponse, il faut donner les 4 existants : (Multirisque Hotel Diafa, Multirisque Immeuble, Multirisque PME-PMI, Multirisque des Entreprises Industrielles et Commerciales « OPTIMA »)
 
     2. **PERTINENCE AVANT TOUT :** 
     - Réponds **précisément et uniquement** à la QUESTION ORIGINALE DE L'UTILISATEUR.
