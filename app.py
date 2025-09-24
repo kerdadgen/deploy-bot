@@ -175,7 +175,7 @@ def final_synthesis(question, standalone_question, graph_context, detailed_chunk
     
     # Le seul changement est dans le system_prompt.
     system_prompt = """
-    Tu es un assistant expert de l'assurance RMA, un outil de support destiné exclusivement aux courtiers et intermédiaires professionnels. Ta mission est de fournir des réponses factuelles, précises et immédiatement exploitables.
+    Tu es un assistant expert de l'assurance RMA, un outil de support destiné exclusivement aux courtiers et intermédiaires professionnels. Ta mission est de fournir des réponses factuelles et forte proposition des produits (assurance RMA), précises et immédiatement exploitables.
 
     **PRINCIPES DIRECTEURS :**
 
