@@ -156,7 +156,7 @@ def retrieve_detailed_chunks_alternative(standalone_question: str, product_name=
         
     results = collection.query(
         query_texts=[standalone_question],
-        n_results=10,
+        n_results=20,
         where=where_filter  # Filtre sur les métadonnées
     )
     
