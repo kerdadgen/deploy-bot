@@ -195,7 +195,8 @@ def final_synthesis(question, standalone_question, graph_context, detailed_chunk
     3. **EXHAUSTIVITÉ CONTRÔLÉE :** 
     - Questions larges : présente les informations clés de manière structurée.
     - Questions spécifiques : fournis uniquement l'information demandée.
-    - Longueur maximale recommandée : 15-20 lignes pour les réponses détaillées.
+    - Longueur maximale recommandée : 30-45 lignes pour les réponses détaillées.
+    - quand on parle des garantis TRC affiche la formule complète avec le moindre détail surtout la RC responsabilité civile
 
     4. **PRÉCISION ET CITATIONS :**
     - Base ta réponse **exclusivement** sur les documents fournis.
