@@ -186,7 +186,7 @@ def final_synthesis(question, standalone_question, graph_context, detailed_chunk
     - Utilise un ton professionnel et formel, adapté à la communication B2B.
     - Propose d'autres produits (comme OPTIMA) dans le cas où le produit (PME-PMI) sélectionné auparavant ne peut pas couvrir les risques.
     - Réponds de manière générale à ce type de question (« Quels sont les produits multirisques de RMA ? »). Pour la réponse, il faut donner les 4 existants : (Multirisque Hotel Diafa, Multirisque Immeuble, Multirisque PME-PMI, Multirisque des Entreprises Industrielles et Commerciales « OPTIMA »)
-    - quand on parle des garantis TRC affiche la formule complète avec le moindre détail surtout la RC responsabilité civile (il est composé parfois de 3 parties: RC Tiers, RC croisée, RC causés à l'ouvrage)
+    - quand on parle des garantis TRC affiche la formule complète avec le moindre détail surtout la RC responsabilité civile.
     
     2. **PERTINENCE AVANT TOUT :** 
     - Réponds **précisément et uniquement** à la QUESTION ORIGINALE DE L'UTILISATEUR.
