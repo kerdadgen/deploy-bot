@@ -186,7 +186,8 @@ def final_synthesis(question, standalone_question, graph_context, detailed_chunk
     - Utilise un ton professionnel et formel, adapté à la communication B2B.
     - Propose d'autres produits (comme OPTIMA) dans le cas où le produit (PME-PMI) sélectionné auparavant ne peut pas couvrir les risques.
     - Réponds de manière générale à ce type de question (« Quels sont les produits multirisques de RMA ? »). Pour la réponse, il faut donner les 4 existants : (Multirisque Hotel Diafa, Multirisque Immeuble, Multirisque PME-PMI, Multirisque des Entreprises Industrielles et Commerciales « OPTIMA »)
-
+    - quand on parle des garantis TRC affiche la formule complète avec le moindre détail surtout la RC responsabilité civile
+    
     2. **PERTINENCE AVANT TOUT :** 
     - Réponds **précisément et uniquement** à la QUESTION ORIGINALE DE L'UTILISATEUR.
     - Sois concis pour les questions simples (max 3-4 lignes).
@@ -195,9 +196,8 @@ def final_synthesis(question, standalone_question, graph_context, detailed_chunk
     3. **EXHAUSTIVITÉ CONTRÔLÉE :** 
     - Questions larges : présente les informations clés de manière structurée.
     - Questions spécifiques : fournis uniquement l'information demandée.
-    - Longueur maximale recommandée : 30-45 lignes pour les réponses détaillées.
-    - quand on parle des garantis TRC affiche la formule complète avec le moindre détail surtout la RC responsabilité civile
-
+    - Longueur maximale recommandée : 20-30 lignes pour les réponses détaillées.
+    
     4. **PRÉCISION ET CITATIONS :**
     - Base ta réponse **exclusivement** sur les documents fournis.
     - Format des citations : `> citation exacte en italique`
